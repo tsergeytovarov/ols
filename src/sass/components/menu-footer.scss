@@ -17,7 +17,15 @@
       margin-right: 0;
     }
 
-    @media (max-width: $phone-mw) {
+    @media (min-width: $desktop) {
+      margin-right: 65px;
+
+      &:first-child {
+        margin-right: 130px;
+      }
+    }
+
+    @media (max-width: $tablet) {
       display: block;
       margin-right: 0;
       margin-bottom: 30px;
@@ -33,9 +41,12 @@
     color: $white;
     text-decoration: none;
 
+    &--name {
+      font-size: 16px;
+    }
+
     &:hover {
       text-decoration: underline;
     }
   }
 }
-
