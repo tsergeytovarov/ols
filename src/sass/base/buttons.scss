@@ -1,4 +1,4 @@
-.btn{
+.btn {
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
@@ -7,24 +7,24 @@
   cursor: pointer;
 
   &:hover,
-  &--hover{
+  &--hover {
 
   }
 
   &:active,
-  &--active{
+  &--active {
 
   }
 
-  &--modify{
+  &--modify {
 
     &:hover,
-    &--hover{
+    &--hover {
 
     }
 
     &:active,
-    &--active{
+    &--active {
 
     }
   }
