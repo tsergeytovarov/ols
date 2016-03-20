@@ -211,7 +211,24 @@ body {
   color: $base-text-color;
 }
 
-strong,
-b {
-  font-weight: 600;
+h1, .h1 {
+  font-family: $montserrat-bold;
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+h2, .h2 {
+  font-family: $montserrat-bold;
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+h3, .h3 {
+  font-family: $montserrat-bold;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+p {
+  line-height: 23px;
 }
