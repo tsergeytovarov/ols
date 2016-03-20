@@ -11,8 +11,6 @@
 ## Установка шаблона
 
 ``` sh
-$ git clone https://github.com/tsergeytovarov/grunt-project.git project-name
-$ cd project-name
 $ npm install
 ```
 
@@ -32,11 +30,3 @@ $ npm install
 - `design/` - каталог для локального хранения файлов макета.
 
 Вся работа осуществляется в каталоге `src/`.
-
-## Шаблонизация
-
-Все шаблоны лежат в папке `htmltmpl`. Основные шаблоны в корне, остальные страницы в и компоненты в `components`. Сами страницы лежат в папке `src` и в них подколючаются компоненты через строку
-
-```html
-@@include('htmltpl/template.html')
-```
