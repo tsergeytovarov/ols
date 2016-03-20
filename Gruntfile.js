@@ -138,6 +138,22 @@ module.exports = function(grunt) {
       all: ['build/**/*.html']
     },
 
+    svgmin: {
+      options: {
+        plugins: [{
+          removeViewBox: false
+        },
+        {
+          removeUselessStrokeAndFill: false
+        }]
+      },
+      dist: {
+        files: {
+          'src/img/*.svg': 'src/img/*.svg'
+        }
+      }
+    },
+
     // отслеживаем изменений
     watch: {
       style: {
@@ -252,5 +268,10 @@ module.exports = function(grunt) {
   grunt.registerTask('img', [
     'copy:img',
     'imagemin'
+  ]);
+
+  // только картики и стили
+  grunt.registerTask('svg', [
+    'svgmin'
   ]);
 };
