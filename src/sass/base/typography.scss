@@ -2,16 +2,207 @@
   Базовая типография
 =====================*/
 
-// @font-face {
-//   font-family: 'Gotham';
-//   src:  url('../font/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
-//         url('../font/GothamPro-Medium.otf') format('opentype'),
-//         url('../font/GothamPro-Medium.woff') format('woff'),
-//         url('../font/GothamPro-Medium.ttf') format('truetype'),
-//         url('../font/GothamPro-Medium.svg#font/GothamPro-Medium') format('svg');
-//   font-weight: normal;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: "open-sans-bold";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("../font/opensans-bold.woff2") format("woff2"),
+  url("../font/opensans-bold.woff") format("woff"),
+  url("../font/opensans-bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "open-sans-bold-italic";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("../font/opensans-bolditalic.woff2") format("woff2"),
+  url("../font/opensans-bolditalic.woff") format("woff"),
+  url("../font/opensans-bolditalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "open-sans-extra-bold";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("../font/opensans-extrabold.woff2") format("woff2"),
+  url("../font/opensans-extrabold.woff") format("woff"),
+  url("../font/opensans-extrabold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "open-sans-extra-bold-italic";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("../font/opensans-extrabolditalic.woff2") format("woff2"),
+  url("../font/opensans-extrabolditalic.woff") format("woff"),
+  url("../font/opensans-extrabolditalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "open-sans-italic";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("../font/opensans-italic.woff2") format("woff2"),
+  url("../font/opensans-italic.woff") format("woff"),
+  url("../font/opensans-italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "open-sans-light";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("../font/opensans-light.woff2") format("woff2"),
+  url("../font/opensans-light.woff") format("woff"),
+  url("../font/opensans-light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "open-sans-light-italic";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("../font/opensans-lightitalic.woff2") format("woff2"),
+  url("../font/opensans-lightitalic.woff") format("woff"),
+  url("../font/opensans-lightitalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "open-sans";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("../font/opensans-regular.woff2") format("woff2"),
+  url("../font/opensans-regular.woff") format("woff"),
+  url("../font/opensans-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "open-sans-semi-bold";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("../font/opensans-semibold.woff2") format("woff2"),
+  url("../font/opensans-semibold.woff") format("woff"),
+  url("../font/opensans-semibold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "open-sans-semi-bold-italic";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("../font/opensans-semibolditalic.woff2") format("woff2"),
+  url("../font/opensans-semibolditalic.woff") format("woff"),
+  url("../font/opensans-semibolditalic.ttf") format("truetype");
+}
+
+
+
+@font-face {
+  font-family: "montserrat-black";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("../font/montserrat-black.woff2") format("woff2"),
+  url("../font/montserrat-black.woff") format("woff"),
+  url("../font/montserrat-black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "montserrat-bold";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("../font/montserrat-bold.woff2") format("woff2"),
+  url("../font/montserrat-bold.woff") format("woff"),
+  url("../font/montserrat-bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "montserrat-extra-bold";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("../font/montserrat-extrabold.woff2") format("woff2"),
+  url("../font/montserrat-extrabold.woff") format("woff"),
+  url("../font/montserrat-extrabold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "montserrat-hair-line";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("../font/montserrat-hairline.woff2") format("woff2"),
+  url("../font/montserrat-hairline.woff") format("woff"),
+  url("../font/montserrat-hairline.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "montserrat-light";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("../font/montserrat-light.woff2") format("woff2"),
+  url("../font/montserrat-light.woff") format("woff"),
+  url("../font/montserrat-light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "montserrat";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("../font/montserrat-regular.woff2") format("woff2"),
+  url("../font/montserrat-regular.woff") format("woff"),
+  url("../font/montserrat-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "montserrat-semi-bold";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("../font/montserrat-semibold.woff2") format("woff2"),
+  url("../font/montserrat-semibold.woff") format("woff"),
+  url("../font/montserrat-semibold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "montserrat-ultra-light";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("../font/montserrat-ultralight.woff2") format("woff2"),
+  url("../font/montserrat-ultralight.woff") format("woff"),
+  url("../font/montserrat-ultralight.ttf") format("truetype");
+}
+
+$open-sans-light: "open-sans-light", Arial, sans-serif;
+$open-sans-light-italic: "open-sans-light-italic", Arial, sans-serif;
+$open-sans: "open-sans", Arial, sans-serif;
+$open-sans-italic: "open-sans-italic", Arial, sans-serif;
+$open-sans-semi-bold: "open-sans-semi-bold", Arial, sans-serif;
+$open-sans-semi-bold-italic: "open-sans-semi-bold-italic", Arial, sans-serif;
+$open-sans-bold: "open-sans-bold", Arial, sans-serif;
+$open-sans-bold-italic: "open-sans-bold-italic", Arial, sans-serif;
+$open-sans-extra-bold: "open-sans-extra-bold", Arial, sans-serif;
+$open-sans-extra-bold-italic: "open-sans-extra-bold-italic", Arial, sans-serif;
+
+$montserrat-ultra-light: "montserrat-ultra-light", Arial, sans-serif;
+$montserrat-light: "montserrat-light", Arial, sans-serif;
+$montserrat-hair-line: "montserrat-hair-line", Arial, sans-serif;
+$montserrat: "montserrat", Arial, sans-serif;
+$montserrat-semi-bold: "montserrat-semi-bold", Arial, sans-serif;
+$montserrat-bold: "montserrat-bold", Arial, sans-serif;
+$montserrat-extra-bold: "montserrat-extra-bold", Arial, sans-serif;
+$montserrat-black: "montserrat-black", Arial, sans-serif;
 
 body {
   font-family: $base-font;
