@@ -163,6 +163,14 @@ module.exports = function(grunt) {
           spawn: false,
           livereload: true
         }
+      },
+      html: {
+        files: ['src/*.html'],
+        tasks: ['copy:html'],
+        options: {
+          spawn: false,
+          livereload: true
+        }
       }
     },
 
