@@ -1,0 +1,40 @@
+.menu-footer {
+
+  &__list {
+    list-style: none;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media (max-width: $phone-mw) {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__link {
+    text-transform: uppercase;
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

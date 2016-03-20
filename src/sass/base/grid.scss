@@ -7,12 +7,13 @@
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
+  box-sizing: border-box;
 }
 
 .container--small {
-  max-width: 720px;
+  max-width: 960px;
 }
 
 @media (min-width: 768px) {
@@ -33,8 +34,8 @@
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 .row {
   margin-right: -15px;
