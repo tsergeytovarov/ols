@@ -23,15 +23,6 @@ module.exports = function(grunt) {
       ]
     },
 
-    includereplace: {
-      htm: {
-        src: '*.html',
-        dest: 'build/',
-        expand: true,
-        cwd: 'src/'
-      }
-    },
-
     // копирование
     copy: {
       img: {
@@ -166,14 +157,6 @@ module.exports = function(grunt) {
           spawn: false,
           livereload: true
         }
-      },
-      html: {
-        files: ['src/**/*.html'],
-        tasks: ['includereplace'],
-        options: {
-          spawn: false,
-          livereload: true
-        }
       }
     },
 
@@ -208,7 +191,6 @@ module.exports = function(grunt) {
   // базовый таск
   grunt.registerTask('default', [
     'clean',
-    'includereplace',
     'copy',
     'sass',
     'cmq',
@@ -225,7 +207,6 @@ module.exports = function(grunt) {
   // билдовый таск
   grunt.registerTask('build', [
     'clean',
-    'includereplace',
     'copy',
     'sass',
     'cmq',
