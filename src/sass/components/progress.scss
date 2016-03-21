@@ -1,0 +1,40 @@
+$big-width: 30px;
+
+.progress {
+  position: relative;
+  overflow: hidden;
+  height: $big-width;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: $gray-dark;
+
+  &__bar {
+    height: $big-width;
+    background-color: $green;
+    font-size: 0;
+  }
+
+  &__text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: $big-width;
+    padding: 0 10px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: $big-width;
+  }
+
+  &--success &__bar {
+    background-color: $green;
+  }
+
+  &--warning &__bar {
+    background-color: $orange;
+  }
+
+  &--danger &__bar {
+    background-color: $red;
+  }
+}

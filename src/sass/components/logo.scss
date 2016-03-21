@@ -1,0 +1,20 @@
+.logo {
+  color: $white;
+  text-transform: uppercase;
+  font-family: $montserrat-bold;
+  font-size: 20px;
+  font-weight: bold;
+
+  &--dark {
+    color: $black;
+  }
+
+  @media (max-width: $tablet) {
+
+    &__second {
+      line-height: 26px;
+      display: block;
+    }
+
+  }
+}

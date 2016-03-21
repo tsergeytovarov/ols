@@ -1,0 +1,15 @@
+.courses-list {
+  padding: 25px 0 55px;
+
+  &__title {
+    margin: 0;
+
+    @include h3();
+  }
+
+  &__sub-title {
+    text-align: center;
+    font-size: 14px;
+    color: #7C8E96;
+  }
+}

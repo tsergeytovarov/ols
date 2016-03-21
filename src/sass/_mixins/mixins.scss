@@ -9,3 +9,20 @@
     clear: both;
   }
 }
+
+@mixin h1() {
+  font-family: $montserrat-bold;
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+@mixin h2() {
+  font-family: $montserrat-bold;
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+@mixin h3() {
+  font-family: $montserrat-bold;
+  font-size: 20px;
+}

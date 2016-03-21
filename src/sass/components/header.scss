@@ -1,0 +1,80 @@
+.header {
+  padding: 20px 0;
+  background-color: $black;
+
+  &--transparent {
+    padding: 40px 0;
+    background-color: transparent;
+  }
+
+  &__toggle {
+    display: none;
+  }
+
+  @media (max-width: $desktop) {
+    &__menu {
+      margin-top: 30px;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    position: relative;
+
+    &__menu {
+      display: none;
+    }
+
+    &__toggle {
+      position: absolute;
+      top: 40px;
+      right: 30px;
+      display: block;
+      width: 30px;
+      height: 30px;
+      padding: 0;
+      border: 0;
+      background: none;
+      font-size: 0;
+
+      span {
+        display: block;
+        width: 30px;
+        height: 6px;
+        border-radius: 4px;
+        background-color: $white;
+
+        &::after,
+        &::before {
+          position: relative;
+          display: block;
+          display: block;
+          width: 30px;
+          height: 6px;
+          border-radius: 4px;
+          background-color: $white;
+          content: "";
+        }
+
+        &::after {
+          top: -12px;
+        }
+
+        &::before {
+          top: -11px;
+        }
+      }
+      
+      &--dark {
+
+        span {
+          background-color: $black;
+
+          &::after,
+          &::before {
+            background-color: $black;
+          }
+        }
+      }
+    }
+  }
+}

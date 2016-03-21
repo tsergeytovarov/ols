@@ -1,0 +1,33 @@
+.status-text {
+  margin-bottom: 15px;
+  font-size: 16px;
+
+  &::before {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 7px;
+    border-radius: 50%;
+    background-color: $black;
+    content: "";
+    vertical-align: baseline;
+  }
+
+  &--success {
+    &::before {
+      background-color: $green;
+    }
+  }
+
+  &--warning {
+    &::before {
+      background-color: $orange;
+    }
+  }
+
+  &--danger {
+    &::before {
+      background-color: $red;
+    }
+  }
+}
