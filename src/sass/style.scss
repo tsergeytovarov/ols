@@ -26,9 +26,11 @@
 @import "components/header";
 @import "components/footer";
 @import "components/menu-footer";
+@import "components/announce-alert";
 
 
 
 /*=== страницы ===*/
 
 @import "pages/layout";
+@import "pages/course";
