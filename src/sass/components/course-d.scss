@@ -17,7 +17,7 @@
       width: 10%;
 
       @media (max-width: $tablet) {
-        width: 70px;
+        width: 30%;
         float: left;
       }
     }
@@ -33,9 +33,7 @@
       }
 
       @media (max-width: $tablet) {
-        width: auto;
-        margin-left: 80px;
-        margin-top: -50px;
+        width: 70%;
       }
     }
 
@@ -107,5 +105,11 @@
     font-family: $open-sans-semi-bold;
     font-weight: 600;
     color: #78909C;
+
+    @media (max-width: $tablet) {
+      span {
+        display: block;
+      }
+    }
   }
 }
