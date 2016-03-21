@@ -1,0 +1,26 @@
+.notice-text {
+  line-height: 18px;
+  padding-left: 15px;
+  border-left: 5px solid $black;
+  margin-bottom: 35px;
+
+  a {
+    color: inherit;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &--success {
+    border-color: $green;
+  }
+
+  &--warning {
+    border-color: $orange;
+  }
+
+  &--danger {
+    border-color: $red;
+  }
+}
