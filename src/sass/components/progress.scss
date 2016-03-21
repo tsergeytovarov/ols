@@ -1,4 +1,5 @@
 $big-width: 30px;
+$small-width: 25px;
 
 .progress {
   position: relative;
@@ -36,5 +37,20 @@ $big-width: 30px;
 
   &--danger &__bar {
     background-color: $red;
+  }
+
+  &--small {
+    height: $small-width;
+    margin-bottom: 0;
+  }
+
+  &--small &__bar {
+    height: $small-width;
+  }
+
+  &--small &__text {
+    line-height: $small-width;
+    font-size: 14px;
+    text-align: center;
   }
 }
