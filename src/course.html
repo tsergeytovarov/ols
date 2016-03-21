@@ -9,9 +9,31 @@
 </head>
 <body>
 
-	<header class="header">
-		
-	</header>
+<header class="header">
+    <div class="container container--small">
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+          <div class="logo">Online <span class="logo__second">Learning System</span></div>
+        </div>
+        <div class="col-md-6 col-xs-12 header__menu">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link menu__link--active">Courses</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Profile</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Sign out</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <button type="button" class="header__toggle"><span>Menu toggle</span></button>
+    </div>
+  </header>
 
   <div class="course">
 
@@ -20,33 +42,62 @@
   		<div class="container container--small">
 
 	  		<div class="announce-alert">
-	  			<div class="announce-alert__thumb">
+	  			<div class="announce-alert__thumb mobile-hide">
 	  				<img src="img/student-photo-thumb.jpg" alt="">
 	  			</div>
 	  			<div class="announce-alert__text">2 Section added and 2 tests. Please, complete sections and tests <span class="announce-alert__date">24.02 2016</span></div>
 	  			<a href="" class="btn announce-alert__link">Show all announcements</a>
 	  		</div>
 
-  			<div class="course-info">
-					<div class="course-info__base">
-						<h1 class="h2"><span>3496</span> Aviation Weather Forecasts course</h1>
-						<div class="course-info__base-text">
-							<p>We developed a wide range of training courses for the aviation community which enable meteorological observers to meet International Civil Aviation Organization (ICAO) requirements teach international best-practice techniques in forecasting and observing and review the latest developments in aeronautical meteorology help you to better understand and interpret meteorological information, and the impacts of weather on your activities</p>
-						</div>
-						<div class="course-info__base-brief">
-							<div class="course-info__base-status">
-								<img src="" alt="">
-							</div>
-							
-						</div>
-					</div>
+  			<div class="course-info row">
+          <div class="col-md-8">
+            <div class="course-base">
+              <h1 class="h2 course-base__title">3496 Aviation Weather Forecasts course</h1>
+              <a href="#course_descr" class="course-base__descr-show btn">Show description</a>
+              <div id="course_descr" class="course-base__descr">
+                <p>We developed a wide range of training courses for the aviation community which enable meteorological observers to meet International Civil Aviation Organization (ICAO) requirements teach international best-practice techniques in forecasting and observing and review the latest developments in aeronautical meteorology help you to better understand and interpret meteorological information, and the impacts of weather on your activities</p>
+              </div>
+              <div class="course-base__brief row">
+                <div class="course-base__total col-md-7 col-sm-7">
+                  <p class="course-base__total-text">10 sections, 6 tests, 5 hrs 46 min total</p>
+                  <div class="progress  progress--dark progress--warning">
+                    <div class="progress__bar" style="width: 80%"></div>
+                    <div class="progress__text">10 of 16 sections</div>
+                  </div>
+                </div>
+                <div class="course-base__instr col-md-5 col-sm-5">
+                  <div class="course-base__instr-count">2</div>
+                  <div class="course-base__instr-text">
+                    <span class="course-base__instr-title">Instructors</span>
+                    <ul class="course-base__instr-list">
+                      <li class="course-base__instr-name"><a href="" class="course-base__instr-link">Joan Simpson</a>,</li>
+                      <li class="course-base__instr-name"><a href="" class="course-base__instr-link">Adam McCarthy</a></li>
+                    </ul>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 tablet-hide">
+            <div class="course-brief ">
+              <div class="course-brief__img">
+                <img src="img/course-bg-big.jpg" alt="">
+              </div>
+              <div class="course-brief__text">
+                <div class="course-brief__title-wrap"><span class="course-brief__title">Studying course</span></div>
+                <ul class="course-brief__list course-brief__list--left">
+                  <li class="course-brief__item">35% <span class="course-brief__status">(430/920 min)</span> watched</li>
+                  <li class="course-brief__item">4/6 test passed</li>
+                  <li class="course-brief__item">82% <span class="course-brief__status">(41/50)</span> correct answers</li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-					<div class="course-info__brief">
-						<div class="course-info__brief-img">
-							<img src="img/course-bg-big.jpg" alt="">
-						</div>
-						<div class="course-info__brief-text"></div>
-					</div>
+
+
+
   				
 
   			</div>
@@ -62,7 +113,7 @@
     <div class="container container--small">
       <nav class="menu-footer">
         <ul class="menu-footer__list">
-          <li class="menu-footer__item"><a href="index.html" class="menu-footer__link">Sky Agency</a></li>
+          <li class="menu-footer__item"><a href="index.html" class="menu-footer__link menu-footer__link--name">Sky Agency</a></li>
           <li class="menu-footer__item"><a href="#" class="menu-footer__link">About</a></li>
           <li class="menu-footer__item"><a href="#" class="menu-footer__link">Manual</a></li>
           <li class="menu-footer__item"><a href="#" class="menu-footer__link">FAQ</a></li>
