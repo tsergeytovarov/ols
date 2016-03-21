@@ -1,0 +1,24 @@
+.link-with-number {
+  margin-right: 20px;
+  color: $black;
+  text-decoration: none;
+  font-family: $montserrat;
+  font-size: 16px;
+  font-weight: 400;
+
+  &__value {
+    display: inline-block;
+    min-width: 30px;
+    margin-left: 20px;
+    padding: 5px;
+    border-radius: 100px;
+    background-color: $black;
+    color: $white;
+    text-align: center;
+    vertical-align: baseline;
+    font-family: $montserrat;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 13px;
+  }
+}
