@@ -53,4 +53,27 @@
   .notice-text:first-of-type {
     margin-top: 30px;
   }
+
+  &__nav {
+    margin-top: 75px;
+    list-style: none;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__nav-item {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--active {
+      padding-bottom: 10px;
+      border-bottom: 2px solid $black;
+    }
+  }
 }
