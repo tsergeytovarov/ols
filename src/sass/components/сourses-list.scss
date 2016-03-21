@@ -24,6 +24,10 @@
 
     &--4 {
       width: 18%;
+
+      @media (max-width: $desktop) {
+        float: right;
+      }
     }
   }
 }
