@@ -1,0 +1,56 @@
+.user-courses {
+  margin-top: 50px;
+
+  @media (max-width: $desktop) {
+
+    margin-top: 30px;
+
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+
+    @include h1();
+  }
+
+  &__link {
+    font-size: 13px;
+    line-height: 13px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 10px;
+    color: $black;
+    background-color: darken(#ECEFF1, 3%);
+    border-radius: 5px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: darken(#ECEFF1, 5%);
+    }
+
+    @media (max-width: $desktop) {
+
+      margin-top: 10px;
+      color: #90A4AE;
+      background-color: transparent;
+      border: 1px solid #90A4AE;
+
+      &:hover {
+        color: darken(#90A4AE, 10%);
+        border: 1px solid darken(#90A4AE, 10%);
+        background-color: transparent;
+      }
+
+    }
+  }
+
+  .progress {
+    max-width: 320px;
+  }
+
+  .notice-text:first-of-type {
+    margin-top: 30px;
+  }
+}
