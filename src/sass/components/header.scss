@@ -41,7 +41,7 @@
         width: 30px;
         height: 6px;
         border-radius: 4px;
-        background-color: $black;
+        background-color: $white;
 
         &::after,
         &::before {
@@ -51,7 +51,7 @@
           width: 30px;
           height: 6px;
           border-radius: 4px;
-          background-color: $black;
+          background-color: $white;
           content: "";
         }
 
@@ -61,6 +61,18 @@
 
         &::before {
           top: -11px;
+        }
+      }
+      
+      &--dark {
+
+        span {
+          background-color: $black;
+
+          &::after,
+          &::before {
+            background-color: $black;
+          }
         }
       }
     }
