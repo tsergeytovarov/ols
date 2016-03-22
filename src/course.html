@@ -9,9 +9,31 @@
 </head>
 <body>
 
-	<header class="header">
-		
-	</header>
+<header class="header">
+    <div class="container container--small">
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+          <div class="logo">Online <span class="logo__second">Learning System</span></div>
+        </div>
+        <div class="col-md-6 col-xs-12 header__menu">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link menu__link--active">Courses</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Profile</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Sign out</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <button type="button" class="header__toggle"><span>Menu toggle</span></button>
+    </div>
+  </header>
 
   <div class="course">
 
@@ -20,39 +42,178 @@
   		<div class="container container--small">
 
 	  		<div class="announce-alert">
-	  			<div class="announce-alert__thumb">
+	  			<div class="announce-alert__thumb mobile-hide">
 	  				<img src="img/student-photo-thumb.jpg" alt="">
 	  			</div>
 	  			<div class="announce-alert__text">2 Section added and 2 tests. Please, complete sections and tests <span class="announce-alert__date">24.02 2016</span></div>
 	  			<a href="" class="btn announce-alert__link">Show all announcements</a>
 	  		</div>
 
-  			<div class="course-info">
-					<div class="course-info__base">
-						<h1 class="h2"><span>3496</span> Aviation Weather Forecasts course</h1>
-						<div class="course-info__base-text">
-							<p>We developed a wide range of training courses for the aviation community which enable meteorological observers to meet International Civil Aviation Organization (ICAO) requirements teach international best-practice techniques in forecasting and observing and review the latest developments in aeronautical meteorology help you to better understand and interpret meteorological information, and the impacts of weather on your activities</p>
-						</div>
-						<div class="course-info__base-brief">
-							<div class="course-info__base-status">
-								<img src="" alt="">
-							</div>
-							
-						</div>
-					</div>
-
-					<div class="course-info__brief">
-						<div class="course-info__brief-img">
-							<img src="img/course-bg-big.jpg" alt="">
-						</div>
-						<div class="course-info__brief-text"></div>
-					</div>
-  				
-
+  			<div class="row">
+          <div class="col-md-8">
+            <div class="course-base">
+              <h1 class="h2 course-base__title">3496 Aviation Weather Forecasts course</h1>
+              <a href="#course_descr" class="course-base__descr-show btn">Show description</a>
+              <div id="course_descr" class="course-base__descr">
+                <p>We developed a wide range of training courses for the aviation community which enable meteorological observers to meet International Civil Aviation Organization (ICAO) requirements teach international best-practice techniques in forecasting and observing and review the latest developments in aeronautical meteorology help you to better understand and interpret meteorological information, and the impacts of weather on your activities</p>
+              </div>
+              <div class="course-base__brief row">
+                <div class="course-base__total col-md-7 col-sm-7">
+                  <p class="course-base__total-text">10 sections, 6 tests, 5 hrs 46 min total</p>
+                  <div class="progress  progress--dark progress--warning">
+                    <div class="progress__bar" style="width: 80%"></div>
+                    <div class="progress__text">10 of 16 sections</div>
+                  </div>
+                </div>
+                <div class="course-base__instr col-md-5 col-sm-5">
+                  <div class="course-base__instr-count">2</div>
+                  <div class="course-base__instr-text">
+                    <span class="course-base__instr-title">Instructors</span>
+                    <ul class="course-base__instr-list">
+                      <li class="course-base__instr-name"><a href="" class="course-base__instr-link">Joan Simpson</a>,</li>
+                      <li class="course-base__instr-name"><a href="" class="course-base__instr-link">Adam McCarthy</a></li>
+                    </ul>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 tablet-hide">
+            <div class="course-brief ">
+              <div class="course-brief__img">
+                <img src="img/course-bg-big.jpg" alt="">
+              </div>
+              <div class="course-brief__text">
+                <div class="course-brief__title-wrap"><span class="course-brief__title">Studying course</span></div>
+                <ul class="course-brief__list course-brief__list--left">
+                  <li class="course-brief__item">35% <span class="course-brief__status">(430/920 min)</span> watched</li>
+                  <li class="course-brief__item">4/6 test passed</li>
+                  <li class="course-brief__item">82% <span class="course-brief__status">(41/50)</span> correct answers</li>
+                </ul>
+              </div>
+            </div>
+          </div>
   			</div>
+
+        <ul class="course-info__nav">
+          <li class="course-info__nav-item course-info__nav-item--active">
+            <a href="#" class="course-info__nav-link">Sections</a>
+          </li>
+          <li class="course-info__nav-item">
+            <a href="#" class="course-info__nav-link">Forum</a>
+          </li>
+        </ul>
   			
   		</div>
   	</div>
+
+    <div class="course-info">
+      <div class="container container--small">
+
+        <div class="course-sections">
+
+          <div class="course-sections__item-wrap course-sections__item-wrap--passed">
+            <div class="course-sections__item">
+              <a class="course-sections__link">
+                <span class="course-sections__item-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.962 11.73"><path d="M0 11.73h8.962V9.775H0v1.955zm0-4.887h11.962V4.888H0v1.955zM0 0v1.955h11.962V0H0z" fill="#fff"/></svg>
+                </span>
+                <span class="course-sections__item-title">Winds and temps</span>
+              </a>
+              <div class="course-sections__item-time tablet-hide">42 min</div>
+              <ul class="course-sections__media-list tablet-hide">
+                <li class="course-sections__media-item">
+                  <a href="" class="course-icon-link course-icon-link--play" data-tooltip="Experimental graphical forecats video">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.101 9.901"><path d="M0 9.901V0l8.101 4.951L0 9.901z" fill="#818181"/></svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="course-sections__item-wrap course-sections__item-wrap--passed">
+            <div class="course-sections__item">
+              <a class="course-sections__link">
+                <span class="course-sections__item-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.962 11.73"><path d="M0 11.73h8.962V9.775H0v1.955zm0-4.887h11.962V4.888H0v1.955zM0 0v1.955h11.962V0H0z" fill="#fff"/></svg>
+                </span>
+                <span class="course-sections__item-title">Turbulence forcasts</span>
+              </a>
+              <div class="course-sections__item-time tablet-hide">2 hrs</div>
+              <ul class="course-sections__media-list tablet-hide">
+                <li class="course-sections__media-item">
+                  <a href="" class="course-icon-link course-icon-link--play">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.101 9.901"><path d="M0 9.901V0l8.101 4.951L0 9.901z" fill="#818181"/></svg>
+                  </a>
+                </li>
+                <li class="course-sections__media-item">
+                  <a href="" class="course-icon-link course-icon-link--play">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.101 9.901"><path d="M0 9.901V0l8.101 4.951L0 9.901z" fill="#818181"/></svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="course-sections__item-wrap">
+            <div class="course-sections__item">
+              <a class="course-sections__link">
+                <span class="course-sections__item-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.962 11.73"><path d="M0 11.73h8.962V9.775H0v1.955zm0-4.887h11.962V4.888H0v1.955zM0 0v1.955h11.962V0H0z" fill="#fff"/></svg>
+                </span>
+                <span class="course-sections__item-title">Icing</span>
+              </a>
+              <div class="course-sections__item-time tablet-hide">24 min</div>
+              <ul class="course-sections__media-list tablet-hide">
+                <li class="course-sections__media-item">
+                  <a href="" class="course-icon-link course-icon-link--play">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.101 9.901"><path d="M0 9.901V0l8.101 4.951L0 9.901z" fill="#818181"/></svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="course-sections__item-wrap">
+            <div class="course-sections__item">
+              <a class="course-sections__link">
+                <span class="course-sections__item-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.962 11.73"><path d="M0 11.73h8.962V9.775H0v1.955zm0-4.887h11.962V4.888H0v1.955zM0 0v1.955h11.962V0H0z" fill="#fff"/></svg>
+                </span>
+                <span class="course-sections__item-title">Experimental Grapical Forecasts</span>
+              </a>
+              <div class="course-sections__item-time tablet-hide">40 min</div>
+              <ul class="course-sections__media-list tablet-hide">
+                <li class="course-sections__media-item">
+                  <a href="" class="course-icon-link course-icon-link--attach">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.804 15.227"><path d="M7.39 14.332l3.376-3.416 3.363-3.322c.809-.81 1.245-1.664 1.308-2.563a3.303 3.303 0 0 0-.68-2.342 3.22 3.22 0 0 0-2.056-1.262 3.693 3.693 0 0 0-.64-.053c-.48 0-.959.118-1.434.354-.476.235-.85.476-1.121.72a32.06 32.06 0 0 0-1.102 1.061L3.76 8.154c-.178.178-.374.36-.587.546-.338.321-.588.562-.747.722-.16.16-.347.382-.56.667a2.33 2.33 0 0 0-.421.841 2.302 2.302 0 0 0-.033.88c.08.56.32.988.72 1.282.401.294.845.44 1.335.44.649 0 1.206-.231 1.668-.694l7.3-7.3c.321-.32.409-.653.267-1.001-.133-.32-.369-.48-.707-.48-.24 0-.463.103-.667.307a5.547 5.547 0 0 0-.52.507L5.775 9.848l-.921-.894.093-.093 5.178-5.285c.302-.302.602-.529.901-.68.298-.151.652-.227 1.061-.227.08 0 .208.009.387.026.801.152 1.322.614 1.561 1.388.134.418.147.845.04 1.281-.106.436-.315.81-.627 1.122L8.19 11.744c-.152.151-.405.422-.761.814-.347.382-.612.667-.794.854a6.451 6.451 0 0 1-.7.606 5.045 5.045 0 0 1-.868.541 3.487 3.487 0 0 1-1.587.375 3.55 3.55 0 0 1-1.722-.427 3.286 3.286 0 0 1-1.255-1.188c-.427-.694-.582-1.463-.467-2.308a3.718 3.718 0 0 1 1.081-2.176L7.95 2.002C8.582 1.37 9.076.947 9.432.734A4.95 4.95 0 0 1 12.061 0c.739 0 1.414.147 2.029.44.702.32 1.281.778 1.735 1.375.454.596.752 1.281.894 2.055a5.064 5.064 0 0 1-.146 2.442 5.05 5.05 0 0 1-1.268 2.096l-6.9 6.82-.921-.801-.094-.095z" fill="#979696"/></svg>
+                  </a>
+                </li>
+                <li class="course-sections__media-item">
+                  <a href="" class="course-icon-link course-icon-link--play">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.101 9.901"><path d="M0 9.901V0l8.101 4.951L0 9.901z" fill="#818181"/></svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="course-sections__item-wrap">
+            <div class="course-sections__item">
+              <a class="course-sections__link">
+                <span class="course-sections__item-icon course-sections__item-icon--test">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.021 12.164"><path d="M3.846 0C5.95 0 8.021.969 8.021 3.287c0 2.137-2.449 2.959-2.975 3.732-.395.574-.263 1.381-1.348 1.381-.707 0-1.052-.575-1.052-1.101 0-1.957 2.876-2.4 2.876-4.012 0-.887-.59-1.413-1.577-1.413-2.104 0-1.282 2.169-2.876 2.169C.494 4.043 0 3.698 0 3.041 0 1.429 1.84 0 3.846 0zm-.082 9.467c.739 0 1.348.607 1.348 1.348s-.608 1.348-1.348 1.348-1.348-.607-1.348-1.348c0-.74.608-1.348 1.348-1.348z" fill="#fff"/></svg>
+                </span>
+                <span class="course-sections__item-title">Experimental Grapical Forecasts</span>
+              </a>
+              <div class="course-sections__item-time tablet-hide">40 min</div>
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+    </div>
 
 
 
@@ -62,7 +223,7 @@
     <div class="container container--small">
       <nav class="menu-footer">
         <ul class="menu-footer__list">
-          <li class="menu-footer__item"><a href="index.html" class="menu-footer__link">Sky Agency</a></li>
+          <li class="menu-footer__item"><a href="index.html" class="menu-footer__link menu-footer__link--name">Sky Agency</a></li>
           <li class="menu-footer__item"><a href="#" class="menu-footer__link">About</a></li>
           <li class="menu-footer__item"><a href="#" class="menu-footer__link">Manual</a></li>
           <li class="menu-footer__item"><a href="#" class="menu-footer__link">FAQ</a></li>
