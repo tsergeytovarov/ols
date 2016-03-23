@@ -10,11 +10,9 @@
   }
 
   @media (max-width: $tablet) {
-
     &__second {
-      line-height: 26px;
       display: block;
+      line-height: 26px;
     }
-
   }
 }

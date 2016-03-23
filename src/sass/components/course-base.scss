@@ -1,97 +1,86 @@
 .course-base {
-	width: 90%;
+  width: 90%;
 
-	@media (max-width: $desktop) {
+  @media (max-width: $desktop) {
     width: 96%;
   }
 
-	&__title {
-		margin: 0;
-	}
+  &__title {
+    margin: 0;
+  }
 
-	&__descr-show {
-		display: none;
-		margin-top: 15px;
-    font-family: $open-sans;
-    font-size: 13px;
-    line-height: 16px;
-    border: 1px solid $gray;
-    border-radius: 3px;
-    background: $gray;
-    color: #546E7A;
-    padding: 3px 12px;
+  &__descr-show {
+    display: none;
+    margin-top: 15px;
 
-    &:hover {
-      background-color: darken($gray, 5%);
+    @media (max-width: $tablet) {
+      display: inline-block;
     }
+  }
 
-		@media (max-width: $tablet) {
-	    display: inline-block;
-	  }
-	}
+  &__descr {
+    margin: 25px 0;
+    color: #37474f;
 
-	&__descr {
-		margin: 25px 0px;
-		color: #37474F;
+    p {
+      color: inherit;
+    }
+  }
 
-		p { color: inherit; }
-	}
+  &__total-text {
+    margin: 0 0 12px;
+    padding: 0;
+    color: $black;
+    font-family: $montserrat;
+    line-height: 24px;
+  }
 
-	&__total-text {
-		margin: 0 0 12px;
-		padding: 0;
-		font-family: $montserrat;
-		line-height: 24px;
-		color: $black;
-	}
+  &__instr-count {
+    display: inline-block;
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+    background: $gray-darker;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    font-family: $montserrat;
+    font-size: 20px;
+    line-height: 50px;
 
-	&__instr-count {
-		float: left;
-		margin-top: 20px;
-		width: 50px;
-		height: 50px;
-		background: $gray-darker;
-		border-radius: 50%;
-		display: inline-block;
-		font-family: $montserrat;
-		color: #FFFFFF;
-		font-size: 20px;
-		text-align: center;
-		vertical-align: middle;
-		line-height: 50px;
+    @media (max-width: $tablet) {
+      float: right;
+    }
+  }
 
-		@media (max-width: $tablet) {
-	    float: right;
-	  }
-	}
+  &__instr-text {
+    display: inline-block;
+    float: left;
+    padding-left: 15px;
+    vertical-align: middle;
 
-	&__instr-text {
-		float: left;
-		display: inline-block;
-		vertical-align: middle;
-		padding-left: 15px;
+    @media (max-width: $tablet) {
+      padding-left: 0;
+    }
+  }
 
-		@media (max-width: $tablet) {
-	    padding-left: 0;
-	  }
-	}
+  &__instr-title {
+    font-family: $montserrat;
+    line-height: 24px;
+  }
 
-	&__instr-title {
-		font-family: $montserrat;
-		line-height: 24px;
-	}
+  &__instr-list {
+    margin: 10px 0 0;
+    padding: 0;
+    list-style: none;
+  }
 
-	&__instr-list {
-		list-style: none;
-		margin: 10px 0 0;
-		padding: 0;
-	}
-	
-	&__instr-name a,
-	&__instr-link {
-		text-decoration: underline;
-		cursor: pointer;
-		color: #4C4F5E;
-	}
-
+  &__instr-name a,
+  &__instr-link {
+    color: #4c4f5e;
+    cursor: pointer;
+    text-decoration: underline;
+  }
 }

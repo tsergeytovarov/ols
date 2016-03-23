@@ -2,9 +2,7 @@
   margin-top: 50px;
 
   @media (max-width: $desktop) {
-
     margin-top: 30px;
-
   }
 
   &__title {
@@ -16,33 +14,13 @@
   }
 
   &__link {
-    font-size: 13px;
-    line-height: 13px;
-    display: inline-block;
-    vertical-align: top;
-    padding: 5px 10px;
-    color: $black;
-    background-color: darken(#ECEFF1, 3%);
-    border-radius: 5px;
-    text-decoration: none;
+    margin-top: 10px;
 
-    &:hover {
-      background-color: darken(#ECEFF1, 5%);
-    }
-
-    @media (max-width: $desktop) {
-
-      margin-top: 10px;
-      color: #90A4AE;
-      background-color: transparent;
-      border: 1px solid #90A4AE;
-
-      &:hover {
-        color: darken(#90A4AE, 10%);
-        border: 1px solid darken(#90A4AE, 10%);
-        background-color: transparent;
-      }
-
+    @media (min-width: $desktop) {
+      margin-top: 0;
+      border: none;
+      background: transparent;
+      color: $base-text-color;
     }
   }
 
@@ -55,17 +33,17 @@
   }
 
   &__nav {
+    margin: 0;
     margin-top: 75px;
+    padding: 0;
     list-style: none;
     font-size: 0;
-    margin: 0;
-    padding: 0;
   }
 
   &__nav-item {
     display: inline-block;
-    vertical-align: top;
     margin-right: 30px;
+    vertical-align: top;
 
     &:last-child {
       margin-right: 0;

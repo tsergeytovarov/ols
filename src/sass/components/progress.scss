@@ -53,8 +53,8 @@ $small-width: 25px;
   }
 
   &--small &__text {
-    line-height: $small-width;
-    font-size: 14px;
     text-align: center;
+    font-size: 14px;
+    line-height: $small-width;
   }
 }

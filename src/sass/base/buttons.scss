@@ -8,10 +8,6 @@
   font-family: $open-sans;
   font-weight: 400;
 
-
-
-
-
   &--bordered {
     padding: 3px 10px;
     border: 1px solid #b0bbbf;
@@ -65,5 +61,87 @@
     &--active {
       background: lighten($black, 10%);
     }
+  }
+}
+
+&--show-all {
+  padding: 3px 12px;
+  border: 1px solid #b0bbbf;
+  border-radius: 3px;
+  background: $gray;
+  color: #546e7a;
+  font-family: $open-sans;
+  font-size: 13px;
+  line-height: 16px;
+
+  &:hover,
+  &--hover {
+    background-color: darken($gray, 5%);
+  }
+
+  &:active,
+  &--active {
+    background-color: darken($gray, 5%);
+  }
+}
+
+&--forum {
+  border-radius: 4px;
+  vertical-align: baseline;
+  font-family: $open-sans;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+&--reply {
+  padding: 2px 10px;
+  background: $gray-darker;
+  color: #ffffff;
+  text-transform: lowercase;
+
+  &:hover,
+  &--hover {
+    background-color: darken($gray-darker, 5%);
+  }
+
+  &:active,
+  &--active {
+    background-color: darken($gray-darker, 5%);
+  }
+}
+
+&--publish {
+  padding: 2px 10px;
+  background: $yellow;
+  color: #37474f;
+  text-transform: lowercase;
+
+  &:hover,
+  &--hover {
+    background-color: darken($yellow, 5%);
+  }
+
+  &:active,
+  &--active {
+    background-color: darken($yellow, 5%);
+  }
+}
+
+&--forum-submit {
+  margin-top: 10px;
+  padding: 4px 15px;
+  outline: none;
+  border: none;
+  background: $yellow;
+  color: #37474f;
+
+  &:hover,
+  &--hover {
+    background-color: darken($yellow, 5%);
+  }
+
+  &:active,
+  &--active {
+    background-color: darken($yellow, 5%);
   }
 }
