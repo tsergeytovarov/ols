@@ -1,0 +1,118 @@
+.section-progress {
+	display: inline-block;
+	height: 26px;
+	font-size: 0;
+	padding-bottom: 25px;
+	position: relative;
+
+	@media (max-width: $tablet) { padding-bottom: 22px; }
+
+	&__step {
+		display: inline-block;
+		box-sizing: border-box;
+		background: #ffffff;
+		padding: 8px 18px;
+		text-decoration: none;
+		text-align: center;
+		position: relative;
+
+		@media (max-width: $tablet) { padding: 7px 13px; }
+
+		&:after {
+			position: absolute;
+			content: '';
+			height: 17px;
+			width: 1px;
+			background: #D4D4D4;
+			bottom: 4px;
+			right: -1px;
+			z-index: 999;
+
+			@media (max-width: $tablet) {
+				height: 10px;
+				bottom: 2px;
+			}
+		}
+
+		svg {
+			display: block;
+			width: 10px;
+      height: 10px;
+
+      @media (max-width: $tablet) { display: none; }
+
+		}
+
+
+		path { fill: #78909C; }
+		
+		&:first-child {
+			border-radius: 5px 0 0 5px;
+
+			@media (max-width: $tablet) { border-radius: 0; }
+
+		}
+
+		&:last-child {
+			border-radius: 0 5px 5px 0;
+
+			&:after { display: none; }
+
+			@media (max-width: $tablet) { border-radius: 0; }
+
+		}
+
+
+		&:hover path { fill: #455A64; }
+
+
+		&--passed {
+			background: $green;
+
+			path { fill: #FFFFFF; }
+
+		}
+
+		&--current {
+			background: $yellow;
+
+			path { fill: #455A64; }
+
+			&:before{ 
+				position: absolute;
+				content: '';
+				height: 17px;
+				width: 1px;
+				background: $yellow;
+				bottom: 4px;
+				left: 0;
+				z-index: 1000;
+
+				@media (max-width: $tablet) {
+					height: 10px;
+					bottom: 2px;
+				}
+			}
+
+			&:after {
+				position: absolute;
+				content: '';
+				left: 50%;
+				width: 0;
+				bottom: -25px;
+				background: transparent;
+				border: 10px solid transparent;
+		    border-bottom: 10px solid #ffffff;
+		    margin: 0px -10px;
+
+		    @media (max-width: $tablet) {
+		    	background: transparent;
+		    	height: 10px;
+		    	bottom: -22px;
+		    }
+			}
+			
+		}
+	}
+
+}
