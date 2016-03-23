@@ -62,13 +62,6 @@
   &__link {
     float: right;
     margin: 4px 0 0;
-    border: 1px solid #78909C;
-    border-radius: 3px;
-    padding: 3px 12px;
-    color: #455A64;
-    font-family: $open-sans;
-    font-size: 13px;
-    line-height: 16px;
 
     &:hover {
       background-color: darken(#ECEFF1, 5%);
@@ -80,9 +73,6 @@
 
     @media (max-width: $desktop) {
       float: left;
-      border: 1px solid $gray;
-      background: $gray;
-      color: #546E7A;
       margin: 8px 0 0 9px;
     }
     

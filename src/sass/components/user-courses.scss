@@ -16,34 +16,15 @@
   }
 
   &__link {
-    font-size: 13px;
-    line-height: 13px;
-    display: inline-block;
-    vertical-align: top;
-    padding: 5px 10px;
-    color: $black;
-    background-color: darken(#ECEFF1, 3%);
-    border-radius: 5px;
-    text-decoration: none;
+    margin-top: 10px;
 
-    &:hover {
-      background-color: darken(#ECEFF1, 5%);
+    @media (min-width: $desktop) {
+      margin-top: 0px;
+      border: none;
+      background: transparent;
+      color: $base-text-color;
     }
 
-    @media (max-width: $desktop) {
-
-      margin-top: 10px;
-      color: #90A4AE;
-      background-color: transparent;
-      border: 1px solid #90A4AE;
-
-      &:hover {
-        color: darken(#90A4AE, 10%);
-        border: 1px solid darken(#90A4AE, 10%);
-        background-color: transparent;
-      }
-
-    }
   }
 
   .progress {

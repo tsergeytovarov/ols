@@ -222,6 +222,7 @@ h2,
   font-family: $montserrat-bold;
   font-size: 25px;
   line-height: 1.2;
+  color: #37474F;
 }
 
 h3,
@@ -229,6 +230,13 @@ h3,
   font-family: $montserrat-bold;
   font-size: 20px;
   line-height: 1.2;
+}
+
+h4, .h4 {
+  font-family: $open-sans-bold;
+  font-size: 15px;
+  line-height: 1.2;
+  color: #4C4F5E;
 }
 
 p {
