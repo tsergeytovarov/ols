@@ -142,7 +142,7 @@
     font-size: 14px;
     line-height: 1.2;
     color: #37474F;
-    padding: 3px 8px;
+    padding: 4px 8px;
     border-radius: 3px;
 
     @media (max-width: $tablet) { font-size: 13px; }
@@ -159,6 +159,8 @@
 
   &--back {
     border: 1px solid #B0BBBF;
+
+    @media (max-width: $desktop) { border: 1px solid transparent; }
 
     svg { transform: rotate(90deg); }
 
@@ -193,17 +195,11 @@
 
 
   &--arrow {
-    width: 30px;
-    height: 30px;
-    line-height: 28px;
+    width: 27px;
+    height: 27px;
+    line-height: 26px;
     border-radius: 50%;
     border: 1px solid #B0BBBF;
-
-    @media (max-width: $tablet) {
-      width: 27px;
-      height: 27px;
-      line-height: 26px;
-    }
 
     svg {
       width: 10px;
