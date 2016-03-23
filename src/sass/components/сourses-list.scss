@@ -1,8 +1,8 @@
 .courses-list {
-
   &__header {
-    @include clearfix();
     margin-bottom: 15px;
+
+    @include clearfix();
   }
 
   &__col {
