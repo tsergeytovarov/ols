@@ -1,0 +1,88 @@
+.form {
+  font-family: $montserrat;
+  font-weight: 400;
+  color: $black;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 18px;
+  }
+
+  &__error {
+    font-size: 14px;
+    text-align: center;
+    background-color: $yellow-light;
+    padding: 20px 0;
+    margin: 0 -45px 25px;
+    border-radius: 5px;
+  }
+
+  &__row {
+    position: relative;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  input {
+    font-family: $montserrat;
+    font-weight: 400;
+    color: $black;
+    font-size: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 45px;
+    padding: 0 20px;
+    border-radius: 5px;
+    border: 1px solid $gray-dark;
+    outline: none;
+  }
+
+  &__label {
+    font-size: 12px;
+    padding: 0 10px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    transform: translateY(-50%);
+  }
+}
+
+.checkbox {
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"] + &__label {
+    padding-left: 25px;
+    position: relative;
+  }
+
+  input[type="checkbox"] + &__label::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    border: 1px solid $gray-dark;
+  }
+
+  input[type="checkbox"]:checked + &__label::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    background-image: url("../img/svg/checked-icon.svg");
+    background-repeat: no-repeat;
+  }
+
+}

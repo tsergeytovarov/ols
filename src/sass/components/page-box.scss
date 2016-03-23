@@ -5,6 +5,13 @@
   width: 325px;
   transform: translate(-50%, -50%);
 
+  @media (max-width: $tablet) {
+    top: 20px;
+    left: 50%;
+    width: 290px;
+    transform: translateX(-50%);
+  }
+
   &__title {
     margin-bottom: 43px;
     text-align: center;
@@ -22,6 +29,7 @@
 
   &__links {
     @include clearfix();
+    margin-bottom: 20px;
   }
 
   &__link {
