@@ -3,3 +3,11 @@
   background-image: url("../img/svg/bg-pattern.svg");
   background-repeat: repeat;
 }
+
+.js-tab {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
