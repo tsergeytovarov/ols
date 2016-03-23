@@ -28,8 +28,9 @@
   }
 
   &__links {
-    @include clearfix();
     margin-bottom: 20px;
+
+    @include clearfix();
   }
 
   &__link {
