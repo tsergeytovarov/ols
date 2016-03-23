@@ -6,14 +6,33 @@
     width: 120px;
     float: left;
 
+    @media (max-width: $desktop) {
+      width: 160px;
+    }
+
+    @media (max-width: $tablet) {
+      width: 130px;
+      float: none;
+      margin-bottom: 20px;
+    }
+
     img {
       width: 100%;
       height: auto;
+      display: block;
     }
   }
 
   &__description {
     margin-left: 140px;
+
+    @media (max-width: $desktop) {
+      margin-left: 190px;
+    }
+
+    @media (max-width: $tablet) {
+      margin-left: 0;
+    }
   }
 
   &__status {
@@ -43,13 +62,30 @@
     font-size: 16px;
     text-transform: uppercase;
     margin-bottom: 30px;
+
+    @media (max-width: $desktop) {
+      margin-top: 30px;
+    }
+
+    @media (max-width: $tablet) {
+      margin-top: 15px;
+    }
+  }
+
+  &__info {
+    @media (max-width: $desktop) {
+      margin-left: 190px;
+    }
+
+    @media (max-width: $tablet) {
+      margin-left: 0;
+    }
   }
 
   &__table {
     td:first-child {
       width: 165px;
       padding-bottom: 10px;
-
     }
   }
 }
