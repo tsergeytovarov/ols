@@ -88,12 +88,77 @@
 
   &__image {
     max-width: 70px;
+    position: relative;
 
     img {
       display: block;
       width: 100%;
       height: auto;
       border-radius: 5px;
+    }
+
+    &--success {
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: transparentize($green, 0.5);
+        z-index: 10;
+      }
+
+      &::before {
+        content: "";
+        width: 30px;
+        height: 30px;
+        background-color: $green;
+        border: 2px solid $gray;
+        background-image: url("../img/svg/checked-white-icon.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 12px 12px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        z-index: 20;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &--danger {
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: transparentize($red, 0.5);
+        z-index: 10;
+      }
+
+      &::before {
+        content: "";
+        width: 30px;
+        height: 30px;
+        background-color: $red;
+        border: 2px solid $gray;
+        background-image: url("../img/svg/point-icon.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 12px 12px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        z-index: 20;
+        transform: translate(-50%, -50%);
+      }
     }
   }
 
