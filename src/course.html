@@ -46,14 +46,14 @@
 	  				<img src="img/student-photo-thumb.jpg" alt="">
 	  			</div>
 	  			<div class="announce-alert__text">2 Section added and 2 tests. Please, complete sections and tests <span class="announce-alert__date">24.02 2016</span></div>
-	  			<a href="" class="btn announce-alert__link">Show all announcements</a>
+	  			<a href="" class="btn btn--show-all announce-alert__link">Show all announcements</a>
 	  		</div>
 
   			<div class="row">
           <div class="col-md-8">
             <div class="course-base">
               <h1 class="h2 course-base__title">3496 Aviation Weather Forecasts course</h1>
-              <a href="#course_descr" class="course-base__descr-show btn">Show description</a>
+              <a href="#course_descr" class="course-base__descr-show btn btn--show-all">Show description</a>
               <div id="course_descr" class="course-base__descr">
                 <p>We developed a wide range of training courses for the aviation community which enable meteorological observers to meet International Civil Aviation Organization (ICAO) requirements teach international best-practice techniques in forecasting and observing and review the latest developments in aeronautical meteorology help you to better understand and interpret meteorological information, and the impacts of weather on your activities</p>
               </div>
@@ -101,7 +101,7 @@
             <a href="#" class="course-info__nav-link">Sections</a>
           </li>
           <li class="course-info__nav-item">
-            <a href="#" class="course-info__nav-link">Forum</a>
+            <a href="#" class="course-info__nav-link">Forum <span class="forum-counter">12</span></a>
           </li>
         </ul>
   			
@@ -174,6 +174,7 @@
               </ul>
             </div>
           </div>
+
           <div class="course-sections__item-wrap">
             <div class="course-sections__item">
               <a class="course-sections__link">
@@ -210,6 +211,70 @@
             </div>
           </div>
 
+        </div>
+
+        <div class="forum">
+          <p class="forum__title">Forum</p>
+          <div class="forum__messages">
+
+            <div class="forum__comments">
+
+              <div class="forum__comment-wrap">
+                <div class="forum__avatar-wrap">
+                  <img src="img/person-thumb-1.png" alt="" class="forum__avatar">
+                </div>
+                <div class="forum__comment">
+                  <div class="forum__comment-head">
+                    <span class="forum__comment-author">Adam Mccarthy</span>
+                    <span class="forum__comment-date">February 23, 2016</span>
+                    <a href="" class="btn btn--forum btn--reply">Reply</a>
+                  </div>
+                  <div class="forum__comment-text">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="forum__comment-wrap forum__comment-wrap--reply forum__comment-wrap--draft">
+                <div class="forum__avatar-wrap">
+                  <img src="img/person-thumb-1.png" alt="" class="forum__avatar">
+                </div>
+                <div class="forum__comment">
+                  <div class="forum__comment-head">
+                    <span class="forum__comment-author">Adam Mccarthy</span>
+                    <span class="forum__comment-date">February 23, 2016</span>
+                    <a href="" class="btn btn--forum btn--publish">Publish</a>
+                  </div>
+                  <div class="forum__comment-text">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            
+            <div class="forum__comments forum__comments--answer">
+              <div class="forum__comment-wrap">
+                <div class="forum__avatar-wrap">
+                  <img src="img/person-thumb-2.png" alt="" class="forum__avatar">
+                </div>
+                <div class="forum__comment">
+                  <div class="forum__comment-head">
+                    <span class="forum__comment-author">Your answer</span>
+                    <span class="forum__comment-date">will be published after instructor’s review</span>
+                  </div>
+                  <form class="forum__comment-answer">
+                    <textarea name="" id="" rows="3"></textarea>
+                    <input type="submit" name="" id="" value="Submit" class="btn btn--forum btn--submit">
+                  </form>
+                </div>
+              </div>
+            </div>  
+
+          </div>
+          
         </div>
         
       </div>
