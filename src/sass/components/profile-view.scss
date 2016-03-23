@@ -1,0 +1,92 @@
+.profile-view {
+  padding: 60px 0 50px;
+  background-color: $gray;
+
+  &__image {
+    float: left;
+    width: 120px;
+
+    @media (max-width: $desktop) {
+      width: 160px;
+    }
+
+    @media (max-width: $tablet) {
+      float: none;
+      width: 130px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__description {
+    margin-left: 140px;
+
+    @media (max-width: $desktop) {
+      margin-left: 190px;
+    }
+
+    @media (max-width: $tablet) {
+      margin-left: 0;
+    }
+  }
+
+  &__status {
+    text-transform: uppercase;
+    font-family: $open-sans-bold;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__id {
+    display: inline-block;
+    padding-left: 20px;
+    vertical-align: top;
+    font-family: $open-sans;
+    font-weight: 400;
+  }
+
+  &__name {
+    margin: 15px 0;
+
+    @include h1();
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-family: $open-sans-bold;
+    font-size: 16px;
+    font-weight: 700;
+
+    @media (max-width: $desktop) {
+      margin-top: 30px;
+    }
+
+    @media (max-width: $tablet) {
+      margin-top: 15px;
+    }
+  }
+
+  &__info {
+    @media (max-width: $desktop) {
+      margin-left: 190px;
+    }
+
+    @media (max-width: $tablet) {
+      margin-left: 0;
+    }
+  }
+
+  &__table {
+    td:first-child {
+      width: 165px;
+      padding-bottom: 10px;
+    }
+  }
+}

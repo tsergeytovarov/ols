@@ -1,0 +1,33 @@
+.courses-list {
+  &__header {
+    margin-bottom: 15px;
+
+    @include clearfix();
+  }
+
+  &__col {
+    float: left;
+
+    &--1 {
+      width: 60%;
+    }
+
+    &--2 {
+      width: 12%;
+      text-align: right;
+    }
+
+    &--3 {
+      width: 10%;
+      text-align: center;
+    }
+
+    &--4 {
+      width: 18%;
+
+      @media (max-width: $desktop) {
+        float: right;
+      }
+    }
+  }
+}

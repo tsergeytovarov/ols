@@ -194,7 +194,6 @@ $open-sans-bold: "open-sans-bold", Arial, sans-serif;
 $open-sans-bold-italic: "open-sans-bold-italic", Arial, sans-serif;
 $open-sans-extra-bold: "open-sans-extra-bold", Arial, sans-serif;
 $open-sans-extra-bold-italic: "open-sans-extra-bold-italic", Arial, sans-serif;
-
 $montserrat-ultra-light: "montserrat-ultra-light", Arial, sans-serif;
 $montserrat-light: "montserrat-light", Arial, sans-serif;
 $montserrat-hair-line: "montserrat-hair-line", Arial, sans-serif;
@@ -205,38 +204,50 @@ $montserrat-extra-bold: "montserrat-extra-bold", Arial, sans-serif;
 $montserrat-black: "montserrat-black", Arial, sans-serif;
 
 body {
+  color: $base-text-color;
   font-family: $open-sans;
   font-size: 14px;
   line-height: 18px;
-  color: $base-text-color;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-family: $montserrat-bold;
   font-size: 34px;
   line-height: 1.2;
 }
 
-h2, .h2 {
+h2,
+.h2 {
+  color: #37474f;
   font-family: $montserrat-bold;
   font-size: 25px;
   line-height: 1.2;
-  color: #37474F;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-family: $montserrat-bold;
   font-size: 20px;
   line-height: 1.2;
 }
 
-h4, .h4 {
+h4,
+.h4 {
+  color: #4c4f5e;
   font-family: $open-sans-bold;
   font-size: 15px;
   line-height: 1.2;
-  color: #4C4F5E;
 }
 
 p {
   line-height: 23px;
+}
+
+.text-success {
+  color: $green;
+}
+
+.text-danger {
+  color: $red;
 }

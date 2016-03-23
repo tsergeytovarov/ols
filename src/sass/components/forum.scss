@@ -1,128 +1,126 @@
 .forum {
+  &__title {
+    margin: 0 0 20px;
+    padding: 0;
+    color: #37474f;
+    font-family: $montserrat-bold;
+    font-size: 18px;
+    line-height: 1.2;
+  }
 
-	&__title {
-		font-family: $montserrat-bold;
-		font-size: 18px;
-		line-height: 1.2;
-		color: #37474F;
-		margin: 0 0 20px;
-		padding: 0;
-	}
+  &__messages {
+    width: 61%;
 
-	&__messages {
-		width: 61%;
-
-		@media (max-width: $desktop) {
-			width: 100%;
-		}
-
-	}
-
-
-	&__comments {
-		margin: 0 0 20px;
-		border-bottom: 1px solid #D4D4D4;
-
-		&--answer {
-			border-bottom: none;
-		}
-	}
-
-
-	&__comment-wrap {
-		@include clearfix();
-		font-size: 0;
-		box-sizing: border-box;
-		padding: 0 0 20px;
-
-		&--reply {
-			margin-left: 15%;
-			border-top: 1px solid #D4D4D4;
-			padding-top: 20px;
-		}
-
-		&--draft {
-			color: #BDBDBD;
-
-			.forum__avatar-wrap {
-				position: relative;
-
-				&:after{
-					position: absolute;
-					top: 0;
-					right: 0;
-					bottom: 0;
-					left: 0;
-					width: 100%;
-					height: 100%;
-					content: '';
-					background: url(../img/svg/eye-draft-icon.svg) 50% 50% no-repeat rgba(84, 110, 122, 0.6);
-					background-size: 26px 18px;
-				}
-			}
-
-			.forum__comment-author { font-family: $open-sans-bold; }
-
-		}
-	}
-
-
-	&__avatar-wrap {
-		float: left;
-		width: 11%;
-		margin-right: 4%;
-	}
-
-	&__avatar-wrap img,
-	&__avatar {
-		display: block;
-		max-width: 100%;
-		height: auto;
-	}
-
-	&__comment {
-		float: left;
-		width: 85%;
-		font-size: 14px;
-	}
-
-	&__comment-head {
-		padding-bottom: 10px;
-	}
-
-	&__comment-author {
-		margin-right: 25px;
-		font-size: 15px;
-
-		@media (max-width: $tablet) {
-    	display: block;
-    	margin-bottom: 5px;
+    @media (max-width: $desktop) {
+      width: 100%;
     }
-	}
+  }
 
-	&__comment-date {
-		color: #ACACAC;
-		font-size: 13px;
-		line-height: 1.1;
-		margin-right: 15px;
-	}
 
-	&__comment-text,
-	&__comment-text p {
-		margin: 0;
-		padding: 0;
-	}
+  &__comments {
+    margin: 0 0 20px;
+    border-bottom: 1px solid #d4d4d4;
 
-	&__comment-answer {
+    &--answer {
+      border-bottom: none;
+    }
+  }
 
-		textarea {
-			border: 1px solid #D4D4D4;
-			width: 100%;
 
-			&:focus {
-				border: 1px solid #D4D4D4;
-			}
-		}
-	}
+  &__comment-wrap {
+    box-sizing: border-box;
+    padding: 0 0 20px;
+    font-size: 0;
 
+    @include clearfix();
+
+    &--reply {
+      margin-left: 15%;
+      padding-top: 20px;
+      border-top: 1px solid #d4d4d4;
+    }
+
+    &--draft {
+      color: #bdbdbd;
+
+      .forum__avatar-wrap {
+        position: relative;
+
+        &:after {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: url(../img/svg/eye-draft-icon.svg) 50% 50% no-repeat rgba(84, 110, 122, 0.6);
+          background-size: 26px 18px;
+          content: "";
+        }
+      }
+
+      .forum__comment-author {
+        font-family: $open-sans-bold;
+      }
+    }
+  }
+
+
+  &__avatar-wrap {
+    float: left;
+    width: 11%;
+    margin-right: 4%;
+  }
+
+  &__avatar-wrap img,
+  &__avatar {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__comment {
+    float: left;
+    width: 85%;
+    font-size: 14px;
+  }
+
+  &__comment-head {
+    padding-bottom: 10px;
+  }
+
+  &__comment-author {
+    margin-right: 25px;
+    font-size: 15px;
+
+    @media (max-width: $tablet) {
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__comment-date {
+    margin-right: 15px;
+    color: #acacac;
+    font-size: 13px;
+    line-height: 1.1;
+  }
+
+  &__comment-text,
+  &__comment-text p {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__comment-answer {
+    textarea {
+      width: 100%;
+      border: 1px solid #d4d4d4;
+
+      &:focus {
+        border: 1px solid #d4d4d4;
+      }
+    }
+  }
 }

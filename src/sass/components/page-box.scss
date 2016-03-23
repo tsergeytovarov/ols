@@ -1,0 +1,55 @@
+.page-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 325px;
+  transform: translate(-50%, -50%);
+
+  @media (max-width: $tablet) {
+    top: 20px;
+    left: 50%;
+    width: 290px;
+    transform: translateX(-50%);
+  }
+
+  &__title {
+    margin-bottom: 43px;
+    text-align: center;
+    font-size: 26px;
+
+    @include h2();
+  }
+
+  &__content {
+    margin-bottom: 15px;
+    padding: 30px 35px;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+
+  &__links {
+    margin-bottom: 20px;
+
+    @include clearfix();
+  }
+
+  &__link {
+    color: $black;
+    text-decoration: none;
+    font-family: $montserrat;
+    font-size: 13px;
+
+    &:first-child {
+      margin-left: 10px;
+    }
+
+    &:last-child {
+      float: right;
+      margin-right: 10px;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
