@@ -11,7 +11,7 @@
 
   &__descr-show {
     display: none;
-    margin-top: 15px;
+    margin: 15px 0;
 
     @media (max-width: $tablet) {
       display: inline-block;
@@ -19,8 +19,16 @@
   }
 
   &__descr {
-    margin: 25px 0;
+    margin: 25px 0 10px;
     color: #37474f;
+
+    @media (max-width: $tablet) {
+      display: none;
+
+      &--open {
+        display: block;
+      }
+    }
 
     p {
       color: inherit;

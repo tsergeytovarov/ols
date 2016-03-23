@@ -117,6 +117,7 @@
     textarea {
       width: 100%;
       border: 1px solid #d4d4d4;
+      resize: vertical;
 
       &:focus {
         border: 1px solid #d4d4d4;
