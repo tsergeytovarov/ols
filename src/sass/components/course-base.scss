@@ -12,18 +12,6 @@
 	&__descr-show {
 		display: none;
 		margin-top: 15px;
-    font-family: $open-sans;
-    font-size: 13px;
-    line-height: 16px;
-    border: 1px solid $gray;
-    border-radius: 3px;
-    background: $gray;
-    color: #546E7A;
-    padding: 3px 12px;
-
-    &:hover {
-      background-color: darken($gray, 5%);
-    }
 
 		@media (max-width: $tablet) {
 	    display: inline-block;

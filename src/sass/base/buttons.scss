@@ -16,16 +16,24 @@
 
   }
 
-  &--modify {
+  &--show-all {
+    font-family: $open-sans;
+    font-size: 13px;
+    line-height: 16px;
+    border: 1px solid #B0BBBF;
+    border-radius: 3px;
+    background: $gray;
+    color: #546E7A;
+    padding: 3px 12px;
 
     &:hover,
     &--hover {
-
+      background-color: darken($gray, 5%);
     }
 
     &:active,
     &--active {
-
+      background-color: darken($gray, 5%);
     }
   }
 }
