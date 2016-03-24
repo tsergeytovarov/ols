@@ -42,6 +42,19 @@
       background: #ffffff;
     }
 
+    &--gray{
+      background: $gray;
+
+      &:before {
+        background: url(../img/svg/contour-gray.svg) 0 0 no-repeat;
+        background-size: 100% 185px;
+      }
+
+      &:after {
+        background: $gray;
+      }
+    }
+
 
   }
 
