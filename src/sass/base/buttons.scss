@@ -221,4 +221,35 @@
       path { fill: $yellow; }
     }
   }
+
+
+  &--download {
+    background: $gray;
+    border-radius: 3px;
+    color: #40494C;
+    padding: 4px 15px 5px 9px;
+    font-size: 14px;
+    line-height: 18px;
+
+    .download-icon {
+      line-height: 15px;
+      vertical-align: middle;
+      padding-right: 8px;
+
+      svg {
+        width: 14px;
+        height: 14px;
+      }
+
+      path { fill: $gray-darker; }
+    }
+
+    &:hover {
+      background-color: darken($gray, 5%);
+    }
+
+    &:active {
+      background-color: darken($gray, 5%);
+    }
+  }
 }
