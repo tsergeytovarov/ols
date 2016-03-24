@@ -2,6 +2,8 @@
 
 	&__body {
 		padding: 30px 0;
+
+		@media (max-width: $tablet) { padding: 20px 0 0; }
 	}
 
 	&__title {
@@ -10,6 +12,8 @@
 	  font-size: 25px;
 	  line-height: 1.3;
 	  margin-bottom: 30px;
+
+	  @media (max-width: $tablet) { margin-bottom: 15px; }
 	}
 
 	&__title-icon {
@@ -22,6 +26,8 @@
 		line-height: 20px;
 		text-align: center;
 		margin: 3px 10px 0 0;
+
+		@media (max-width: $tablet) { display: none; }
 
 		svg {
 			width: 10px;

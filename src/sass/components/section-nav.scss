@@ -1,6 +1,18 @@
-.section-head {
+.section-nav {
 	padding: 20px 0 0;
 	background: #EAEEF1;
+
+	&--bottom {
+		background: #D8E3EE;
+		padding: 25px 0;
+
+		.section-nav__back {
+			border: 1px solid #B0BBBF;
+			margin-right: 5px;
+		}
+
+		@media (min-width: $tablet) { display: none; }
+	}
 
 	&__title {
 		margin: 0 0 20px;
