@@ -1,0 +1,40 @@
+.section-head {
+	padding: 20px 0 0;
+	background: #EAEEF1;
+
+	&__title {
+		margin: 0 0 20px;
+		padding: 0;
+		font-family: $montserrat;
+		font-size: 15px;
+		line-height: 1.2;
+		color: #37474F;
+	}
+	
+	&__links {
+		@include clearfix();
+	}
+
+	&__back {
+		float: left;
+		margin-right: 20px;
+	}
+
+	&__progress {
+		float: left;
+
+		@media (max-width: $tablet) { padding-bottom: 10px; }
+		@media (max-width: $desktop) { margin-top: 20px; clear: both; }
+		
+	}
+
+	&__btns {
+		float: right;
+
+		@media (max-width: $desktop) { float: left; }
+	}
+
+	&__arrow {
+		margin-right: 8px;
+	}
+}
