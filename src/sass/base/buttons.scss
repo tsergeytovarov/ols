@@ -144,4 +144,24 @@
       background-color: darken($yellow, 5%);
     }
   }
+
+  &--alert {
+    font-size: 14px;
+    padding: 8px 20px;
+    outline: none;
+    border: none;
+    background: $yellow;
+    color: $gray;
+    border-radius: 3px;
+
+    &:hover,
+    &--hover {
+      background-color: darken($yellow, 10%);
+    }
+
+    &:active,
+    &--active {
+      background-color: darken($yellow, 5%);
+    }
+  }
 }

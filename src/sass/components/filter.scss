@@ -1,0 +1,136 @@
+.filter {
+  position: relative;
+  padding: 20px 25px;
+  background-color: $gray;
+
+  @media (max-width: $desktop) {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 10px;
+  }
+
+  &__collapse {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    display: none;
+    border: 0;
+    background: none;
+
+    svg {
+      width: 15px;
+      transform: rotate(180deg);
+    }
+
+    @media (max-width: $desktop) {
+      display: block;
+    }
+
+    @media (max-width: $tablet) {
+      top: 10px;
+      right: 10px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: $montserrat;
+    font-size: 18px;
+
+    @media (max-width: $desktop) {
+      margin-bottom: 0;
+    }
+
+    svg {
+      display: inline-block;
+      width: 20px;
+      margin-right: 5px;
+      vertical-align: top;
+    }
+  }
+
+  &__group {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    border: 0;
+
+    @media (max-width: $desktop) {
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: top;
+
+      &:nth-child(1) {
+        width: 44%;
+      }
+
+      &:nth-child(2) {
+        width: 55%;
+      }
+    }
+
+    @media (max-width: $tablet) {
+      margin-bottom: 10px;
+
+      &:nth-child(1) {
+        width: 49%;
+      }
+
+      &:nth-child(2) {
+        float: right;
+        width: 50%;
+      }
+    }
+  }
+
+  &__group-title {
+    display: block;
+    margin-bottom: 10px;
+    color: $gray-dark;
+    font-size: 14px;
+  }
+
+  .checkbox {
+    margin-bottom: 10px;
+
+    @media (max-width: $desktop) {
+      display: inline-block;
+      margin-right: 10px;
+      vertical-align: top;
+    }
+
+    @media (max-width: $tablet) {
+      display: block;
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__form {
+    @media (max-width: $desktop) {
+      display: none;
+    }
+  }
+
+  &--open &__collapse svg {
+    transform: rotate(0deg);
+  }
+
+  &--open &__form {
+    @media (max-width: $desktop) {
+      display: block;
+    }
+  }
+
+  &--open &__title {
+    @media (max-width: $desktop) {
+      margin-bottom: 20px;
+    }
+  }
+}

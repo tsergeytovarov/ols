@@ -94,4 +94,10 @@
     background-repeat: no-repeat;
     content: "";
   }
+
+  &--white-bg {
+    input[type="checkbox"] + .checkbox__label::before {
+      background-color: #ffffff;
+    }
+  }
 }
