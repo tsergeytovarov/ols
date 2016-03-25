@@ -46,11 +46,14 @@
     <div class="row">
       <aside class="col-md-3 col-sm-12 col-xs-12 pull-right">
         <section class="filter">
+          <button type="button" class="filter__collapse js-filter-collapse">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.044 8.905"><path fill="none" stroke="#455a64" stroke-width="2" stroke-miterlimit="10" d="M11.248 8.274L6.192 1.618.776 8.274"/></svg>
+          </button>
           <h2 class="filter__title">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.96 16.555"><path d="M17.909.312A.546.546 0 0 0 17.416 0H.544a.546.546 0 0 0-.42.89L6.61 8.757v7.254a.546.546 0 0 0 .786.488l3.644-1.806a.546.546 0 0 0 .303-.487l.007-5.448L17.836.891a.547.547 0 0 0 .073-.579zm-7.523 7.903a.543.543 0 0 0-.124.346l-.007 5.306-2.556 1.267V8.562a.545.545 0 0 0-.124-.346L1.699 1.089h14.563l-5.876 7.126z"/></svg>
             Filter
           </h2>
-          <form action="/echo" method="GET">
+          <form action="/echo" method="GET" class="filter__form">
             <fieldset class="filter__group">
               <legend class="filter__group-title">By status</legend>
               <div class="checkbox checkbox--white-bg">

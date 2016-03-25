@@ -1,12 +1,39 @@
 .filter {
   background-color: $gray;
   padding: 20px 25px;
+  position: relative;
+
+  @media (max-width: $desktop) {
+    margin-bottom: 30px;
+  }
+
+  &__collapse {
+    background: none;
+    border: 0;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    display: none;
+
+    svg {
+      width: 15px;
+      transform: rotate(180deg);
+    }
+
+    @media (max-width: $desktop) {
+      display: block;
+    }
+  }
 
   &__title {
     font-family: $montserrat;
     font-size: 18px;
     margin: 0;
     margin-bottom: 20px;
+
+    @media (max-width: $desktop) {
+      margin-bottom: 0;
+    }
 
     svg {
       width: 20px;
@@ -21,6 +48,20 @@
     padding: 0;
     border: 0;
     margin-bottom: 10px;
+
+    @media (max-width: $desktop) {
+      display: inline-block;
+      vertical-align: top;
+      margin-bottom: 0;
+
+      &:nth-child(1) {
+        width: 44%;
+      }
+
+      &:nth-child(2) {
+        width: 55%;
+      }
+    }
   }
 
   &__group-title {
@@ -32,5 +73,33 @@
 
   .checkbox {
     margin-bottom: 10px;
+
+    @media (max-width: $desktop) {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 10px;
+    }
+  }
+
+  &__form {
+    @media (max-width: $desktop) {
+      display: none;
+    }
+  }
+
+  &--open &__collapse svg{
+    transform: rotate(0deg);
+  }
+
+  &--open &__form {
+    @media (max-width: $desktop) {
+      display: block;
+    }
+  }
+
+  &--open &__title {
+    @media (max-width: $desktop) {
+      margin-bottom: 20px;
+    }
   }
 }
