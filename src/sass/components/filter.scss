@@ -1,0 +1,36 @@
+.filter {
+  background-color: $gray;
+  padding: 20px 25px;
+
+  &__title {
+    font-family: $montserrat;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 20px;
+
+    svg {
+      width: 20px;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 5px;
+    }
+  }
+
+  &__group {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    margin-bottom: 10px;
+  }
+
+  &__group-title {
+    display: block;
+    font-size: 14px;
+    color: $gray-dark;
+    margin-bottom: 10px;
+  }
+
+  .checkbox {
+    margin-bottom: 10px;
+  }
+}

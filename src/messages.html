@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>OLS - about</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container container--small">
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+          <div class="logo">Online <span class="logo__second">Learning System</span></div>
+        </div>
+        <div class="col-md-6 col-xs-12 header__menu">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="courses.html" class="menu__link">Courses</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link menu__link--active">Profile</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Sign out</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <button type="button" class="header__toggle"><span>Menu toggle</span></button>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container container--small">
+      <h1 class="page-header__title">Messages</h1>
+      <p class="page-header__description status-text status-text--danger">2 unread messages</p>
+    </div>
+  </div>
+
+  <div class="page container container--small">
+    <div class="row">
+      <aside class="col-md-3 col-sm-12 col-xs-12 pull-right">
+        <section class="filter">
+          <h2 class="filter__title">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.96 16.555"><path d="M17.909.312A.546.546 0 0 0 17.416 0H.544a.546.546 0 0 0-.42.89L6.61 8.757v7.254a.546.546 0 0 0 .786.488l3.644-1.806a.546.546 0 0 0 .303-.487l.007-5.448L17.836.891a.547.547 0 0 0 .073-.579zm-7.523 7.903a.543.543 0 0 0-.124.346l-.007 5.306-2.556 1.267V8.562a.545.545 0 0 0-.124-.346L1.699 1.089h14.563l-5.876 7.126z"/></svg>
+            Filter
+          </h2>
+          <form action="/echo" method="GET">
+            <fieldset class="filter__group">
+              <legend class="filter__group-title">By status</legend>
+              <div class="checkbox checkbox--white-bg">
+                <input type="checkbox" id="ch1">
+                <label for="ch1" class="checkbox__label">New</label>
+              </div>
+              <div class="checkbox checkbox--white-bg">
+                <input type="checkbox" id="ch2">
+                <label for="ch2" class="checkbox__label">Read</label>
+              </div>
+              <div class="checkbox checkbox--white-bg">
+                <input type="checkbox" id="ch3">
+                <label for="ch3" class="checkbox__label">Answered</label>
+              </div>
+            </fieldset>
+            <fieldset class="filter__group">
+              <legend class="filter__group-title">By type</legend>
+              <div class="checkbox checkbox--white-bg">
+                <input type="checkbox" id="ch4">
+                <label for="ch4" class="checkbox__label">Bug reports</label>
+              </div>
+              <div class="checkbox checkbox--white-bg">
+                <input type="checkbox" id="ch5">
+                <label for="ch5" class="checkbox__label">Questions</label>
+              </div>
+              <div class="checkbox checkbox--white-bg">
+                <input type="checkbox" id="ch6">
+                <label for="ch6" class="checkbox__label">Information</label>
+              </div>
+            </fieldset>
+            <button type="submit" class="btn btn--forum-submit">Show result</button>
+          </form>
+        </section>
+      </aside>
+      <div class="col-md-9 col-sm-12 col-xs-12">
+        1
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container container--small">
+      <nav class="menu-footer">
+        <ul class="menu-footer__list">
+          <li class="menu-footer__item"><a href="index.html" class="menu-footer__link menu-footer__link--name">Sky Agency</a></li>
+          <li class="menu-footer__item"><a href="#" class="menu-footer__link">About</a></li>
+          <li class="menu-footer__item"><a href="#" class="menu-footer__link">Manual</a></li>
+          <li class="menu-footer__item"><a href="#" class="menu-footer__link">FAQ</a></li>
+          <li class="menu-footer__item"><a href="#" class="menu-footer__link">Help</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/script.min.js"></script>
+</body>
+</html>
