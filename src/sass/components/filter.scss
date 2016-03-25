@@ -1,7 +1,7 @@
 .filter {
-  background-color: $gray;
-  padding: 20px 25px;
   position: relative;
+  padding: 20px 25px;
+  background-color: $gray;
 
   @media (max-width: $desktop) {
     margin-bottom: 30px;
@@ -12,12 +12,12 @@
   }
 
   &__collapse {
-    background: none;
-    border: 0;
     position: absolute;
     top: 20px;
     right: 25px;
     display: none;
+    border: 0;
+    background: none;
 
     svg {
       width: 15px;
@@ -35,33 +35,33 @@
   }
 
   &__title {
-    font-family: $montserrat;
-    font-size: 18px;
     margin: 0;
     margin-bottom: 20px;
+    font-family: $montserrat;
+    font-size: 18px;
 
     @media (max-width: $desktop) {
       margin-bottom: 0;
     }
 
     svg {
-      width: 20px;
       display: inline-block;
-      vertical-align: top;
+      width: 20px;
       margin-right: 5px;
+      vertical-align: top;
     }
   }
 
   &__group {
     margin: 0;
+    margin-bottom: 10px;
     padding: 0;
     border: 0;
-    margin-bottom: 10px;
 
     @media (max-width: $desktop) {
       display: inline-block;
-      vertical-align: top;
       margin-bottom: 0;
+      vertical-align: top;
 
       &:nth-child(1) {
         width: 44%;
@@ -80,17 +80,17 @@
       }
 
       &:nth-child(2) {
-        width: 50%;
         float: right;
+        width: 50%;
       }
     }
   }
 
   &__group-title {
     display: block;
-    font-size: 14px;
-    color: $gray-dark;
     margin-bottom: 10px;
+    color: $gray-dark;
+    font-size: 14px;
   }
 
   .checkbox {
@@ -98,8 +98,8 @@
 
     @media (max-width: $desktop) {
       display: inline-block;
-      vertical-align: top;
       margin-right: 10px;
+      vertical-align: top;
     }
 
     @media (max-width: $tablet) {
@@ -118,7 +118,7 @@
     }
   }
 
-  &--open &__collapse svg{
+  &--open &__collapse svg {
     transform: rotate(0deg);
   }
 
