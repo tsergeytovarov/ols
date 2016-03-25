@@ -89,7 +89,39 @@
         </section>
       </aside>
       <div class="col-md-9 col-sm-12 col-xs-12">
-        1
+        <div class="messages">
+          <div class="messages__header">
+            <div class="messages__col messages__col--1">Employee</div>
+            <div class="messages__col messages__col--2">type</div>
+            <div class="messages__col messages__col--3">topic <span>click topic to read message</span></div>
+          </div>
+          <div class="messages__row">
+            <div class="messages__col messages__col--1">
+              <img src="img/person-thumb-1.png" alt="" class="messages__image">
+              <div class="messages__name">Jesus Ross</div>
+              <div class="messagse__date">23.03.2016</div>
+            </div>
+            <div class="messages__col messages__col--2">
+              <svg class="messages__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5773.634 2768.167"><g fill="#455a64"><path d="M16.532 2761.351h-2.114a6.423 6.423 0 0 0-1.222-3.265l1.403-1.403a.572.572 0 0 0-.808-.808l-1.356 1.356a5.96 5.96 0 0 0-.656-.53c-.065-1.376-.908-2.54-2.073-3.011l.795-.795a.572.572 0 0 0-.808-.808l-1.141 1.141-1.13-1.13a.572.572 0 0 0-.808.808l.784.784c-1.166.472-2.009 1.635-2.074 3.011-.23.16-.449.338-.656.53l-1.356-1.356a.572.572 0 0 0-.808.808l1.403 1.403a6.42 6.42 0 0 0-1.222 3.265H.571a.57.57 0 1 0 0 1.142h2.114a6.42 6.42 0 0 0 1.222 3.265l-1.403 1.403a.572.572 0 0 0 .808.808l1.356-1.356c1.038.967 2.396 1.554 3.883 1.554s2.845-.588 3.883-1.554l1.356 1.356a.568.568 0 0 0 .808 0 .572.572 0 0 0 0-.808l-1.403-1.403a6.428 6.428 0 0 0 1.222-3.265h2.114a.571.571 0 0 0 .001-1.142zm-7.98-6.744c.876 0 1.626.588 1.937 1.418a5.556 5.556 0 0 0-3.874 0c.31-.83 1.061-1.418 1.937-1.418zm-4.749 7.318v-.003-.003c.001-2.604 1.828-4.757 4.178-5.061v10.129c-2.35-.305-4.177-2.457-4.178-5.062zm5.32 5.062v-10.129c2.348.304 4.175 2.455 4.177 5.058v.012c-.002 2.603-1.829 4.755-4.177 5.059z"/><circle cx="5767.841" cy=".72" r=".72"/><path d="M5766.47 2.477a.72.72 0 1 0 0 1.44.72.72 0 0 0 0-1.44zM5767.841 4.932a.72.72 0 1 0 0 1.44.72.72 0 0 0 0-1.44z"/><circle cx="5771.543" cy=".72" r=".72"/><circle cx="5772.915" cy="3.197" r=".72"/><circle cx="5771.543" cy="5.652" r=".72"/></g></svg>
+            </div>
+            <div class="messages__col messages__col--3">
+              <div class="messages__title js-messages-collapse">
+                <div class="status-text status-text--danger">Video in Section 23 is broken <svg class="messages__collapse-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.044 8.905"><path fill="none" stroke="#455a64" stroke-width="2" stroke-miterlimit="10" d="M11.248 8.274L6.192 1.618.776 8.274"/></svg></div>
+              </div>
+              <div class="messages__content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum iure voluptatibus, at modi magni non aut. Mollitia, magnam asperiores, dolore iusto distinctio sunt odio provident, optio voluptatibus fugit delectus ullam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, nulla, non? Eaque blanditiis iusto ad odio illo repudiandae similique, iste suscipit, laboriosam, maiores id. Quae sed rem sunt impedit, nulla!</p>
+              </div>
+              <form action="/echo" method="GET">
+                <select class="messages__select">
+                  <option value="1">New message</option>
+                  <option value="2">Answered</option>
+                  <option value="3">Read</option>
+                </select>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
