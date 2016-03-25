@@ -1,0 +1,134 @@
+.messages {
+
+  &__header {
+    @include clearfix();
+    font-size: 13px;
+
+    span {
+      display: inline-block;
+      margin-left: 50px;
+    }
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &__row {
+    @include clearfix();
+    padding: 7px 10px;
+    border-top: 1px solid #CFD8DC;
+    position: relative;
+
+    &:last-child {
+      border-bottom: 1px solid #CFD8DC;
+    }
+  }
+
+  &__col {
+    float: left;
+
+    &--1 {
+      width: 23%;
+
+      @media (max-width: $tablet) {
+        width: 50%;
+      }
+    }
+
+    &--2 {
+      width: 10%;
+      text-align: center;
+
+      @media (max-width: $tablet) {
+        width: 50%;
+      }
+    }
+
+    &--3 {
+      width: 67%;
+
+      @media (max-width: $tablet) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__image {
+    width: 30px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    display: block;
+  }
+
+  &__name {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 3px;
+  }
+
+  &__date {
+    font-size: 13px;
+    line-height: 13px;
+    color: #CFD8DC;
+  }
+
+  &__icon {
+    fill: $black;
+    width: 30px;
+  }
+
+  &__title {
+    min-width: 310px;
+    margin-top: 3px;
+    cursor: pointer;
+
+    @media (max-width: $tablet) {
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__collapse-icon {
+    width: 12px;
+    transform: rotate(180deg);
+    margin-left: 10px;
+  }
+
+  &__select {
+    width: 125px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    @media (max-width: $tablet) {
+      position: static;
+    }
+  }
+
+  &__content {
+    display: none;
+
+    p {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}
+
+.messages__col--open {
+
+  .messages__content {
+    display: block;
+  }
+
+  .messages__collapse-icon {
+    transform: rotate(0deg);
+  }
+
+}
