@@ -194,6 +194,23 @@
   }
 
 
+  &--green {
+    background: $green;
+    border: 1px solid $green;
+    color: #ffffff;
+
+    svg path { fill: #ffffff; }
+
+    &:hover {
+      background-color: darken($green, 5%);
+    }
+
+    &:active {
+      background-color: darken($green, 5%);
+    }
+  }
+
+
   &--arrow {
     width: 27px;
     height: 27px;

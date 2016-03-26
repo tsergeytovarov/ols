@@ -9,6 +9,12 @@
 		border-radius: 6px;
 	}
 
+	&--complete {
+
+		.test-nav__btns { display: none; }
+		
+	}
+
 	.test-progress {
 		float: left;
 		padding-top: 3px;

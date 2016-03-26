@@ -20,7 +20,7 @@
 		@include clearfix();
 		background: $gray;
 		padding: 15px 40px 20px;
-		border-radius: 0 0 6px 6px;
+		border-radius: 0 0 5px 5px;
 
 		@media (max-width: $tablet) { padding: 15px 0; }
 
@@ -39,6 +39,14 @@
 				text-align: center;
 			}
 		}
+	}
+
+
+	&--complete {
+		padding: 20px 0;
+		text-align: center;
+		vertical-align: baseline;
+		background: $gray;
 	}
 
 
@@ -89,6 +97,23 @@
 		@media (max-width: $tablet) {
 			float: none;
 			margin: 10px 0 0;
+		}
+	}
+
+	&__next-text {
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+		color: $gray-darker;
+	}
+
+	&__next-link {
+		text-decoration: underline;
+		color: $black;
+		margin-right: 15px;
+
+		&:hover {
+			color: darken($black, 15%);
 		}
 	}
 }

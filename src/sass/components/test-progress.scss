@@ -52,5 +52,17 @@
 			color: #FAFAFA;
 			background: #78909C;
 		}
+
+		&--passed {
+			background: $green;
+			color: #fff;
+			cursor: default;
+		}
+
+		&--error {
+			background: $red;
+			color: #fff;
+			cursor: default;
+		}
 	}
 }
