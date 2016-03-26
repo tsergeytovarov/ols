@@ -4,15 +4,14 @@
 	border-radius: 6px 6px 0 0;
 	@include clearfix();
 
-	@media (max-width: $tablet ) {
-		padding: 13px;
+	@media (max-width: $tablet) {
+		padding: 6px 13px 13px;
 		border-radius: 6px;
 	}
 
 	&--complete {
-
+		padding-top: 15px;
 		.test-nav__btns { display: none; }
-		
 	}
 
 	.test-progress {
@@ -23,6 +22,6 @@
 	&__btns {
 		float: right;
 
-		@media (max-width: $tablet ) { display: none; }
+		@media (max-width: $tablet) { display: none; }
 	}
 }

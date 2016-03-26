@@ -2,7 +2,13 @@
 	padding: 20px 40px;
 	border-left: 1px solid #cfd8dc;
 	border-right: 1px solid #cfd8dc;
+	border-bottom: 1px solid #cfd8dc;
 	@include clearfix();
+
+	@media (max-width: $tablet) {
+		padding: 15px 13px;
+		border: none;
+	}
 
 	&__info {
 		float: left;
@@ -11,6 +17,8 @@
 	&__links {
 		float: right;
 		text-align: right;
+
+		@media (max-width: $tablet) { display: none; }
 	}
 
 	&__percent {

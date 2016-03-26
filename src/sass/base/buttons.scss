@@ -145,7 +145,7 @@
     padding: 4px 8px;
     border-radius: 3px;
 
-    @media (max-width: $tablet) { font-size: 13px; }
+    @media (max-width: $tablet) { font-size: 12px; }
 
     svg {
       width: 10px;
@@ -236,6 +236,12 @@
       border: 1px solid $yellow;
 
       path { fill: $yellow; }
+    }
+
+    @media (max-width: $tablet) {
+      width: 26px;
+      height: 26px;
+      line-height: 25px;
     }
   }
 
