@@ -1,0 +1,54 @@
+.section-content {
+	padding: 25px 25px 0;
+	background: #FAFAFA;
+	border: 1px solid #CFD8DC;
+	border-radius: 6px;
+
+	@media (max-width: $tablet) {
+		border: none;
+		background: transparent;
+		padding: 0;
+	}
+
+	@media (max-width: $desktop) {
+		margin-bottom: 25px;
+	}
+
+	&__descr,
+	&__descr p {
+		margin: 0 0 20px;
+		padding: 0;
+
+		@media (max-width: $tablet) { display: none; }
+	}
+
+
+	&__descr-btn {
+
+		@media (min-width: $tablet) {
+			display: none;
+		}
+	}
+
+	&__media {
+		width: 100%;
+		margin: 0 0 20px;
+		position: relative;
+
+		@media (max-width: $tablet) {
+			margin-top: 25px;
+		}
+
+		video {
+			width: 100%;
+		}
+	}
+
+	.forum {
+
+		&__messages { width: 100%; }
+
+		@media (max-width: $desktop) { display: none; }
+	}
+
+}

@@ -1,0 +1,51 @@
+.test-quest {
+	background: #FAFAFA;
+	border-left: 1px solid #CFD8DC;
+	border-right: 1px solid #CFD8DC;
+	border-bottom: 1px solid #CFD8DC;
+	border-radius: 0 0 6px 6px;
+
+	@media (max-width: $tablet) {
+		background: transparent;
+		border: none;
+	}
+
+	&__wrap {
+		padding: 30px 40px 0;
+		
+		@media (max-width: $tablet) { padding: 20px 0 0; }
+		@media (max-width: $desktop) { max-width: 540px; margin: 0 auto; }
+	}
+
+	&__title {
+		margin: 0 0 20px;
+		padding: 0;
+		font-family: $montserrat-bold;
+	  font-size: 18px;
+	  line-height: 1.2;
+	}
+
+	&__desrc{
+		color: #37474F;
+		font-size: 14px;
+		line-height: 1.5;
+		margin: 0;
+		padding: 0 0 10px;
+	}
+
+	&__media {
+		width: 100%;
+		margin: 10px 0 0;
+
+		@media (max-width: $tablet) { display: none; }
+
+		img,
+		video {
+			display: block;
+			width: 100%;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+}

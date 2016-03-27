@@ -101,10 +101,25 @@
   }
 
   &__comment-date {
-    margin-right: 15px;
+    display: inline;
+    margin: 0 15px 0 0;
+    padding: 0;
     color: #acacac;
     font-size: 13px;
     line-height: 1.1;
+  }
+
+  &__draft-icon {
+    display: inline-block;
+    vertical-align: bottom;
+    padding-right: 7px;
+
+    svg {
+      width: 15px;
+      height: 12px;
+    }
+    
+    path { fill: #757575; }
   }
 
   &__comment-text,

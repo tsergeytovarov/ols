@@ -73,13 +73,11 @@
     font-size: 13px;
     line-height: 16px;
 
-    &:hover,
-    &--hover {
+    &:hover {
       background-color: darken($gray, 5%);
     }
 
-    &:active,
-    &--active {
+    &:active {
       background-color: darken($gray, 5%);
     }
   }
@@ -98,13 +96,11 @@
     color: #ffffff;
     text-transform: lowercase;
 
-    &:hover,
-    &--hover {
+    &:hover {
       background-color: darken($gray-darker, 5%);
     }
 
-    &:active,
-    &--active {
+    &:active {
       background-color: darken($gray-darker, 5%);
     }
   }
@@ -115,13 +111,11 @@
     color: #37474f;
     text-transform: lowercase;
 
-    &:hover,
-    &--hover {
+    &:hover {
       background-color: darken($yellow, 5%);
     }
 
-    &:active,
-    &--active {
+    &:active {
       background-color: darken($yellow, 5%);
     }
   }
@@ -134,13 +128,67 @@
     background: $yellow;
     color: #37474f;
 
-    &:hover,
-    &--hover {
+    &:hover {
       background-color: darken($yellow, 5%);
     }
 
-    &:active,
-    &--active {
+    &:active {
+      background-color: darken($yellow, 5%);
+    }
+  }
+
+  &--icon {
+    font-family: $open-sans;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #37474F;
+    padding: 4px 8px;
+    border-radius: 3px;
+
+    @media (max-width: $tablet) { font-size: 12px; }
+
+    svg {
+      width: 10px;
+      height: 10px;
+    }
+
+    path { fill: #37474F; }
+
+  }
+
+
+  &--back {
+    border: 1px solid #B0BBBF;
+
+    @media (max-width: $desktop) { border: 1px solid transparent; }
+
+    svg { transform: rotate(90deg); }
+
+    .btn-text { padding-left: 5px; }
+
+    &:hover {
+      background-color: darken($gray, 5%);
+    }
+
+    &:active {
+      background-color: darken($gray, 5%);
+    }
+  }
+
+
+  &--next {
+    background: $yellow;
+    border: 1px solid $yellow;
+
+    svg { transform: rotate(180deg); }
+
+    .btn-text { padding-right: 5px; }
+
+    &:hover {
+      background-color: darken($yellow, 5%);
+    }
+
+    &:active {
       background-color: darken($yellow, 5%);
     }
   }
@@ -162,6 +210,88 @@
     &:active,
     &--active {
       background-color: darken($yellow, 5%);
+    }
+  }
+
+  &--green {
+    background: $green;
+    border: 1px solid $green;
+    color: #ffffff;
+
+    svg path { fill: #ffffff; }
+
+    &:hover {
+      background-color: darken($green, 5%);
+    }
+
+    &:active {
+      background-color: darken($green, 5%);
+    }
+  }
+
+
+  &--arrow {
+    width: 27px;
+    height: 27px;
+    line-height: 26px;
+    border-radius: 50%;
+    border: 1px solid #B0BBBF;
+
+    svg {
+      width: 10px;
+      height: 10px;
+    }
+
+    path { fill: #37474F; }
+
+    &:hover,
+    &--hover {
+      border: 1px solid $yellow;
+
+      path { fill: $yellow; }
+    }
+
+    &:active {
+      border: 1px solid $yellow;
+
+      path { fill: $yellow; }
+    }
+
+    @media (max-width: $tablet) {
+      width: 26px;
+      height: 26px;
+      line-height: 25px;
+    }
+  }
+
+
+  &--download {
+    background: $gray;
+    border-radius: 3px;
+    color: #40494C;
+    padding: 4px 15px 5px 9px;
+    font-size: 14px;
+    line-height: 18px;
+
+    .download-icon {
+      line-height: 15px;
+      vertical-align: middle;
+      padding-right: 8px;
+
+      svg {
+        width: 14px;
+        height: 14px;
+      }
+
+      path { fill: $gray-darker; }
+    }
+
+    &:hover {
+      background-color: darken($gray, 5%);
+    }
+
+    &:active {
+      background-color: darken($gray, 5%);
     }
   }
 }

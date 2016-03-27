@@ -18,6 +18,44 @@
     position: relative;
     padding: 10px 45px 45px;
     text-align: center;
+
+    &:before {
+      position: absolute;
+      content: '';
+      top: -32px;
+      left: 0;
+      right: 0;
+      height: 35px;
+      background: url(../img/svg/contour.svg) 0 0 no-repeat;
+      background-size: 100% 185px;
+    }
+    
+    // fixing svg bug
+    &:after {
+      position: absolute;
+      content: '';
+      top: -28px;
+      left: 0;
+      right: 0;
+      width: 1px;
+      height: 35px;
+      background: #ffffff;
+    }
+
+    &--gray{
+      background: $gray;
+
+      &:before {
+        background: url(../img/svg/contour-gray.svg) 0 0 no-repeat;
+        background-size: 100% 185px;
+      }
+
+      &:after {
+        background: $gray;
+      }
+    }
+
+
   }
 
 
