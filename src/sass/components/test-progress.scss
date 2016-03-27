@@ -8,8 +8,8 @@
 
   &__step {
     display: inline-block;
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     margin: 5px 7px 0 0;
     border-radius: 3px;
     background: #ffffff;
@@ -17,8 +17,8 @@
     text-align: center;
     text-decoration: none;
     font-family: $montserrat;
-    font-size: 10px;
-    line-height: 18px;
+    font-size: 11px;
+    line-height: 20px;
 
     @media (max-width: $tablet ) {
       width: 13px;
