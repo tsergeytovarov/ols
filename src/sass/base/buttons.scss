@@ -7,6 +7,11 @@
   text-decoration: none;
   font-family: $open-sans;
   font-weight: 400;
+  font-size: 15px;
+
+  @media (max-width: $tablet) {
+    font-size: 14px;
+  }
 
   &--bordered {
     padding: 3px 10px;
@@ -16,8 +21,12 @@
     color: #546e7a;
     text-transform: uppercase;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 16px;
+
+    @media (max-width: $tablet) {
+      font-size: 14px;
+    }
 
     @media (max-width: $desktop) {
       border: 1px solid $gray-dark;
@@ -70,8 +79,12 @@
     background: $gray;
     color: #546e7a;
     font-family: $open-sans;
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 15px;
+    line-height: 17px;
+
+    @media (max-width: $tablet) {
+      font-size: 14px;
+    }
 
     &:hover {
       background-color: darken($gray, 5%);
@@ -86,8 +99,12 @@
     border-radius: 4px;
     vertical-align: baseline;
     font-family: $open-sans;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 15px;
+
+    @media (max-width: $tablet) {
+      font-size: 14px;
+    }
   }
 
   &--reply {
@@ -142,11 +159,11 @@
     border-radius: 3px;
     color: #37474f;
     font-family: $open-sans;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.2;
 
     @media (max-width: $tablet) {
-      font-size: 12px;
+      font-size: 14px;
     }
 
     svg {
@@ -213,7 +230,11 @@
     border-radius: 3px;
     background: $yellow;
     color: $gray;
-    font-size: 14px;
+    font-size: 15px;
+
+    @media (max-width: $tablet) {
+      font-size: 14px;
+    }
 
     &:hover,
     &--hover {
@@ -291,8 +312,12 @@
     border-radius: 3px;
     background: $gray;
     color: #40494c;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 18px;
+
+    @media (max-width: $tablet) {
+      font-size: 14px;
+    }
 
     .download-icon {
       padding-right: 8px;
