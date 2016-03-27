@@ -1,123 +1,138 @@
 .section-nav {
-	padding: 20px 0 0;
-	background: #EAEEF1;
+  padding: 20px 0 0;
+  background: #eaeef1;
 
-	&--bottom {
-		background: #D8E3EE;
-		padding: 25px 0;
+  &--bottom {
+    padding: 25px 0;
+    background: #d8e3ee;
 
-		.section-nav__back {
-			border: 1px solid #B0BBBF;
-			margin-right: 5px;
-		}
+    .section-nav__back {
+      margin-right: 5px;
+      border: 1px solid #b0bbbf;
+    }
 
-		@media (min-width: $tablet) { display: none; }
-	}
-
-
-
-	&--test {
-		@include clearfix();
-		background: $gray;
-		padding: 15px 40px 20px;
-		border-radius: 0 0 5px 5px;
-
-		@media (max-width: $tablet) { padding: 15px 0; }
-
-		@media (max-width: $desktop) {
-			max-width: 540px;
-			margin: 0 auto;
-			background: transparent;
-		}
-
-		.section-nav__btns {
-			float: left;
-
-			@media (max-width: $tablet) {
-				float: none;
-				display: block;
-				text-align: center;
-			}
-		}
-	}
-
-
-	&--complete {
-		padding: 20px 0;
-		text-align: center;
-		vertical-align: baseline;
-		background: $gray;
-
-		@media (max-width: $tablet) { padding: 25px 0; }
-	}
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
 
 
 
-	&__title {
-		margin: 0 0 20px;
-		padding: 0;
-		font-family: $montserrat;
-		font-size: 15px;
-		line-height: 1.2;
-		color: #37474F;
-	}
-	
-	&__links {
-		@include clearfix();
-	}
+  &--test {
+    padding: 15px 40px 20px;
+    border-radius: 0 0 5px 5px;
+    background: $gray;
 
-	&__back {
-		float: left;
-		margin-right: 20px;
-	}
+    @include clearfix();
 
-	&__progress {
-		float: left;
+    @media (max-width: $tablet) {
+      padding: 15px 0;
+    }
 
-		@media (max-width: $tablet) { padding-bottom: 10px; }
-		@media (max-width: $desktop) { margin-top: 20px; clear: both; }
-		
-	}
+    @media (max-width: $desktop) {
+      max-width: 540px;
+      margin: 0 auto;
+      background: transparent;
+    }
 
-	&__btns {
-		float: right;
-		
-		@media (max-width: $desktop) { float: left; }
-	}
+    .section-nav__btns {
+      float: left;
 
-	&__arrow {
-		margin-right: 8px;
-	}
+      @media (max-width: $tablet) {
+        display: block;
+        float: none;
+        text-align: center;
+      }
+    }
+  }
 
-	&__text {
-		float: right;
-		margin: 0;
-		padding: 0;
-		font-size: 13px;
-		text-align: center;
 
-		@media (max-width: $tablet) {
-			float: none;
-			margin: 10px 0 0;
-		}
-	}
+  &--complete {
+    padding: 20px 0;
+    background: $gray;
+    text-align: center;
+    vertical-align: baseline;
 
-	&__next-text {
-		margin: 0;
-		padding: 0;
-		display: inline-block;
-		color: $gray-darker;
+    @media (max-width: $tablet) {
+      padding: 25px 0;
+    }
+  }
 
-		@media (max-width: $tablet) { padding-bottom: 10px; }
-	}
 
-	&__next-link {
-		text-decoration: underline;
-		color: $black;
-		margin-right: 15px;
 
-		&:hover {
-			color: darken($black, 15%);
-		}
-	}
+  &__title {
+    margin: 0 0 20px;
+    padding: 0;
+    color: #37474f;
+    font-family: $montserrat;
+    font-size: 15px;
+    line-height: 1.2;
+  }
+
+  &__links {
+    @include clearfix();
+  }
+
+  &__back {
+    float: left;
+    margin-right: 20px;
+  }
+
+  &__progress {
+    float: left;
+
+    @media (max-width: $tablet) {
+      padding-bottom: 10px;
+    }
+    @media (max-width: $desktop) {
+      clear: both;
+      margin-top: 20px;
+    }
+  }
+
+  &__btns {
+    float: right;
+
+    @media (max-width: $desktop) {
+      float: left;
+    }
+  }
+
+  &__arrow {
+    margin-right: 8px;
+  }
+
+  &__text {
+    float: right;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 13px;
+
+    @media (max-width: $tablet) {
+      float: none;
+      margin: 10px 0 0;
+    }
+  }
+
+  &__next-text {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    color: $gray-darker;
+
+    @media (max-width: $tablet) {
+      padding-bottom: 10px;
+    }
+  }
+
+  &__next-link {
+    margin-right: 15px;
+    color: $black;
+    text-decoration: underline;
+
+    &:hover {
+      color: darken($black, 15%);
+    }
+  }
 }

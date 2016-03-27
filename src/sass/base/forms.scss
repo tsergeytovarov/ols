@@ -1,17 +1,13 @@
-input[type='text'],
+input[type="text"],
 textarea,
 select,
-input[type='password'] {
+input[type="password"] {
   box-sizing: border-box;
-  outline: none;
   width: 100%;
+  outline: none;
+  font-family: $open-sans;
   font-size: 18px;
   line-height: 20px;
-  font-family: $open-sans;
-
-  &:focus {
-
-  }
 }
 
 label {
@@ -19,14 +15,6 @@ label {
 }
 
 button {
-  cursor: pointer;
   outline: none;
-}
-
-input::-webkit-input-placeholder {
-
-}
-
-input::-moz-placeholde {
-
+  cursor: pointer;
 }

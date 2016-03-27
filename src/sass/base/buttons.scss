@@ -138,33 +138,42 @@
   }
 
   &--icon {
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: #37474f;
     font-family: $open-sans;
     font-size: 14px;
     line-height: 1.2;
-    color: #37474F;
-    padding: 4px 8px;
-    border-radius: 3px;
 
-    @media (max-width: $tablet) { font-size: 12px; }
+    @media (max-width: $tablet) {
+      font-size: 12px;
+    }
 
     svg {
       width: 10px;
       height: 10px;
     }
 
-    path { fill: #37474F; }
-
+    path {
+      fill: #37474f;
+    }
   }
 
 
   &--back {
-    border: 1px solid #B0BBBF;
+    border: 1px solid #b0bbbf;
 
-    @media (max-width: $desktop) { border: 1px solid transparent; }
+    @media (max-width: $desktop) {
+      border: 1px solid transparent;
+    }
 
-    svg { transform: rotate(90deg); }
+    svg {
+      transform: rotate(90deg);
+    }
 
-    .btn-text { padding-left: 5px; }
+    .btn-text {
+      padding-left: 5px;
+    }
 
     &:hover {
       background-color: darken($gray, 5%);
@@ -177,12 +186,16 @@
 
 
   &--next {
-    background: $yellow;
     border: 1px solid $yellow;
+    background: $yellow;
 
-    svg { transform: rotate(180deg); }
+    svg {
+      transform: rotate(180deg);
+    }
 
-    .btn-text { padding-right: 5px; }
+    .btn-text {
+      padding-right: 5px;
+    }
 
     &:hover {
       background-color: darken($yellow, 5%);
@@ -194,13 +207,13 @@
   }
 
   &--alert {
-    font-size: 14px;
     padding: 8px 20px;
     outline: none;
     border: none;
+    border-radius: 3px;
     background: $yellow;
     color: $gray;
-    border-radius: 3px;
+    font-size: 14px;
 
     &:hover,
     &--hover {
@@ -214,11 +227,13 @@
   }
 
   &--green {
-    background: $green;
     border: 1px solid $green;
+    background: $green;
     color: #ffffff;
 
-    svg path { fill: #ffffff; }
+    svg path {
+      fill: #ffffff;
+    }
 
     &:hover {
       background-color: darken($green, 5%);
@@ -233,28 +248,34 @@
   &--arrow {
     width: 27px;
     height: 27px;
-    line-height: 26px;
+    border: 1px solid #b0bbbf;
     border-radius: 50%;
-    border: 1px solid #B0BBBF;
+    line-height: 26px;
 
     svg {
       width: 10px;
       height: 10px;
     }
 
-    path { fill: #37474F; }
+    path {
+      fill: #37474f;
+    }
 
     &:hover,
     &--hover {
       border: 1px solid $yellow;
 
-      path { fill: $yellow; }
+      path {
+        fill: $yellow;
+      }
     }
 
     &:active {
       border: 1px solid $yellow;
 
-      path { fill: $yellow; }
+      path {
+        fill: $yellow;
+      }
     }
 
     @media (max-width: $tablet) {
@@ -266,24 +287,26 @@
 
 
   &--download {
-    background: $gray;
-    border-radius: 3px;
-    color: #40494C;
     padding: 4px 15px 5px 9px;
+    border-radius: 3px;
+    background: $gray;
+    color: #40494c;
     font-size: 14px;
     line-height: 18px;
 
     .download-icon {
-      line-height: 15px;
-      vertical-align: middle;
       padding-right: 8px;
+      vertical-align: middle;
+      line-height: 15px;
 
       svg {
         width: 14px;
         height: 14px;
       }
 
-      path { fill: $gray-darker; }
+      path {
+        fill: $gray-darker;
+      }
     }
 
     &:hover {

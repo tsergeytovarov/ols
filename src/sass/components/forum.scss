@@ -111,15 +111,17 @@
 
   &__draft-icon {
     display: inline-block;
-    vertical-align: bottom;
     padding-right: 7px;
+    vertical-align: bottom;
 
     svg {
       width: 15px;
       height: 12px;
     }
-    
-    path { fill: #757575; }
+
+    path {
+      fill: #757575;
+    }
   }
 
   &__comment-text,

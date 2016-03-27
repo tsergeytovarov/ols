@@ -5,11 +5,11 @@
  */
 
 .container {
+  box-sizing: border-box;
   margin-right: auto;
   margin-left: auto;
   padding-right: 30px;
   padding-left: 30px;
-  box-sizing: border-box;
 }
 
 .container--small {
@@ -102,10 +102,10 @@
 .col-md-12,
 .col-lg-12 {
   position: relative;
+  box-sizing: border-box;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-  box-sizing: border-box;
 }
 .col-xs-1,
 .col-xs-2,

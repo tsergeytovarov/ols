@@ -1,116 +1,128 @@
 .section-progress {
-	display: inline-block;
-	height: 26px;
-	font-size: 0;
-	padding-bottom: 25px;
-	position: relative;
+  position: relative;
+  display: inline-block;
+  height: 26px;
+  padding-bottom: 25px;
+  font-size: 0;
 
-	&__step {
-		display: inline-block;
-		box-sizing: border-box;
-		background: #ffffff;
-		padding: 8px 18px;
-		text-decoration: none;
-		text-align: center;
-		position: relative;
+  &__step {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 8px 18px;
+    background: #ffffff;
+    text-align: center;
+    text-decoration: none;
 
-		@media (max-width: $tablet) { padding: 7px 10px; }
+    @media (max-width: $tablet) {
+      padding: 7px 10px;
+    }
 
-		&:after {
-			position: absolute;
-			content: '';
-			height: 17px;
-			width: 1px;
-			background: #D4D4D4;
-			bottom: 4px;
-			right: -1px;
-			z-index: 999;
+    &:after {
+      position: absolute;
+      right: -1px;
+      bottom: 4px;
+      z-index: 999;
+      width: 1px;
+      height: 17px;
+      background: #d4d4d4;
+      content: "";
 
-			@media (max-width: $tablet) {
-				height: 10px;
-				bottom: 2px;
-			}
-		}
+      @media (max-width: $tablet) {
+        bottom: 2px;
+        height: 10px;
+      }
+    }
 
-		svg {
-			display: block;
-			width: 10px;
+    svg {
+      display: block;
+      width: 10px;
       height: 10px;
 
-      @media (max-width: $tablet) { display: none; }
-
-		}
-
-
-		path { fill: #78909C; }
-		
-		&:first-child {
-			border-radius: 5px 0 0 5px;
-
-			@media (max-width: $tablet) { border-radius: 0; }
-
-		}
-
-		&:last-child {
-			border-radius: 0 5px 5px 0;
-
-			&:after { display: none; }
-
-			@media (max-width: $tablet) { border-radius: 0; }
-
-		}
+      @media (max-width: $tablet) {
+        display: none;
+      }
+    }
 
 
-		&:hover path { fill: #455A64; }
+    path {
+      fill: #78909c;
+    }
+
+    &:first-child {
+      border-radius: 5px 0 0 5px;
+
+      @media (max-width: $tablet) {
+        border-radius: 0;
+      }
+    }
+
+    &:last-child {
+      border-radius: 0 5px 5px 0;
+
+      &:after {
+        display: none;
+      }
+
+      @media (max-width: $tablet) {
+        border-radius: 0;
+      }
+    }
 
 
-		&--passed {
-			background: $green;
+    &:hover path {
+      fill: #455a64;
+    }
 
-			path { fill: #FFFFFF; }
 
-		}
+    &--passed {
+      background: $green;
 
-		&--current {
-			background: $yellow;
+      path {
+        fill: #ffffff;
+      }
+    }
 
-			path { fill: #455A64; }
+    &--current {
+      background: $yellow;
 
-			&:before{ 
-				position: absolute;
-				content: '';
-				height: 17px;
-				width: 1px;
-				background: $yellow;
-				bottom: 4px;
-				left: 0;
-				z-index: 1000;
+      path {
+        fill: #455a64;
+      }
 
-				@media (max-width: $tablet) {
-					height: 10px;
-					bottom: 2px;
-				}
-			}
+      &:before {
+        position: absolute;
+        bottom: 4px;
+        left: 0;
+        z-index: 1000;
+        width: 1px;
+        height: 17px;
+        background: $yellow;
+        content: "";
 
-			&:after {
-				position: absolute;
-				content: '';
-				left: 50%;
-				width: 0;
-				bottom: -25px;
-				background: transparent;
-				border: 10px solid transparent;
-		    border-bottom: 10px solid #ffffff;
-		    margin: 0px -10px;
+        @media (max-width: $tablet) {
+          bottom: 2px;
+          height: 10px;
+        }
+      }
 
-		    @media (max-width: $tablet) {
-		    	background: transparent;
-		    	height: 10px;
-		    	bottom: -22px;
-		    }
-			}
-			
-		}
-	}
+      &:after {
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        width: 0;
+        margin: 0 -10px;
+        border: 10px solid transparent;
+        border-bottom: 10px solid #ffffff;
+        background: transparent;
+        content: "";
 
+        @media (max-width: $tablet) {
+          bottom: -22px;
+          height: 10px;
+          background: transparent;
+        }
+      }
+    }
+  }
 }

@@ -1,27 +1,32 @@
 .test-nav {
-	background: #37474F;
-	padding: 25px 40px 0;
-	border-radius: 6px 6px 0 0;
-	@include clearfix();
+  padding: 25px 40px 0;
+  border-radius: 6px 6px 0 0;
+  background: #37474f;
 
-	@media (max-width: $tablet) {
-		padding: 6px 13px 13px;
-		border-radius: 6px;
-	}
+  @include clearfix();
 
-	&--complete {
-		padding-top: 15px;
-		.test-nav__btns { display: none; }
-	}
+  @media (max-width: $tablet) {
+    padding: 6px 13px 13px;
+    border-radius: 6px;
+  }
 
-	.test-progress {
-		float: left;
-		padding-top: 3px;
-	}
+  &--complete {
+    padding-top: 15px;
+    .test-nav__btns {
+      display: none;
+    }
+  }
 
-	&__btns {
-		float: right;
+  .test-progress {
+    float: left;
+    padding-top: 3px;
+  }
 
-		@media (max-width: $tablet) { display: none; }
-	}
+  &__btns {
+    float: right;
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
 }

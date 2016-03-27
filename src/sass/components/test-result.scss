@@ -38,8 +38,9 @@
   }
 
   &__quest-wrap {
-    @include clearfix();
     cursor: pointer;
+
+    @include clearfix();
   }
 
   &__quest-num {
