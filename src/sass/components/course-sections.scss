@@ -19,7 +19,6 @@
       display: none;
     }
 
-
     &--passed {
       border: 1px solid $green;
 
@@ -31,7 +30,7 @@
         background: $green;
 
         path {
-          fill: #ffffff;
+          fill: #07090a;
         }
       }
 
