@@ -21,7 +21,12 @@
 
     @media (max-width: $tablet) {
       display: none;
+
+      &--open {
+        display: block;
+      }
     }
+
   }
 
   &__descr-btn {
