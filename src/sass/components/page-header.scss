@@ -1,8 +1,8 @@
 .page-header {
-  background-color: $gray;
   padding: 50px 0 50px;
   border-bottom: 1px solid #cfd8dc;
   background-color: $gray;
+  background-image: url("../img/bg-pattern.png");
 
   @media (max-width: $desktop) {
     background: $sand;
@@ -21,8 +21,4 @@
   &__description {
     margin: 0;
   }
-}
-
-.page-header {
-
 }
