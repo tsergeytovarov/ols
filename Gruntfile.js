@@ -76,6 +76,17 @@ module.exports = function(grunt) {
         files: {
           'build/css/style.css': ['build/css/style.css']
         }
+      },
+      scss: {
+        options: {
+          config: 'csscomb.json'
+        },
+        dynamic_mappings: {
+          expand: true,
+          cwd: '/src/sass',
+          src: ['*.scss'],
+          dest: '/src/sass'
+        }
       }
     },
 
