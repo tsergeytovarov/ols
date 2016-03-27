@@ -55,12 +55,6 @@
 @import "components/test-answers";
 @import "components/test-complete";
 @import "components/test-result";
-
-/*=== страницы ===*/
-@import "pages/layout";
-@import "pages/course";
-@import "pages/course-section";
-
 @import "components/сourses-list";
 @import "components/course-d";
 @import "components/profile-view";
@@ -70,3 +64,10 @@
 @import "components/collapse";
 @import "components/filter";
 @import "components/messages";
+
+
+
+/*=== страницы ===*/
+@import "pages/layout";
+@import "pages/course";
+@import "pages/course-section";
