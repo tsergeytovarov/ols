@@ -19,7 +19,7 @@
 
   &__comments {
     margin: 0 0 20px;
-    border-bottom: 1px solid #d4d4d4;
+    border-bottom: 1px solid $hr;
 
     &--answer {
       border-bottom: none;
@@ -37,7 +37,7 @@
     &--reply {
       margin-left: 15%;
       padding-top: 20px;
-      border-top: 1px solid #d4d4d4;
+      border-top: 1px solid $hr;
     }
 
     &--draft {

@@ -17,12 +17,12 @@
   &__row {
     position: relative;
     padding: 7px 10px;
-    border-top: 1px solid #cfd8dc;
+    border-top: 1px solid $hr;
 
     @include clearfix();
 
     &:last-child {
-      border-bottom: 1px solid #cfd8dc;
+      border-bottom: 1px solid $hr;
     }
   }
 

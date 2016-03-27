@@ -1,10 +1,10 @@
 .course-preview {
   padding: 15px 0;
-  border-bottom: 1px solid #c0c7cc;
+  border-bottom: 1px solid $hr;
   font-size: 0;
 
   &:first-of-type {
-    border-top: 1px solid #c0c7cc;
+    border-top: 1px solid $hr;
 
     @media (max-width: $tablet) {
       border-top: 0;
