@@ -21,6 +21,7 @@
     padding: 15px 40px;
     border-bottom: 1px solid #cfd8dc;
     background: $gray;
+    cursor: pointer;
 
     &--active {
       background: #ffffff;
@@ -38,8 +39,6 @@
   }
 
   &__quest-wrap {
-    cursor: pointer;
-
     @include clearfix();
   }
 
