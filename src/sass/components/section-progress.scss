@@ -18,7 +18,7 @@
       padding: 7px 10px;
     }
 
-    &:after {
+    &::after {
       position: absolute;
       right: -1px;
       bottom: 4px;
@@ -60,7 +60,7 @@
     &:last-child {
       border-radius: 0 5px 5px 0;
 
-      &:after {
+      &::after {
         display: none;
       }
 
@@ -90,7 +90,7 @@
         fill: #455a64;
       }
 
-      &:before {
+      &::before {
         position: absolute;
         bottom: 4px;
         left: 0;
@@ -106,7 +106,7 @@
         }
       }
 
-      &:after {
+      &::after {
         position: absolute;
         bottom: -25px;
         left: 50%;

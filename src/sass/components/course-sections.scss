@@ -5,7 +5,7 @@
     padding: 15px 13px;
     border: 1px solid #c1c1c1;
 
-    &:before {
+    &::before {
       position: absolute;
       top: -13px;
       left: 23px;
@@ -23,7 +23,7 @@
     &--passed {
       border: 1px solid $green;
 
-      &:before {
+      &::before {
         background: $green;
       }
 
@@ -47,7 +47,7 @@
 
 
     @media (max-width: $tablet) {
-      &:after {
+      &::after {
         display: none;
       }
     }

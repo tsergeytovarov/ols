@@ -19,7 +19,7 @@
     padding: 10px 45px 45px;
     text-align: center;
 
-    &:before {
+    &::before {
       position: absolute;
       top: -32px;
       right: 0;
@@ -31,7 +31,7 @@
     }
 
     // fixing svg bug
-    &:after {
+    &::after {
       position: absolute;
       top: -28px;
       right: 0;
@@ -45,12 +45,12 @@
     &--gray {
       background: $gray;
 
-      &:before {
+      &::before {
         background: url(../img/svg/contour-gray.svg) 0 0 no-repeat;
         background-size: 100% 185px;
       }
 
-      &:after {
+      &::after {
         background: $gray;
       }
     }

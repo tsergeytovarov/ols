@@ -5,7 +5,7 @@
     content: "";
   }
 
-  &:after {
+  &::after {
     clear: both;
   }
 }
