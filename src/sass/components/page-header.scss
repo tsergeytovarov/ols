@@ -1,7 +1,28 @@
 .page-header {
   background-color: $gray;
+  padding: 50px 0 50px;
+  border-bottom: 1px solid #cfd8dc;
+  background-color: $gray;
 
   @media (max-width: $desktop) {
     background: $sand;
   }
+
+  &--with-tab {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    margin: 0;
+  }
+}
+
+.page-header {
+
 }
