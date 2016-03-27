@@ -45,6 +45,10 @@
     p {
       min-width: 460px;
 
+      @media (max-width: $tablet) {
+        min-width: 100%;
+      }
+
       &:last-child {
         margin-bottom: 0;
       }
