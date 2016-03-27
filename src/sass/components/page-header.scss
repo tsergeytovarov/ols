@@ -5,7 +5,7 @@
   background-image: url("../img/bg-pattern.png");
 
   @media (max-width: $desktop) {
-    background: $sand;
+    background-color: $sand;
   }
 
   &--with-tab {
