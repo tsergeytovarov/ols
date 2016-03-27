@@ -1,7 +1,24 @@
 .page-header {
+  padding: 50px 0 50px;
+  border-bottom: 1px solid #cfd8dc;
   background-color: $gray;
+  background-image: url("../img/bg-pattern.png");
 
   @media (max-width: $desktop) {
     background: $sand;
+  }
+
+  &--with-tab {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    margin: 0;
   }
 }

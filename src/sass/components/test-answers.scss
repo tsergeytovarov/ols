@@ -1,0 +1,58 @@
+.test-answers {
+  margin: 20px 0;
+
+  @media (max-width: $tablet) {
+    margin: 0 0 10px;
+  }
+
+  &__form {
+    width: 100%;
+  }
+
+  &__item {
+    margin-bottom: 10px;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    display: none;
+  }
+
+  &__label {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    padding: 7px 9px 7px 40px;
+    border: 1px solid $yellow;
+    border-radius: 18px;
+    font-size: 15px;
+    line-height: 22px;
+
+    &::before {
+      position: absolute;
+      top: 7px;
+      left: 9px;
+      box-sizing: border-box;
+      width: 22px;
+      height: 22px;
+      border: 2px solid #d4d4d4;
+      border-radius: 50%;
+      content: "";
+    }
+  }
+
+  input[type="checkbox"]:checked + .test-answers__label,
+  input[type="radio"]:checked + .test-answers__label,
+  &__label:hover {
+    background: $gray;
+  }
+
+  input[type="checkbox"]:checked + .test-answers__label:before,
+  input[type="checkbox"] + .test-answers__label:hover:before,
+  input[type="radio"]:checked + .test-answers__label:before,
+  input[type="radio"] + .test-answers__label:hover:before {
+    border: 2px solid $yellow;
+    background: url(../img/svg/checked-white-icon.svg) 50% 50% no-repeat $yellow;
+    background-size: 10px;
+  }
+}

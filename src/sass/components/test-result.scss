@@ -1,0 +1,113 @@
+.test-result {
+  border-right: 1px solid #cfd8dc;
+  border-bottom: 1px solid #cfd8dc;
+  border-left: 1px solid #cfd8dc;
+  border-radius: 0 0 6px 6px;
+
+  @media (max-width: $tablet) {
+    border: none;
+    border-radius: 0;
+  }
+
+  &__wrap {
+    @media (max-width: $tablet) {
+      border-right: 1px solid #cfd8dc;
+      border-bottom: 1px solid #cfd8dc;
+      border-left: 1px solid #cfd8dc;
+    }
+  }
+
+  &__item {
+    padding: 15px 40px;
+    border-bottom: 1px solid #cfd8dc;
+    background: $gray;
+    cursor: pointer;
+
+    &--active {
+      background: #ffffff;
+
+      .test-result__quest-content {
+        display: block;
+      }
+    }
+
+    @media (max-width: $tablet) {
+      padding: 15px 13px;
+      border-top: 1px solid #cfd8dc;
+      border-bottom: none;
+    }
+  }
+
+  &__quest-wrap {
+    @include clearfix();
+  }
+
+  &__quest-num {
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin: 0 10px 0 0;
+    border-radius: 3px;
+    background: $green;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-family: $montserrat;
+    font-size: 10px;
+    line-height: 18px;
+
+    &.error {
+      background: $red;
+    }
+  }
+
+  &__quest {
+    float: left;
+    width: 94%;
+    margin: 0 0 5px;
+    padding: 0;
+    line-height: 18px;
+
+    @media (max-width: $tablet) {
+      width: 87%;
+    }
+  }
+
+  &__quest-content {
+    display: none;
+    padding-left: 28px;
+  }
+
+  &__media {
+    width: 100%;
+    margin: 15px 0 0;
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__answers {
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  &__correct {
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+    background: url(../img/svg/checked-green-icon.svg) 0 50% no-repeat;
+    background-size: 10px;
+  }
+
+  &__error {
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+    background: url(../img/svg/x-icon.svg) 0 50% no-repeat;
+    background-size: 10px;
+  }
+}

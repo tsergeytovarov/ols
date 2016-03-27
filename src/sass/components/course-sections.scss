@@ -1,11 +1,12 @@
 .course-sections {
+
   &__item-wrap {
     position: relative;
     margin-bottom: 12px;
     padding: 15px 13px;
     border: 1px solid #c1c1c1;
 
-    &:before {
+    &::before {
       position: absolute;
       top: -13px;
       left: 23px;
@@ -19,11 +20,10 @@
       display: none;
     }
 
-
     &--passed {
       border: 1px solid $green;
 
-      &:before {
+      &::before {
         background: $green;
       }
 
@@ -31,7 +31,7 @@
         background: $green;
 
         path {
-          fill: #ffffff;
+          fill: #07090a;
         }
       }
 
@@ -47,7 +47,7 @@
 
 
     @media (max-width: $tablet) {
-      &:after {
+      &::after {
         display: none;
       }
     }

@@ -1,0 +1,57 @@
+.materials {
+  margin: 0 0 40px;
+
+  &__title {
+    margin: 0;
+    padding: 0 0 20px;
+    font-family: $montserrat;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0 0 10px;
+    list-style: none;
+  }
+
+  &__list-item {
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    display: block;
+    color: #424242;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      color: darken(#424242, 25%);
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    padding-right: 8px;
+    text-decoration: none;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    &--clip path {
+      fill: #979696;
+    }
+
+
+    &--play path {
+      fill: #757575;
+    }
+  }
+
+  &__text {
+    vertical-align: top;
+    text-decoration: underline;
+  }
+}

@@ -1,7 +1,7 @@
 [data-tooltip] {
   position: relative;
 
-  &:before {
+  &::before {
     position: absolute;
     right: -10px;
     bottom: -40px;
@@ -18,7 +18,7 @@
     line-height: 17px;
   }
 
-  &:after {
+  &::after {
     position: absolute;
     right: 5px;
     bottom: -15px;

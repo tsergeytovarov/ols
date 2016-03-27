@@ -44,18 +44,30 @@
 @import "components/course-icon-link";
 @import "components/tooltip";
 @import "components/forum";
-
-/*=== страницы ===*/
-@import "pages/layout";
-@import "pages/course";
-
+@import "components/section-nav";
+@import "components/section-progress";
+@import "components/section-content";
+@import "components/materials";
+@import "components/test-nav";
+@import "components/test-progress";
+@import "components/test-quest";
+@import "components/test-content";
+@import "components/test-answers";
+@import "components/test-complete";
+@import "components/test-result";
 @import "components/сourses-list";
-@import "components/course-d";
+@import "components/course-preview";
 @import "components/profile-view";
 @import "components/form";
 @import "components/page-box";
-@import "components/page-top";
 @import "components/alert";
 @import "components/collapse";
 @import "components/filter";
 @import "components/messages";
+
+
+
+/*=== страницы ===*/
+@import "pages/layout";
+@import "pages/course";
+@import "pages/course-section";

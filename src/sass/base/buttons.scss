@@ -6,7 +6,12 @@
   vertical-align: top;
   text-decoration: none;
   font-family: $open-sans;
+  font-size: 15px;
   font-weight: 400;
+
+  @media (max-width: $tablet) {
+    font-size: 14px;
+  }
 
   &--bordered {
     padding: 3px 10px;
@@ -16,8 +21,12 @@
     color: #546e7a;
     text-transform: uppercase;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 16px;
+
+    @media (max-width: $tablet) {
+      font-size: 14px;
+    }
 
     @media (max-width: $desktop) {
       border: 1px solid $gray-dark;
@@ -70,16 +79,18 @@
     background: $gray;
     color: #546e7a;
     font-family: $open-sans;
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 15px;
+    line-height: 17px;
 
-    &:hover,
-    &--hover {
+    @media (max-width: $tablet) {
+      font-size: 14px;
+    }
+
+    &:hover {
       background-color: darken($gray, 5%);
     }
 
-    &:active,
-    &--active {
+    &:active {
       background-color: darken($gray, 5%);
     }
   }
@@ -88,8 +99,12 @@
     border-radius: 4px;
     vertical-align: baseline;
     font-family: $open-sans;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 15px;
+
+    @media (max-width: $tablet) {
+      font-size: 14px;
+    }
   }
 
   &--reply {
@@ -98,13 +113,11 @@
     color: #ffffff;
     text-transform: lowercase;
 
-    &:hover,
-    &--hover {
+    &:hover {
       background-color: darken($gray-darker, 5%);
     }
 
-    &:active,
-    &--active {
+    &:active {
       background-color: darken($gray-darker, 5%);
     }
   }
@@ -115,13 +128,11 @@
     color: #37474f;
     text-transform: lowercase;
 
-    &:hover,
-    &--hover {
+    &:hover {
       background-color: darken($yellow, 5%);
     }
 
-    &:active,
-    &--active {
+    &:active {
       background-color: darken($yellow, 5%);
     }
   }
@@ -134,25 +145,96 @@
     background: $yellow;
     color: #37474f;
 
-    &:hover,
-    &--hover {
+    &:hover {
       background-color: darken($yellow, 5%);
     }
 
-    &:active,
-    &--active {
+    &:active {
+      background-color: darken($yellow, 5%);
+    }
+  }
+
+  &--icon {
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: #37474f;
+    font-family: $open-sans;
+    font-size: 15px;
+    line-height: 1.2;
+
+    @media (max-width: $tablet) {
+      font-size: 14px;
+    }
+
+    svg {
+      width: 10px;
+      height: 10px;
+    }
+
+    path {
+      fill: #37474f;
+    }
+  }
+
+
+  &--back {
+    border: 1px solid #b0bbbf;
+
+    @media (max-width: $desktop) {
+      border: 1px solid transparent;
+    }
+
+    svg {
+      transform: rotate(90deg);
+    }
+
+    .btn-text {
+      padding-left: 5px;
+    }
+
+    &:hover {
+      background-color: darken($gray, 5%);
+    }
+
+    &:active {
+      background-color: darken($gray, 5%);
+    }
+  }
+
+
+  &--next {
+    border: 1px solid $yellow;
+    background: $yellow;
+
+    svg {
+      transform: rotate(180deg);
+    }
+
+    .btn-text {
+      padding-right: 5px;
+    }
+
+    &:hover {
+      background-color: darken($yellow, 5%);
+    }
+
+    &:active {
       background-color: darken($yellow, 5%);
     }
   }
 
   &--alert {
-    font-size: 14px;
     padding: 8px 20px;
     outline: none;
     border: none;
+    border-radius: 3px;
     background: $yellow;
     color: $gray;
-    border-radius: 3px;
+    font-size: 15px;
+
+    @media (max-width: $tablet) {
+      font-size: 14px;
+    }
 
     &:hover,
     &--hover {
@@ -162,6 +244,102 @@
     &:active,
     &--active {
       background-color: darken($yellow, 5%);
+    }
+  }
+
+  &--green {
+    border: 1px solid $green;
+    background: $green;
+    color: #ffffff;
+
+    svg path {
+      fill: #ffffff;
+    }
+
+    &:hover {
+      background-color: darken($green, 5%);
+    }
+
+    &:active {
+      background-color: darken($green, 5%);
+    }
+  }
+
+
+  &--arrow {
+    width: 27px;
+    height: 27px;
+    border: 1px solid #b0bbbf;
+    border-radius: 50%;
+    line-height: 26px;
+
+    svg {
+      width: 10px;
+      height: 10px;
+    }
+
+    path {
+      fill: #37474f;
+    }
+
+    &:hover,
+    &--hover {
+      border: 1px solid $yellow;
+
+      path {
+        fill: $yellow;
+      }
+    }
+
+    &:active {
+      border: 1px solid $yellow;
+
+      path {
+        fill: $yellow;
+      }
+    }
+
+    @media (max-width: $tablet) {
+      width: 26px;
+      height: 26px;
+      line-height: 25px;
+    }
+  }
+
+
+  &--download {
+    padding: 4px 15px 5px 9px;
+    border-radius: 3px;
+    background: $gray;
+    color: #40494c;
+    font-size: 15px;
+    line-height: 18px;
+
+    @media (max-width: $tablet) {
+      font-size: 14px;
+    }
+
+    .download-icon {
+      padding-right: 8px;
+      vertical-align: middle;
+      line-height: 15px;
+
+      svg {
+        width: 14px;
+        height: 14px;
+      }
+
+      path {
+        fill: $gray-darker;
+      }
+    }
+
+    &:hover {
+      background-color: darken($gray, 5%);
+    }
+
+    &:active {
+      background-color: darken($gray, 5%);
     }
   }
 }

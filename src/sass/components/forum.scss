@@ -19,7 +19,7 @@
 
   &__comments {
     margin: 0 0 20px;
-    border-bottom: 1px solid #d4d4d4;
+    border-bottom: 1px solid $hr;
 
     &--answer {
       border-bottom: none;
@@ -37,7 +37,7 @@
     &--reply {
       margin-left: 15%;
       padding-top: 20px;
-      border-top: 1px solid #d4d4d4;
+      border-top: 1px solid $hr;
     }
 
     &--draft {
@@ -46,7 +46,7 @@
       .forum__avatar-wrap {
         position: relative;
 
-        &:after {
+        &::after {
           position: absolute;
           top: 0;
           right: 0;
@@ -101,10 +101,27 @@
   }
 
   &__comment-date {
-    margin-right: 15px;
+    display: inline;
+    margin: 0 15px 0 0;
+    padding: 0;
     color: #acacac;
     font-size: 13px;
     line-height: 1.1;
+  }
+
+  &__draft-icon {
+    display: inline-block;
+    padding-right: 7px;
+    vertical-align: bottom;
+
+    svg {
+      width: 15px;
+      height: 12px;
+    }
+
+    path {
+      fill: #757575;
+    }
   }
 
   &__comment-text,

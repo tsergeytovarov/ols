@@ -1,0 +1,32 @@
+.test-nav {
+  padding: 25px 40px 0;
+  border-radius: 6px 6px 0 0;
+  background: #37474f;
+
+  @include clearfix();
+
+  @media (max-width: $tablet) {
+    padding: 6px 13px 13px;
+    border-radius: 6px;
+  }
+
+  &--complete {
+    padding-top: 15px;
+    .test-nav__btns {
+      display: none;
+    }
+  }
+
+  .test-progress {
+    float: left;
+    padding-top: 3px;
+  }
+
+  &__btns {
+    float: right;
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+}
