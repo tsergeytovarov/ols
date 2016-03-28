@@ -83,10 +83,15 @@
     list-style: none;
   }
 
-  &__instr-name a,
   &__instr-link {
     color: #4c4f5e;
     cursor: pointer;
     text-decoration: underline;
+    transition: all $time ease;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
+
 }
