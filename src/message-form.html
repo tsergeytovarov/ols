@@ -35,15 +35,35 @@
     </div>
   </header>
 
-  <div class="page-header">
+  <div class="page-header page-header--message-form">
     <div class="container container--small">
       <div class="message-form">
         <div class="form-alert">
           <span class="form-alert__text">Message sent</span><a href="#" class="form-alert__btn btn btn--ok">Ок</a>
         </div>
+        <div class="message-form__wrap">
+          <h1 class="message-form__title h1">Leave us a message</h1>
+          <form action="/echo" method="POST">
+            <div class="message-form__row">
+              <label for="topic" class="message-form__label">Topic</label>
+              <input type="text" id="topic" placeholder="Are elective courses really elective?">
+            </div>
+            <div class="message-form__row">
+              <label for="personal-info" class="message-form__label">Personal info</label>
+              <textarea id="personal-info" rows="3" placeholder="Put your text here"></textarea>
+            </div>
+            <div class="message-form__row">
+              <label for="message-type" class="message-form__label">Message type</label>
+              <select id="message-type" class="message-form__select">
+                <option value="volvo">It is a bug report</option>
+                <option value="saab">It is a review</option>
+                <option value="fiat">Another</option>
+              </select>
+              <button type="submit" class="message-form__btn btn btn--submit">Send message</button>
+            </div>
+          </form>
+        </div>
       </div>
-
-
     </div>
   </div>
 
