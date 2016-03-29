@@ -1,6 +1,7 @@
 .messages {
   &__header {
     font-size: 13px;
+    margin: 15px 0;
 
     @include clearfix();
 
