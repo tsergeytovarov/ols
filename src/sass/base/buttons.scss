@@ -145,6 +145,7 @@
     border: none;
     background: $yellow;
     color: #37474f;
+    border-radius: 3px;
 
     &:hover {
       background-color: darken($yellow, 5%);
