@@ -1,7 +1,9 @@
 .messages {
+
   &__header {
     font-size: 13px;
-    margin: 15px 0;
+    position: relative;
+    padding: 15px 10px;
 
     @include clearfix();
 
@@ -77,9 +79,28 @@
   }
 
   &__icon {
-    width: 30px;
+    display: block;
+    padding: 5px 0 0;
+    
+    svg {
+      width: 15px;
+      height: 15px;
+    }
 
-    fill: $black;
+    path {
+      fill: #546E7A;
+    }
+
+    &--bug {
+      padding: 2px 0 0;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    
   }
 
   &__title {
@@ -127,6 +148,10 @@
 .messages__col--open {
   .messages__content {
     display: block;
+  }
+
+  .messages__title {
+    text-decoration: underline;
   }
 
   .messages__collapse-icon {
