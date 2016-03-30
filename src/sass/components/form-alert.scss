@@ -1,0 +1,15 @@
+.form-alert {
+	background: #FFF3E0;
+	border: 1px solid #E0CA8C;
+	padding: 10px 33px;
+	margin: 10px 0;
+
+	&__text {
+		color: $gray-darker;
+		line-height: 22px;
+	}
+
+	&__btn {
+		margin-left: 15px;
+	}
+}
