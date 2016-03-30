@@ -109,11 +109,7 @@
   }
 
   &--reply {
-<<<<<<< HEAD
     padding: 4px 10px;
-=======
-    padding: 3px 10px;
->>>>>>> master
     background: $gray-darker;
     color: #ffffff;
     text-transform: lowercase;
@@ -128,11 +124,7 @@
   }
 
   &--publish {
-<<<<<<< HEAD
-    padding: 4px 10px;
-=======
     padding: 3px 10px;
->>>>>>> master
     background: $yellow;
     color: #37474f;
     text-transform: lowercase;
@@ -374,6 +366,32 @@
     &:active,
     &--active {
       opacity: 0.8;
+    }
+  }
+
+  &--restart {
+    padding: 4px 10px 4px 6px;
+    border-radius: 3px;
+    background: $orange;
+    color: #F9FAFB;
+    text-transform: uppercase;
+
+    svg {
+      width: 12px;
+      height: 12px;
+      margin-right: 5px;
+    }
+
+    path {
+      fill: #F9FAFB;
+    }
+
+    &:hover {
+      background-color: darken($orange, 5%);
+    }
+
+    &:active {
+      background-color: darken($orange, 2.5%);
     }
   }
 }
