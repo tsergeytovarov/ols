@@ -30,6 +30,8 @@
 @import "components/header";
 @import "components/menu";
 @import "components/logo";
+@import "components/course";
+@import "components/course-section";
 @import "components/user-courses";
 @import "components/notice-text";
 @import "components/progress";
@@ -64,10 +66,10 @@
 @import "components/collapse";
 @import "components/filter";
 @import "components/messages";
+@import "components/message-form";
+@import "components/form-alert";
 
 
 
 /*=== страницы ===*/
 @import "pages/layout";
-@import "pages/course";
-@import "pages/course-section";

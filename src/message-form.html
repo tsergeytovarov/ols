@@ -35,29 +35,38 @@
     </div>
   </header>
 
-  <div class="page-header">
+  <div class="page-header page-header--message-form">
     <div class="container">
-      <h1 class="page-header__title">About</h1>
-      <p class="page-header__description">Version 1.1.3 beta, released 3/2/2016</p>
+      <div class="message-form">
+        <div class="form-alert">
+          <span class="form-alert__text">Message sent</span><a href="#" class="form-alert__btn btn btn--ok">Ок</a>
+        </div>
+        <div class="message-form__wrap">
+          <h1 class="message-form__title h1">Leave us a message</h1>
+          <form action="/echo" method="POST">
+            <div class="message-form__row">
+              <label for="topic" class="message-form__label">Topic</label>
+              <input type="text" id="topic" placeholder="Are elective courses really elective?">
+            </div>
+            <div class="message-form__row">
+              <label for="personal-info" class="message-form__label">Personal info</label>
+              <textarea id="personal-info" rows="3" placeholder="Put your text here"></textarea>
+            </div>
+            <div class="message-form__row">
+              <label for="message-type" class="message-form__label">Message type</label>
+              <select id="message-type" class="message-form__select">
+                <option value="volvo">It is a bug report</option>
+                <option value="saab">It is a review</option>
+                <option value="fiat">Another</option>
+              </select>
+              <button type="submit" class="message-form__btn btn btn--submit">Send message</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="page container">
-    <div class="row">
-      <div class="col-md-7 col-sm-12 col-xs-12">
-        <p>Educational technology is the effective use of technological tools in learning. As a concept, it concerns an array of tools, such as media, machines and networking hardware, as well as considering underlying theoretical perspectives for their effective application.[1][2] </p>
-        <p>Educational technology is not restricted to high technology.[3] Also called e-learning, it includes an array of approaches, components, and delivery methods.[4] For example, m-learning emphasizes mobility, but is otherwise indistinguishable in principle from educational technology.[5]</p>
-        <p>Educational technology includes numerous types of media that deliver text, audio, images, animation, and streaming video, and includes technology applications and processes such as audio or video tape, satellite TV, CD-ROM, and computer-based learning, as well as local intranet/extranet and web-based learning. Information and communication systems, whether free-standing or based on either local networks or the Internet in.</p>
-      </div>
-      <div class="col-md-5 col-sm-12 col-xs-12">
-        <article class="alert">
-          <h2 class="alert__title">Need more help?</h2>
-          <p class="alert__text">Lorem Ipsum is simply dummy text of the printing and typesetting Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
-          <a href="#" class="btn btn--alert">Send message</a>
-        </article>
-      </div>
-    </div>
-  </div>
 
   <footer class="footer">
     <div class="container">
