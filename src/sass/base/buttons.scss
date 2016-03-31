@@ -16,10 +16,10 @@
 
   &--bordered {
     padding: 3px 10px;
-    border: 1px solid #b0bbbf;
+    border: 1px solid $gray-dark;
     border-radius: 5px;
-    background: none;
-    color: #546e7a;
+    background-color: $gray-dark;
+    color: #F9FAFB;
     text-transform: uppercase;
     text-transform: uppercase;
     font-size: 15px;
@@ -29,17 +29,10 @@
       font-size: 14px;
     }
 
-    @media (max-width: $desktop) {
-      border: 1px solid $gray-dark;
-      background-color: $gray-dark;
-      color: #ffffff;
-    }
-
     &:hover,
     &--hover {
-      border: 1px solid $gray-dark;
-      background-color: $gray-dark;
-      color: #ffffff;
+      background-color: darken($gray-dark, 20%);
+      border-color: darken($gray-dark, 20%);
     }
 
     &:active,

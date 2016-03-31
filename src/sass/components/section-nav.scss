@@ -10,12 +10,16 @@
     @media (min-width: $tablet) {
       display: none;
     }
+
+    @media (max-width: $tablet) {
+      padding: 15px 0 25px;
+    }
   }
 
   &--bottom &__back {
-      margin-right: 5px;
-      border: 1px solid #b0bbbf;
-    }
+    margin-right: 5px;
+    border: 1px solid #b0bbbf;
+  }
 
 
 
@@ -78,6 +82,10 @@
   &__back {
     float: left;
     margin-right: 20px;
+
+    @media (max-width: $tablet) {
+     margin-top: 10px;
+    }
   }
 
   &__progress {
@@ -94,6 +102,10 @@
 
   &__btns {
     float: right;
+
+    @media (max-width: $tablet) {
+     margin-top: 10px;
+    }
 
     @media (max-width: $desktop) {
       float: left;

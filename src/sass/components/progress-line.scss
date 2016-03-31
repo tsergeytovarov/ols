@@ -1,7 +1,7 @@
 .progress-line {
 
 	&__legend {
-
+		
 	}
 
 	&__link {
@@ -28,11 +28,20 @@
 
 	&__bar {
 		float: right;
-		width: 260px;
+		width: 100%;
+		max-width: 260px;
 		margin: 15px 0 0;
 		padding: 0;
 		list-style: none;
 		font-size: 0;
+
+		@media (max-width: $tablet) {
+			max-width: 100%;
+		}
+
+		@media (max-width: $desktop) {
+			float: none;
+		}
 	}
 
 	&__bar-line {

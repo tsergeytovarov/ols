@@ -1,6 +1,6 @@
 .collapse {
   margin-bottom: 20px;
-  padding: 20px 15px;
+  padding: 20px;
   border: 1px solid #cfd8dc;
 
   &:last-child {
@@ -9,6 +9,10 @@
     @media (max-width: $desktop) {
       margin-bottom: 20px;
     }
+  }
+
+  @media (max-width: $desktop) {
+    padding: 20px 15px;
   }
 
   &__header {
@@ -20,6 +24,10 @@
     font-family: $montserrat;
     font-size: 18px;
     font-weight: 400;
+    
+    @media (max-width: $tablet) {
+      font-size: 14px;
+    }
   }
 
   &__btn {

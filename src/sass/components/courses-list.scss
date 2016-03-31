@@ -3,12 +3,65 @@
 
   &__title {
     margin: 0;
-
     @include h3();
+    font-family: $montserrat;
   }
 
   &__sub-title {
     color: #7c8e96;
     font-size: 14px;
+  }
+
+  &__header {
+    margin-bottom: 15px;
+
+    @include clearfix();
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &__col {
+    float: left;
+
+    &--1 {
+      width: 10%;
+    }
+
+    &--2 {
+      width: 50%;
+    }
+
+    &--3 {
+      width: 12%;
+      text-align: right;
+    }
+
+    &--4 {
+      width: 10%;
+      text-align: center;
+    }
+
+    &--5 {
+      width: 18%;
+
+      @media (max-width: $desktop) {
+        float: right;
+      }
+    }
+
+    &--6 {
+      width: 53%;
+    }
+
+    &--7 {
+      width: 35%;
+    }
+
+    &--8 {
+      width: 60%;
+    }
+
   }
 }

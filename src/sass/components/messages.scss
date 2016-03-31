@@ -33,10 +33,10 @@
     float: left;
 
     &--1 {
-      width: 23%;
+      width: 20%;
 
       @media (max-width: $tablet) {
-        width: 50%;
+        width: 90%;
       }
     }
 
@@ -45,12 +45,12 @@
       text-align: center;
 
       @media (max-width: $tablet) {
-        width: 50%;
+        width: 10%;
       }
     }
 
     &--3 {
-      width: 67%;
+      width: 70%;
 
       @media (max-width: $tablet) {
         width: 100%;
@@ -109,6 +109,8 @@
     cursor: pointer;
 
     @media (max-width: $tablet) {
+      min-width: 240px;
+      max-width: 240px;
       width: 100%;
       margin-top: 10px;
     }

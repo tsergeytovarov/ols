@@ -7,16 +7,16 @@
     float: left;
     width: 120px;
 
-    @media (max-width: $desktop) {
-      width: 160px;
-    }
-
     @media (max-width: $tablet) {
       float: none;
       width: 130px;
       margin-bottom: 20px;
     }
 
+    @media (max-width: $desktop) {
+      width: 160px;
+    }
+    
     img {
       display: block;
       width: 100%;
@@ -55,6 +55,26 @@
     margin: 15px 0;
 
     @include h1();
+  }
+
+  &__stat-list {
+    margin: 0;
+    padding: 0 0 15px;
+    list-style: none;
+  }
+
+  &__stat-item {
+    display: inline-block;
+    margin:0 20px 5px 0;
+    color: #546E7A;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__stat-num {
+    color: #37474F;
   }
 
   &__title {
