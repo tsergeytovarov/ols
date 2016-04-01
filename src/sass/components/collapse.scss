@@ -61,6 +61,14 @@
         margin-bottom: 0;
       }
     }
+
+    img,
+    video,
+    iframe {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
   }
 
   &--open &__header {
