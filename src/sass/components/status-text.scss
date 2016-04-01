@@ -34,4 +34,27 @@
       background-color: $red;
     }
   }
+
+  &--pass-success {
+    color: $green;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+
+    &::before {
+      background-color: $green;
+    }
+  }
+
+
+  &--pass-danger {
+    color: $red;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+
+    &::before {
+      background-color: $red;
+    }
+  }
 }

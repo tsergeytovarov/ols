@@ -44,11 +44,107 @@
     </div>
   </header>
   
-  <div class="page-body">
+  <div class="profile-edit page-body">
     <div class="container container--small">
       <div class="form-alert">
-        <span class="form-alert__text">Message sent</span><a href="#" class="form-alert__btn btn btn--ok">Ок</a>
+        <span class="form-alert__text">Changes saved</span><a href="#" class="form-alert__btn btn btn--ok">Ок</a>
       </div>
+      <form action="/echo" method="POST">
+        <div class="profile-edit__head">
+          <h1 class="profile-edit__title h1">Max Johnston</h1>
+          <button class="btn btn--submit btn--pull-right">Save</button>
+        </div>
+        <div class="profile-edit__info">
+          <div class="profile-edit__col profile-edit__col-1">
+            <div class="profile-edit__form-row">
+              <div class="profile-edit__user-photo" style="background-image: url('img/student-photo.jpg');">
+                <input type="file">
+                <span class="profile-edit__upload-btn btn">Replace</span>
+                <button class="btn btn--close"></button>
+              </div>
+            </div>
+            <div class="profile-edit__form-row">
+              <label for="active">Active</label>
+              <select id="active">
+                <option>yes</option>
+                <option>no</option>
+              </select>
+            </div>
+            <div class="profile-edit__form-row">
+              <label>Extra field 1</label>
+              <input type="text">
+            </div>
+          </div>
+          <div class="profile-edit__col profile-edit__col-2">
+            <div class="profile-edit__form-row">
+              <label for="user-type">User type</label>
+              <select id="user-type">
+                <option>staff</option>
+                <option>instructor</option>
+                <option>student</option>
+              </select>
+            </div>
+            <div class="profile-edit__form-row">
+              <label for="user-id">Id</label>
+              <input type="text" id="user-id">
+            </div>
+            <div class="profile-edit__form-row">
+              <label for="task-department">Task Department</label>
+              <select id="task-department">
+                <option>Atc</option>
+                <option>Ctr</option>
+              </select>
+            </div>
+            <div class="profile-edit__form-row">
+              <label>Id</label>
+              <input type="text">
+            </div>
+            <div class="profile-edit__form-row">
+              <label>Extra field 2</label>
+              <input type="text">
+            </div>
+          </div>
+          <div class="profile-edit__col profile-edit__col-3">
+            <div class="profile-edit__form-row">
+              <label>Name</label>
+              <input type="text">
+            </div>
+            <div class="profile-edit__form-row">
+              <label>Email</label>
+              <input type="email">
+            </div>
+            <div class="profile-edit__form-row">
+              <label>Personal Info</label>
+              <textarea rows="5"></textarea>
+            </div>
+            <div class="profile-edit__form-row">
+              <label>Extra field 3</label>
+              <input type="text">
+            </div>
+          </div>
+          <button class="profile-edit__btn-bottom btn btn--submit btn--edit">Save</button>
+        </div>
+      </form>
+
+      <div class="profile-edit__password">
+        <form action="/echo" method="POST">
+          <div class="profile-edit__form-row profile-edit__form-row--pass">
+            <label for="newpass">New password</label>
+            <input type="password" id="newpass">
+          </div>
+          <div class="profile-edit__form-row profile-edit__form-row--pass">
+            <label for="repeatpass">Repeat new password</label>
+            <input type="password" id="repeatpass">
+          </div>
+          <div class="profile-edit__form-row profile-edit__form-row--pass">
+            <p class="status-text status-text--pass-danger">Passwords don't match!</p>
+            <p class="status-text status-text--pass-success">Passwords match!</p>
+            <button class="btn btn--submit btn--edit">Change password</button>
+          </div>
+        </form>
+      </div>
+      
+
     </div>
   </div>
 
