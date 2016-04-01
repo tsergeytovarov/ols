@@ -31,16 +31,35 @@
       height: 40px;
       background: #C0C7CC;
       top: 7px;
-      right: -2px;
+      left: -2px;
     }
 
     &:first-child {
       padding-left: 0;
+
+      &::before {
+        display: none;
+      }
     }
 
-    &:last-child::before {
-      display: none;
-    }
+    &:last-child {
+
+      @media (max-width: $tablet) {
+        padding-bottom: 30px;
+      }
+
+      @media (max-width: $desktop) {
+        display: block;
+        padding: 20px 0 0;
+
+        &::before {
+          display: none;
+        }
+      }
+
+     }
+
+
   }
 
   &__stat-item {
@@ -83,6 +102,10 @@
     padding: 0;
     list-style: none;
     font-size: 0;
+
+    @media (max-width: $tablet) {
+      margin-top: 45px;
+    }
   }
 
   &__nav-item {

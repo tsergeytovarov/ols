@@ -215,6 +215,10 @@ h1,
   font-family: $montserrat-bold;
   font-size: 34px;
   line-height: 1.2;
+
+  @media (max-width: $tablet) {
+    font-size: 30px;
+  }
 }
 
 h2,

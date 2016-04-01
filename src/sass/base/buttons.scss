@@ -184,6 +184,11 @@
     margin-left: 15px;
     text-transform: none;
     padding: 7px 20px;
+
+    @media (max-width: $tablet) {
+      margin-left: 5px;
+      padding: 7px 10px;
+    }
   }
 
   &--icon {
