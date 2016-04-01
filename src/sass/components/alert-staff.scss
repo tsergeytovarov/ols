@@ -1,0 +1,12 @@
+.alert-staff {
+	padding: 15px 20px;
+	border: 1px solid #B0BEC5;
+
+	span {
+		padding-right: 25px;
+
+		&.pull-right {
+			padding-right: 0;
+		}
+	}
+}
