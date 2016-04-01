@@ -1,78 +1,78 @@
 .progress-line {
 
-	&__legend {
-		
-	}
+  &__legend {
+    
+  }
 
-	&__link {
-		color: #37474F;
-		font-size: 13px;
-	}
+  &__link {
+    color: #37474F;
+    font-size: 13px;
+  }
 
-	&__done {
-		color: $green;
-	}
+  &__done {
+    color: $green;
+  }
 
-	&__progress {
-		color: $yellow;
-	}
+  &__progress {
+    color: $yellow;
+  }
 
-	&__not {
-		color: $orange;
-	}
+  &__not {
+    color: $orange;
+  }
 
-	&__overdue {
-		color: $red;
-	}
+  &__overdue {
+    color: $red;
+  }
 
 
-	&__bar {
-		float: right;
-		width: 100%;
-		max-width: 260px;
-		margin: 15px 0 0;
-		padding: 0;
-		list-style: none;
-		font-size: 0;
+  &__bar {
+    float: right;
+    width: 100%;
+    max-width: 260px;
+    margin: 15px 0 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
 
-		@media (max-width: $tablet) {
-			max-width: 100%;
-		}
+    @media (max-width: $tablet) {
+      max-width: 100%;
+    }
 
-		@media (max-width: $desktop) {
-			float: none;
-		}
-	}
+    @media (max-width: $desktop) {
+      float: none;
+    }
+  }
 
-	&__bar-line {
-		display: inline-block;
-		height: 9px;
-		font-size: 0;
-		background: $orange;
+  &__bar-line {
+    display: inline-block;
+    height: 9px;
+    font-size: 0;
+    background: $orange;
 
-		&:first-child {
-			border-radius: 10px 0 0 10px;
-		}
+    &:first-child {
+      border-radius: 10px 0 0 10px;
+    }
 
-		&:last-child {
-			border-radius: 0 10px 10px 0;
-		}
+    &:last-child {
+      border-radius: 0 10px 10px 0;
+    }
 
-		&--done {
-			background: $green;
-		}
+    &--done {
+      background: $green;
+    }
 
-		&--progress {
-			background: $yellow;
-		}
+    &--progress {
+      background: $yellow;
+    }
 
-		&--not {
-			background: $orange;
-		}
+    &--not {
+      background: $orange;
+    }
 
-		&--overdue {
-			background: $red;
-		}
+    &--overdue {
+      background: $red;
+    }
 
-	}
+  }
 }

@@ -29,7 +29,7 @@
     font-size: 14px;
     line-height: 20px;
 
-    &:last-child {
+    &::last-child {
       margin-bottom: 0;
     }
   }
