@@ -52,11 +52,12 @@
       <form action="/echo" method="POST">
         <div class="profile-edit__head">
           <h1 class="profile-edit__title h1">Max Johnston</h1>
-          <button class="btn btn--submit btn--pull-right">Save</button>
+          <button class="profile-edit__btn-top btn btn--submit btn--pull-right">Save</button>
         </div>
         <div class="profile-edit__info">
           <div class="profile-edit__col profile-edit__col-1">
             <div class="profile-edit__form-row">
+              <label for="active">Picture</label>
               <div class="profile-edit__user-photo" style="background-image: url('img/student-photo.jpg');">
                 <input type="file">
                 <span class="profile-edit__upload-btn btn">Replace</span>
@@ -122,6 +123,7 @@
               <input type="text">
             </div>
           </div>
+          <a href="#" class="profile-edit__show-more">Some more fields</a>
           <button class="profile-edit__btn-bottom btn btn--submit btn--edit">Save</button>
         </div>
       </form>
