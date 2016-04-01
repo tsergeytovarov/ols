@@ -2,7 +2,7 @@
   margin-top: 50px;
 
   @media (max-width: $desktop) {
-    margin-top: 30px;
+    margin-top: 40px;
   }
 
   &__title {
@@ -56,10 +56,7 @@
           display: none;
         }
       }
-
-     }
-
-
+    }
   }
 
   &__stat-item {
@@ -94,6 +91,17 @@
 
   .notice-text:first-of-type {
     margin-top: 30px;
+  }
+
+  &__announce {
+    
+    @media (max-width: $tablet) {
+
+      .link-with-number {
+        display: block;
+      }
+    }
+
   }
 
   &__nav {

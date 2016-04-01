@@ -3,12 +3,24 @@
   background-color: $gray;
   background-image: url("../img/bg-pattern.png");
 
+  @media (max-width: $tablet) {
+    padding: 35px 0;
+  }
+
   @media (max-width: $desktop) {
     background-color: $sand;
   }
 
   &--with-line {
     border-bottom: 1px solid #cfd8dc;
+  }
+
+  &--staff{
+    padding: 0 0 50px;
+
+    @media (max-width: $tablet) {
+      padding: 0 0 35px;
+    }
   }
 
   &--courses {

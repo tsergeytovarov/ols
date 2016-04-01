@@ -6,6 +6,13 @@
     font-size: 14px;
   }
 
+  &__group {
+
+    @media (max-width: $tablet) {
+      padding-bottom: 20px;
+    }
+  }
+
   &::before {
     display: inline-block;
     width: 10px;
