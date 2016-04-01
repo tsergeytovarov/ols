@@ -13,11 +13,12 @@
   &__value {
     display: inline-block;
     min-width: 20px;
-    margin-left: 20px;
-    padding: 5px;
+    margin-left: 10px;
+    padding: 3px 5px;
+    border: 1px solid $black;
     border-radius: 100px;
-    background-color: $black;
-    color: $white;
+    background-color: transparent;
+    color: $black;
     text-align: center;
     vertical-align: baseline;
     font-family: $montserrat;

@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-
+  
   <header class="header header--admin">
     <div class="container container--small">
       <div class="row">
@@ -40,111 +40,74 @@
           </nav>
         </div>
       </div>
-      <button type="button" class="header__toggle header__toggle--dark"><span>Menu toggle</span></button>
+      <button type="button" class="header__toggle"><span>Menu toggle</span></button>
     </div>
   </header>
 
+  <div class="page-header page-header--courses">
     <div class="container container--small">
-      <div class="user-courses">
-        <div class="row">
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="user-courses__title">Welcome, Joan</div>
-            <div class="progress progress--success">
-              <div class="progress__bar" style="width: 70%">70%</div>
-              <div class="progress__text">16 of 20 courses passed</div>
-            </div>
-            <div class="status-text status-text--danger">2 courses overdue</div>
-            <div class="status-text status-text--warning">1 course not started</div>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-12 mobile-hide">
-            <a href="#" class="link-with-number">Announcements <span class="link-with-number__value">2</span></a>
-            <a href="#" class="btn btn--show-all user-courses__link">Show all announcements</a>
-            <div class="notice-text notice-text--success">2 Section added to course <a href="#">Weather forecasts</a>. They are marked as not completed now, please, complete theme asap</div>
-            <div class="notice-text notice-text--danger">You have 2 overdue courses. Please, complete it asap.</div>
-          </div>
-        </div>
-        <ul class="user-courses__nav">
-          <li class="user-courses__nav-item user-courses__nav-item--active">
-            <a href="#" class="link-with-number">Scheduled <span class="mobile-hide">courses</span><span class="link-with-number__value">5</span></a>
-          </li>
-          <li class="user-courses__nav-item">
-            <a href="#" class="link-with-number">Completed <span class="mobile-hide">courses</span><span class="link-with-number__value">16</span></a>
-          </li>
-        </ul>
-      </div>
+      
+      <ul class="user-courses__nav">
+        <li class="user-courses__nav-item user-courses__nav-item--active">
+          <a href="#" class="link-with-number js-tab-control" data-target="all-courses">All <span class="link-with-number__value">45</span></a>
+        </li>
+        <li class="user-courses__nav-item">
+          <a href="#" class="link-with-number js-tab-control" data-target="my-courses">My <span class="link-with-number__value">5</span></a>
+        </li>
+      </ul>
     </div>
-
+  </div>
 
   <div class="container container--small">
-    <section class="courses-list">
-      <header class="courses-list__header mobile-hide">
-        <div class="courses-list__col courses-list__col--1">
+  <div class="courses js-tab-container">
+    <section class="courses-list js-tab js-tab--active all-courses">
+      <header class="courses-list__header">
+        <div class="courses-list__col courses-list__col--6">
           <h3 class="courses-list__title">Courses</h3>
         </div>
-        <div class="courses-list__col courses-list__col--2 tablet-hide">
-          <div class="courses-list__sub-title">Instructor(s)</div>
-        </div>
         <div class="courses-list__col courses-list__col--3 tablet-hide">
-          <div class="courses-list__sub-title">time</div>
+          <div class="courses-list__sub-title">instructor(s)</div>
         </div>
-        <div class="courses-list__col courses-list__col--4">
+        <div class="courses-list__col courses-list__col--7 tablet-hide">
           <div class="courses-list__sub-title text-right">progress</div>
         </div>
       </header>
       <!-- course -->
       <div class="course-preview">
         <div class="course-preview__col course-preview__col--1">
-          <a href="#" class="course-preview__image course-preview__image--success">
+          <a href="#" class="course-preview__image">
             <img src="img/course-bg-1.jpg" alt="">
           </a>
         </div>
-        <div class="course-preview__col course-preview__col--2">
-          <div class="course-preview__col course-preview__col--2-1">
+        <div class="course-preview__col course-preview__col--4">
+          <div class="course-preview__col course-preview__col--4-1">
             <a href="#" class="course-preview__title">3496 Aviation Weather Forecasts course</a>
-            <p class="course-preview__about">Obligatory, every year</p>
+            <span class="course-preview__time">9h 20m</sapn>, 
+            <p class="course-preview__about course-preview__about--inline">Elective, every year <span class="text-success">repeat until 26.03.2017</span></p>
+            <a href="#" class="btn btn--gray-edit tablet-hide">Edit</a>
           </div>
-          <div class="course-preview__col course-preview__col--2-2 mobile-hide">
-            Adam Mccarthy, Joan Simpson
-          </div>
-          <div class="course-preview__col course-preview__col--2-3 mobile-hide">
-            9h 20m
-          </div>
-        </div>
-        <div class="course-preview__col course-preview__col--3">
-          <div class="progress progress--warning progress--small">
-            <div class="progress__bar" style="width: 30%">30%</div>
-            <div class="progress__text">3/7 sections, 1/3 tests</div>
+          <div class="course-preview__col course-preview__col--4-2 mobile-hide">
+            <a href="#" class="course-preview__instr">Adam Mccarthy</a>,
+            <a href="#" class="course-preview__instr">Joan Simpson</a>
           </div>
         </div>
-      </div>
-
-      <!-- course -->
-      <div class="course-preview">
-        <div class="course-preview__col course-preview__col--1">
-          <a href="#" class="course-preview__image course-preview__image--success">
-            <img src="img/course-bg-1.jpg" alt="">
-          </a>
-        </div>
-        <div class="course-preview__col course-preview__col--2">
-          <div class="course-preview__col course-preview__col--2-1">
-            <a href="#" class="course-preview__title">3006 Abbreviations and Symbols course</a>
-            <p class="course-preview__about">Obligatory, every year</p>
-          </div>
-          <div class="course-preview__col course-preview__col--2-2 mobile-hide">
-            Joan Simpson
-          </div>
-          <div class="course-preview__col course-preview__col--2-3 mobile-hide">
-            5h 30 m
-          </div>
-        </div>
-        <div class="course-preview__col course-preview__col--3">
-          <div class="progress progress--warning progress--small">
-            <div class="progress__bar" style="width: 30%">30%</div>
-            <div class="progress__text">5/9 sections, 2/3 test</div>
+        <div class="course-preview__col course-preview__col--5">
+          <div class="progress-line">
+            <div class="progress-line__legend">
+              <span class="progress-line__done">2 </span><a href="#" class="progress-line__link">done</a>,
+              <span class="progress-line__progress">7 </span><a href="#" class="progress-line__link">in progress</a>,
+              <span class="progress-line__not">9 </span><a href="#" class="progress-line__link">not started</a>,
+              <span class="progress-line__overdue">3 </span><a href="#" class="progress-line__link">overdue</a>
+            </div>
+            <ul class="progress-line__bar">
+              <li class="progress-line__bar-line progress-line__bar-line--done" style="width:40%;"></li>
+              <li class="progress-line__bar-line progress-line__bar-line--progress" style="width:10%;"></li>
+              <li class="progress-line__bar-line progress-line__bar-line--not" style="width:20%;"></li>
+              <li class="progress-line__bar-line progress-line__bar-line--overdue" style="width:30%;"></li>
+            </ul>
           </div>
         </div>
       </div>
-
       <!-- course -->
       <div class="course-preview">
         <div class="course-preview__col course-preview__col--1">
@@ -152,53 +115,78 @@
             <img src="img/course-bg-2.jpg" alt="">
           </a>
         </div>
-        <div class="course-preview__col course-preview__col--2">
-          <div class="course-preview__col course-preview__col--2-1">
-            <a href="#" class="course-preview__title">3582 Radio Navigation course</a>
-            <p class="course-preview__about">Elective, every year <span class="text-success">repeat until 26.03.2017</span></p>
+        <div class="course-preview__col course-preview__col--4">
+          <div class="course-preview__col course-preview__col--4-1">
+            <a href="#" class="course-preview__title">3006 Abbreviations and Symbols course</a>
+            <span class="course-preview__time">5h 30 m</span>,
+            <p class="course-preview__about course-preview__about--inline">Obligatory, every year</p>
+            <a href="#" class="btn btn--gray-edit tablet-hide">Edit</a>
           </div>
-          <div class="course-preview__col course-preview__col--2-2 mobile-hide">
-            Adam Mccarthy, Joan Simpson
-          </div>
-          <div class="course-preview__col course-preview__col--2-3 mobile-hide">
-            1h 20m
-          </div>
-        </div>
-        <div class="course-preview__col course-preview__col--3">
-          <div class="progress progress--success progress--small">
-            <div class="progress__bar" style="width: 100%">100%</div>
-            <div class="progress__text">3/3 sections</div>
+          <div class="course-preview__col course-preview__col--4-2 mobile-hide">
+            <a href="#" class="course-preview__instr">Joan Simpson</a>
           </div>
         </div>
-      </div>
-
-      <!-- course -->
-      <div class="course-preview">
-        <div class="course-preview__col course-preview__col--1">
-          <a href="#" class="course-preview__image">
-            <img src="img/course-bg-1.jpg" alt="">
-          </a>
-        </div>
-        <div class="course-preview__col course-preview__col--2">
-          <div class="course-preview__col course-preview__col--2-1">
-            <a href="#" class="course-preview__title">3247 The Pitot Static System and Associated Instruments course and Associated</a>
-            <p class="course-preview__about">Elective, every 2 years <span class="text-danger">repeat until 26.03.2017</span></p>
-          </div>
-          <div class="course-preview__col course-preview__col--2-2 mobile-hide">
-            Adam Mccarthy, Joan Simpson
-          </div>
-          <div class="course-preview__col course-preview__col--2-3 mobile-hide">
-            9h 20m
-          </div>
-        </div>
-        <div class="course-preview__col course-preview__col--3">
-          <div class="progress progress--warning progress--small">
-            <div class="progress__bar" style="width: 0%">0%</div>
-            <div class="progress__text">2/2 section, 2/2 tests</div>
+        <div class="course-preview__col course-preview__col--5">
+          <div class="progress-line">
+            <div class="progress-line__legend">
+              <span class="progress-line__done">12 </span><a href="#" class="progress-line__link">done</a>,
+              <span class="progress-line__overdue">3 </span><a href="#" class="progress-line__link">overdue</a>
+            </div>
+            <ul class="progress-line__bar">
+              <li class="progress-line__bar-line progress-line__bar-line--done" style="width:70%;"></li>
+              <li class="progress-line__bar-line progress-line__bar-line--overdue" style="width:30%;"></li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="courses-list js-tab my-courses">
+      <header class="courses-list__header">
+        <div class="courses-list__col courses-list__col--6">
+          <h3 class="courses-list__title">Courses</h3>
+        </div>
+        <div class="courses-list__col courses-list__col--3 tablet-hide">
+          <div class="courses-list__sub-title">instructor(s)</div>
+        </div>
+        <div class="courses-list__col courses-list__col--7 tablet-hide">
+          <div class="courses-list__sub-title text-right">progress</div>
+        </div>
+      </header>
+      <!-- course -->
+      <div class="course-preview">
+        <div class="course-preview__col course-preview__col--1">
+          <a href="#" class="course-preview__image">
+            <img src="img/course-bg-2.jpg" alt="">
+          </a>
+        </div>
+        <div class="course-preview__col course-preview__col--4">
+          <div class="course-preview__col course-preview__col--4-1">
+            <a href="#" class="course-preview__title">3006 Abbreviations and Symbols course</a>
+            <span class="course-preview__time">5h 30 m</span>,
+            <p class="course-preview__about course-preview__about--inline">Obligatory, every year</p>
+            <a href="#" class="btn btn--gray-edit tablet-hide">Edit</a>
+          </div>
+          <div class="course-preview__col course-preview__col--4-2 mobile-hide">
+            <a href="#" class="course-preview__instr">Joan Simpson</a>
+          </div>
+        </div>
+        <div class="course-preview__col course-preview__col--5">
+          <div class="progress-line">
+            <div class="progress-line__legend">
+              <span class="progress-line__done">12 </span><a href="#" class="progress-line__link">done</a>,
+              <span class="progress-line__overdue">3 </span><a href="#" class="progress-line__link">overdue</a>
+            </div>
+            <ul class="progress-line__bar">
+              <li class="progress-line__bar-line progress-line__bar-line--done" style="width:70%;"></li>
+              <li class="progress-line__bar-line progress-line__bar-line--overdue" style="width:30%;"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
   </div>
 
   <footer class="footer">

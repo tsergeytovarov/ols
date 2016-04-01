@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>OLS - Profile (admin)</title>
+  <title>OLS - Course (admin)</title>
   <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-
+  
   <header class="header header--admin">
     <div class="container container--small">
       <div class="row">
@@ -19,8 +19,8 @@
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="menu__link menu__link--double">Courses</a>
-                <a class="menu__link menu__link--add">
+                <a class="menu__link menu__link--active menu__link--double">Courses</a>
+                <a class="menu__link menu__link--active menu__link--add">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.947 9.946"><path d="M9.325 4.352h-3.73V.622a.62.62 0 1 0-1.243 0v3.73H.622a.62.62 0 1 0 0 1.243h3.73v3.73a.622.622 0 0 0 1.244 0v-3.73h3.73a.622.622 0 1 0 0-1.243z" fill="#90a4ae"/></svg>
                 </a>
               </li>
@@ -31,7 +31,7 @@
                 </a>
               </li>
               <li class="menu__item">
-                <a href="profile.html" class="menu__link menu__link--active">Profile</a>
+                <a href="profile.html" class="menu__link">Profile</a>
               </li>
               <li class="menu__item">
                 <a href="#" class="menu__link">Sign out</a>
@@ -40,76 +40,61 @@
           </nav>
         </div>
       </div>
-      <button type="button" class="header__toggle"><span>Menu toggle</span></button>
+      <button type="button" class="header__toggle header__toggle--dark"><span>Menu toggle</span></button>
     </div>
   </header>
-
-  <section class="profile-view page-header">
+  <div class="page-header">
     <div class="container container--small">
-      <div class="row">
-        <div class="col-md-6 col-sm-9 col-xs-12">
-          <div class="profile-view__image">
-            <img src="img/student-photo.jpg" alt="">
-          </div>
-          <div class="profile-view__description">
-            <div class="profile-view__status">ATC STAFF <span class="profile-view__id">ID 2345678</span></div>
-            <div class="profile-view__name">Max Johnston</div>
+      <div class="user-courses">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="user-courses__title">Welcome, Joan</div>
             <div class="progress progress--success">
               <div class="progress__bar" style="width: 70%">70%</div>
               <div class="progress__text">16 of 20 courses passed</div>
             </div>
+            <div class="status-text status-text--danger">2 courses overdue</div>
+            <div class="status-text status-text--warning">1 course not started</div>
           </div>
-          <p class="profile-view__info">Additional information, if needed <a href="#" class="btn btn--edit pull-right">Edit</a></p>
+          <div class="col-md-6 col-sm-6 col-xs-12 mobile-hide">
+            <a href="#" class="link-with-number">Announcements <span class="link-with-number__value">2</span></a>
+            <a href="#" class="btn btn--show-all user-courses__link">Show all announcements</a>
+            <div class="notice-text notice-text--success">2 Section added to course <a href="#">Weather forecasts</a>. They are marked as not completed now, please, complete theme asap</div>
+            <div class="notice-text notice-text--danger">You have 2 overdue courses. Please, complete it asap.</div>
+          </div>
         </div>
-        <div class="col-md-5 col-sm-12 col-xs-12 pull-right">
-          <h2 class="profile-view__title">Statistics</h2>
-          <table class="profile-view__table">
-            <tr>
-              <td>Sections competed</td>
-              <td>68</td>
-            </tr>
-            <tr>
-              <td>Video watched</td>
-              <td>8h 30m</td>
-            </tr>
-            <tr>
-              <td>Test passed</td>
-              <td>38</td>
-            </tr>
-            <tr>
-              <td>Correct answers</td>
-              <td>157/220 &nbsp;&nbsp; 82%</td>
-            </tr>
-          </table>
-        </div>
+        <ul class="user-courses__nav">
+          <li class="user-courses__nav-item user-courses__nav-item--active">
+            <a href="#" class="link-with-number">Scheduled <span class="mobile-hide">courses</span><span class="link-with-number__value">5</span></a>
+          </li>
+          <li class="user-courses__nav-item">
+            <a href="#" class="link-with-number">Completed <span class="mobile-hide">courses</span><span class="link-with-number__value">16</span></a>
+          </li>
+        </ul>
       </div>
     </div>
-  </section>
+  </div>
 
   <div class="container container--small">
     <section class="courses-list">
-      <header class="courses-list__header">
+      <header class="courses-list__header mobile-hide">
         <div class="courses-list__col courses-list__col--1">
           <h3 class="courses-list__title">Courses</h3>
         </div>
         <div class="courses-list__col courses-list__col--2 tablet-hide">
-          <a href="#" class="btn btn--restart"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.179 18.179"><g fill="#455a64"><path d="M9.09 0a.37.37 0 0 0 0 .74c4.604 0 8.35 3.746 8.35 8.35s-3.746 8.35-8.35 8.35S.74 13.694.74 9.09a8.33 8.33 0 0 1 4.512-7.418.37.37 0 0 0-.34-.657A9.066 9.066 0 0 0 0 9.09c0 5.01 4.078 9.088 9.09 9.088s9.088-4.078 9.088-9.09S14.1 0 9.088 0z"/><path d="M12.653 4.407a5.828 5.828 0 0 0-3.563-1.2c-3.244 0-5.884 2.64-5.884 5.883s2.64 5.884 5.884 5.884a5.848 5.848 0 0 0 4.16-1.723.37.37 0 0 0-.522-.522 5.11 5.11 0 0 1-3.637 1.507c-2.835 0-5.143-2.308-5.143-5.144S6.255 3.948 9.09 3.948a5.168 5.168 0 0 1 4.94 3.706.37.37 0 0 0 .71-.206 5.925 5.925 0 0 0-2.087-3.04z"/><path d="M13.427 7.97a.37.37 0 0 0-.523.523l1.392 1.392a.37.37 0 0 0 .524 0l1.392-1.392a.37.37 0 0 0-.523-.523L14.56 9.1l-1.133-1.13z"/></g></svg>
-          Restart all courses</a>
-        </div>
-        <div class="courses-list__col courses-list__col--3 tablet-hide">
           <div class="courses-list__sub-title">Instructor(s)</div>
         </div>
-        <div class="courses-list__col courses-list__col--4 tablet-hide">
+        <div class="courses-list__col courses-list__col--3 tablet-hide">
           <div class="courses-list__sub-title">time</div>
         </div>
-        <div class="courses-list__col courses-list__col--5">
+        <div class="courses-list__col courses-list__col--4">
           <div class="courses-list__sub-title text-right">progress</div>
         </div>
       </header>
       <!-- course -->
       <div class="course-preview">
         <div class="course-preview__col course-preview__col--1">
-          <a href="#" class="course-preview__image course-preview__image--danger">
+          <a href="#" class="course-preview__image course-preview__image--success">
             <img src="img/course-bg-1.jpg" alt="">
           </a>
         </div>

@@ -14,13 +14,12 @@
     font-size: 14px;
   }
 
-  &--bordered {
+  &--edit {
     padding: 3px 10px;
     border: 1px solid $gray-dark;
     border-radius: 5px;
     background-color: $gray-dark;
     color: #F9FAFB;
-    text-transform: uppercase;
     text-transform: uppercase;
     font-size: 15px;
     line-height: 16px;
@@ -31,6 +30,33 @@
 
     &:hover,
     &--hover {
+      background-color: darken($gray-dark, 20%);
+      border-color: darken($gray-dark, 20%);
+    }
+
+    &:active,
+    &--active {
+      opacity: 0.8;
+    }
+  }
+
+  &--gray-edit {
+    background: #ECEFF1;
+    padding: 3px 10px;
+    border: 1px solid #ECEFF1;
+    border-radius: 5px;
+    color: #90A4AE;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 1;
+
+    @media (max-width: $tablet) {
+      font-size: 14px;
+    }
+
+    &:hover,
+    &--hover {
+      color: #fff;
       background-color: darken($gray-dark, 20%);
       border-color: darken($gray-dark, 20%);
     }
@@ -149,7 +175,7 @@
     }
   }
 
-  &--edit {
+  &--save {
     padding: 7px 20px;
   }
 

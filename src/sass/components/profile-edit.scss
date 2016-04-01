@@ -25,6 +25,7 @@
 	}
 
 	&__btn-top {
+		float: right;
 		
 		@media (max-width: $tablet) {
 	    display: none;

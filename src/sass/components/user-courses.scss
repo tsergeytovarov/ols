@@ -52,6 +52,11 @@
     &--active {
       padding-bottom: 10px;
       border-bottom: 2px solid $black;
+
+      .link-with-number__value {
+        background: $black;
+        color: #ffffff;
+      }
     }
 
     .link-with-number {
