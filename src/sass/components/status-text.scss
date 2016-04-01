@@ -30,6 +30,12 @@
     }
   }
 
+  &--progress {
+    &::before {
+      background-color: $yellow;
+    }
+  }
+
   &--warning {
     &::before {
       background-color: $orange;

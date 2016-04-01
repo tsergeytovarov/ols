@@ -40,165 +40,74 @@
           </nav>
         </div>
       </div>
-      <button type="button" class="header__toggle header__toggle--dark"><span>Menu toggle</span></button>
+      <button type="button" class="header__toggle"><span>Menu toggle</span></button>
     </div>
   </header>
-  <div class="page-header">
+  <div class="page-header page-header--course">
     <div class="container container--small">
-      <div class="user-courses">
-        <div class="row">
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="user-courses__title">Welcome, Joan</div>
-            <div class="progress progress--success">
-              <div class="progress__bar" style="width: 70%">70%</div>
-              <div class="progress__text">16 of 20 courses passed</div>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="course-base course-base--admin">
+            <h1 class="h2 course-base__title">3496 Aviation Weather Forecasts course <a href="#" class="btn btn--edit">Edit</a></h1>
+            <div class="course-base__descr">
+              <p>We developed a wide range of training courses for the aviation community which enable meteorological observers to meet International Civil Aviation Organization (ICAO) requirements teach international best-practice techniques in forecasting and observing and review the latest developments in aeronautical meteorology help you to better understand and interpret meteorological information, and the impacts of weather on your activities</p>
             </div>
-            <div class="status-text status-text--danger">2 courses overdue</div>
-            <div class="status-text status-text--warning">1 course not started</div>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-12 mobile-hide">
-            <a href="#" class="link-with-number">Announcements <span class="link-with-number__value">2</span></a>
-            <a href="#" class="btn btn--show-all user-courses__link">Show all announcements</a>
-            <div class="notice-text notice-text--success">2 Section added to course <a href="#">Weather forecasts</a>. They are marked as not completed now, please, complete theme asap</div>
-            <div class="notice-text notice-text--danger">You have 2 overdue courses. Please, complete it asap.</div>
+            <a class="course-base__descr-show btn btn--show-all js-button-more" data-target="course-base__descr">Show description</a>
+            <div class="course-base__brief row">
+              <div class="course-base__total col-md-7 col-sm-7">
+                <div class="progress progress--dark progress--warning">
+                  <div class="progress__bar" style="width: 50%"></div>
+                  <div class="progress__text">8 of 16 completed all sections</div>
+                </div>
+                <div class="status-text status-text--danger">2 employees overdue</div>
+                <div class="status-text status-text--warning">1 employee not started</div>
+                <div class="status-text status-text--progress">5 employees in progress</div>
+              </div>
+              <div class="course-base__instr col-md-5 col-sm-5">
+                <div class="course-base__instr-count">2</div>
+                <div class="course-base__instr-text">
+                  <span class="course-base__instr-title">Instructors</span>
+                  <ul class="course-base__instr-list">
+                    <li class="course-base__instr-name"><a href="#" class="course-base__instr-link">Joan Simpson</a>,</li>
+                    <li class="course-base__instr-name"><a href="#" class="course-base__instr-link">Adam McCarthy</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <ul class="user-courses__nav">
-          <li class="user-courses__nav-item user-courses__nav-item--active">
-            <a href="#" class="link-with-number">Scheduled <span class="mobile-hide">courses</span><span class="link-with-number__value">5</span></a>
-          </li>
-          <li class="user-courses__nav-item">
-            <a href="#" class="link-with-number">Completed <span class="mobile-hide">courses</span><span class="link-with-number__value">16</span></a>
-          </li>
-        </ul>
+        <div class="col-md-4 tablet-hide">
+          <div class="course-brief ">
+            <div class="course-brief__img">
+              <img src="img/course-bg-big.jpg" alt="">
+            </div>
+            <div class="course-brief__text">
+              <div class="course-brief__title-wrap"></div>
+              <ul class="course-brief__list course-brief__list--left">
+                <li class="course-brief__item">16 sections  <span class="course-brief__item-right">10 tests</span></li>
+                <li class="course-brief__item">32 h video</li>
+                <li class="course-brief__item">82% <span class="course-brief__status">(41/50)</span> correct answers</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
+      <ul class="user-courses__nav user-courses__nav--course-admin">
+        <li class="user-courses__nav-item user-courses__nav-item--active">
+          <a href="#" class="link-with-number js-tab-control" data-target="all-courses">Staff <span class="link-with-number__value">22</span></a>
+        </li>
+        <li class="user-courses__nav-item">
+          <a href="#" class="link-with-number js-tab-control" data-target="my-courses">Sections</a>
+        </li>
+        <li class="user-courses__nav-item">
+          <a href="#" class="link-with-number js-tab-control" data-target="my-courses">Forum <span class="link-with-number__value">12</span></a>
+        </li>
+      </ul>
     </div>
   </div>
 
   <div class="container container--small">
-    <section class="courses-list">
-      <header class="courses-list__header mobile-hide">
-        <div class="courses-list__col courses-list__col--1">
-          <h3 class="courses-list__title">Courses</h3>
-        </div>
-        <div class="courses-list__col courses-list__col--2 tablet-hide">
-          <div class="courses-list__sub-title">Instructor(s)</div>
-        </div>
-        <div class="courses-list__col courses-list__col--3 tablet-hide">
-          <div class="courses-list__sub-title">time</div>
-        </div>
-        <div class="courses-list__col courses-list__col--4">
-          <div class="courses-list__sub-title text-right">progress</div>
-        </div>
-      </header>
-      <!-- course -->
-      <div class="course-preview">
-        <div class="course-preview__col course-preview__col--1">
-          <a href="#" class="course-preview__image course-preview__image--success">
-            <img src="img/course-bg-1.jpg" alt="">
-          </a>
-        </div>
-        <div class="course-preview__col course-preview__col--2">
-          <div class="course-preview__col course-preview__col--2-1">
-            <a href="#" class="course-preview__title">3496 Aviation Weather Forecasts course</a>
-            <p class="course-preview__about">Obligatory, every year</p>
-          </div>
-          <div class="course-preview__col course-preview__col--2-2 mobile-hide">
-            Adam Mccarthy, Joan Simpson
-          </div>
-          <div class="course-preview__col course-preview__col--2-3 mobile-hide">
-            9h 20m
-          </div>
-        </div>
-        <div class="course-preview__col course-preview__col--3">
-          <div class="progress progress--warning progress--small">
-            <div class="progress__bar" style="width: 30%">30%</div>
-            <div class="progress__text">3/7 sections, 1/3 tests</div>
-          </div>
-        </div>
-      </div>
 
-      <!-- course -->
-      <div class="course-preview">
-        <div class="course-preview__col course-preview__col--1">
-          <a href="#" class="course-preview__image course-preview__image--success">
-            <img src="img/course-bg-1.jpg" alt="">
-          </a>
-        </div>
-        <div class="course-preview__col course-preview__col--2">
-          <div class="course-preview__col course-preview__col--2-1">
-            <a href="#" class="course-preview__title">3006 Abbreviations and Symbols course</a>
-            <p class="course-preview__about">Obligatory, every year</p>
-          </div>
-          <div class="course-preview__col course-preview__col--2-2 mobile-hide">
-            Joan Simpson
-          </div>
-          <div class="course-preview__col course-preview__col--2-3 mobile-hide">
-            5h 30 m
-          </div>
-        </div>
-        <div class="course-preview__col course-preview__col--3">
-          <div class="progress progress--warning progress--small">
-            <div class="progress__bar" style="width: 30%">30%</div>
-            <div class="progress__text">5/9 sections, 2/3 test</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- course -->
-      <div class="course-preview">
-        <div class="course-preview__col course-preview__col--1">
-          <a href="#" class="course-preview__image">
-            <img src="img/course-bg-2.jpg" alt="">
-          </a>
-        </div>
-        <div class="course-preview__col course-preview__col--2">
-          <div class="course-preview__col course-preview__col--2-1">
-            <a href="#" class="course-preview__title">3582 Radio Navigation course</a>
-            <p class="course-preview__about">Elective, every year <span class="text-success">repeat until 26.03.2017</span></p>
-          </div>
-          <div class="course-preview__col course-preview__col--2-2 mobile-hide">
-            Adam Mccarthy, Joan Simpson
-          </div>
-          <div class="course-preview__col course-preview__col--2-3 mobile-hide">
-            1h 20m
-          </div>
-        </div>
-        <div class="course-preview__col course-preview__col--3">
-          <div class="progress progress--success progress--small">
-            <div class="progress__bar" style="width: 100%">100%</div>
-            <div class="progress__text">3/3 sections</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- course -->
-      <div class="course-preview">
-        <div class="course-preview__col course-preview__col--1">
-          <a href="#" class="course-preview__image">
-            <img src="img/course-bg-1.jpg" alt="">
-          </a>
-        </div>
-        <div class="course-preview__col course-preview__col--2">
-          <div class="course-preview__col course-preview__col--2-1">
-            <a href="#" class="course-preview__title">3247 The Pitot Static System and Associated Instruments course and Associated</a>
-            <p class="course-preview__about">Elective, every 2 years <span class="text-danger">repeat until 26.03.2017</span></p>
-          </div>
-          <div class="course-preview__col course-preview__col--2-2 mobile-hide">
-            Adam Mccarthy, Joan Simpson
-          </div>
-          <div class="course-preview__col course-preview__col--2-3 mobile-hide">
-            9h 20m
-          </div>
-        </div>
-        <div class="course-preview__col course-preview__col--3">
-          <div class="progress progress--warning progress--small">
-            <div class="progress__bar" style="width: 0%">0%</div>
-            <div class="progress__text">2/2 section, 2/2 tests</div>
-          </div>
-        </div>
-      </div>
-    </section>
   </div>
 
   <footer class="footer">
