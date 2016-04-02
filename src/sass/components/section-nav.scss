@@ -1,23 +1,23 @@
 .section-nav {
   padding: 20px 0 0;
-  background: #eaeef1;
-  background-image: url("../img/bg-pattern.png");
 
   &--bottom {
     padding: 25px 0;
     background: #d8e3ee;
 
-    .section-nav__back {
-      margin-right: 5px;
-      border: 1px solid #b0bbbf;
-    }
-
     @media (min-width: $tablet) {
       display: none;
     }
+
+    @media (max-width: $tablet) {
+      padding: 15px 0 25px;
+    }
   }
 
-
+  &--bottom &__back {
+    margin-right: 5px;
+    border: 1px solid #b0bbbf;
+  }
 
   &--test {
     padding: 15px 40px 20px;
@@ -36,17 +36,17 @@
       background: transparent;
     }
 
-    .section-nav__btns {
-      float: left;
-
-      @media (max-width: $tablet) {
-        display: block;
-        float: none;
-        text-align: center;
-      }
-    }
   }
 
+  &--test &__btns {
+    float: left;
+
+    @media (max-width: $tablet) {
+      display: block;
+      float: none;
+      text-align: center;
+    }
+  }
 
   &--complete {
     padding: 20px 0;
@@ -58,8 +58,6 @@
       padding: 25px 0;
     }
   }
-
-
 
   &__title {
     margin: 0 0 20px;
@@ -77,6 +75,10 @@
   &__back {
     float: left;
     margin-right: 20px;
+
+    @media (max-width: $tablet) {
+     margin-top: 10px;
+    }
   }
 
   &__progress {
@@ -94,6 +96,10 @@
   &__btns {
     float: right;
 
+    @media (max-width: $tablet) {
+     margin-top: 10px;
+    }
+
     @media (max-width: $desktop) {
       float: left;
     }
@@ -106,7 +112,7 @@
   &__text {
     float: right;
     margin: 0;
-    padding: 0;
+    padding: 4px 0 0;
     text-align: center;
     font-size: 13px;
 
@@ -119,7 +125,7 @@
   &__next-text {
     display: inline-block;
     margin: 0;
-    padding: 0;
+    padding: 4px 0 0;
     color: $gray-darker;
 
     @media (max-width: $tablet) {
@@ -133,7 +139,7 @@
     text-decoration: underline;
 
     &:hover {
-      color: darken($black, 15%);
+      text-decoration: none;
     }
   }
 }

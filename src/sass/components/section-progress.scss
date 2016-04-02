@@ -38,15 +38,15 @@
       display: block;
       width: 10px;
       height: 10px;
-
+      
       @media (max-width: $tablet) {
         display: none;
       }
     }
 
-
     path {
       fill: #78909c;
+      transition: all $time ease;
     }
 
     &:first-child {

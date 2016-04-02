@@ -32,6 +32,7 @@
 
     p {
       color: inherit;
+      margin-bottom: 10px;
     }
   }
 
@@ -83,10 +84,30 @@
     list-style: none;
   }
 
-  &__instr-name a,
   &__instr-link {
     color: #4c4f5e;
     cursor: pointer;
     text-decoration: underline;
+    transition: all $time ease;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &--admin {
+    width: 100%;
+  }
+  
+  &--admin &__descr{
+    padding-right: 50px;
+
+    @media (max-width: $tablet) {
+      padding-right: 0;
+    }
+  }
+
+  &--admin &__instr{
+    padding-top: 45px;
   }
 }

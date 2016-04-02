@@ -39,6 +39,10 @@ $small-width: 25px;
     background-color: $orange;
   }
 
+  &--progress &__bar {
+    background-color: $yellow;
+  }
+
   &--danger &__bar {
     background-color: $red;
   }
@@ -55,6 +59,7 @@ $small-width: 25px;
   &--small &__text {
     text-align: center;
     font-size: 14px;
+    height: $small-width;
     line-height: $small-width;
   }
 }

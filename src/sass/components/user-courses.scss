@@ -2,7 +2,7 @@
   margin-top: 50px;
 
   @media (max-width: $desktop) {
-    margin-top: 30px;
+    margin-top: 40px;
   }
 
   &__title {
@@ -13,14 +13,75 @@
     @include h1();
   }
 
+  &__stat {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__stat-group {
+    display: inline-block;
+    padding: 0 15px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 1px;
+      height: 40px;
+      background: #C0C7CC;
+      top: 7px;
+      left: -2px;
+    }
+
+    &:first-child {
+      padding-left: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &:last-child {
+
+      @media (max-width: $tablet) {
+        padding-bottom: 30px;
+      }
+
+      @media (max-width: $desktop) {
+        display: block;
+        padding: 20px 0 0;
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__stat-item {
+    padding: 5px 0;
+    font-size: 15px;
+    line-height: 1.1;
+    color: #546E7A;
+  }
+
+  &__stat-count {
+    color: #37474F;
+  }
+
   &__link {
     margin-top: 10px;
 
     @media (min-width: $desktop) {
       margin-top: 0;
-      border: none;
+      border: 1px solid transparent;
       background: transparent;
       color: $base-text-color;
+    }
+
+    &:hover {
+      border: 1px solid #b0bbbf;
     }
   }
 
@@ -32,12 +93,31 @@
     margin-top: 30px;
   }
 
+  &__announce {
+    
+    @media (max-width: $tablet) {
+
+      .link-with-number {
+        display: block;
+      }
+    }
+
+  }
+
   &__nav {
     margin: 0;
     margin-top: 75px;
     padding: 0;
     list-style: none;
     font-size: 0;
+
+    @media (max-width: $tablet) {
+      margin-top: 45px;
+    }
+
+    &--course-admin {
+      margin-top: 25px;
+    }
   }
 
   &__nav-item {
@@ -52,6 +132,11 @@
     &--active {
       padding-bottom: 10px;
       border-bottom: 2px solid $black;
+
+      .link-with-number__value {
+        background: $black;
+        color: #ffffff;
+      }
     }
 
     .link-with-number {

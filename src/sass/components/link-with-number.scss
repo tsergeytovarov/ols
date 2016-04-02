@@ -5,25 +5,33 @@
   font-family: $montserrat;
   font-size: 16px;
   font-weight: 400;
+  transition: all $time ease;
 
   &:hover {
     opacity: 0.8;
   }
 
+  &:hover &__value{
+    background: $black;
+    color: #fff;
+  }
+
   &__value {
     display: inline-block;
     min-width: 20px;
-    margin-left: 20px;
-    padding: 5px;
+    margin-left: 10px;
+    padding: 3px 5px;
+    border: 1px solid $black;
     border-radius: 100px;
-    background-color: $black;
-    color: $white;
+    background-color: transparent;
+    color: $black;
     text-align: center;
     vertical-align: baseline;
     font-family: $montserrat;
     font-size: 13px;
     font-weight: 400;
     line-height: 13px;
+    transition: all $time ease;
 
     @media (max-width: 768px) {
       margin-left: 5px;

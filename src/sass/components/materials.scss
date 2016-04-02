@@ -24,10 +24,11 @@
     color: #424242;
     cursor: pointer;
     text-decoration: none;
+    transition: all $time ease;
+  }
 
-    &:hover {
-      color: darken(#424242, 25%);
-    }
+  &__link:hover &__text {
+    text-decoration: none;
   }
 
   &__icon {

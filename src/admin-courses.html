@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>OLS - Courses (admin)</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  
+  <header class="header">
+    <div class="container container--small">
+      <div class="row">
+        <div class="col-md-3 col-xs-12">
+          <div class="logo">Online <span class="logo__second">Learning System</span></div>
+        </div>
+        <div class="col-md-9 col-xs-12 header__menu">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link menu__link--active menu__link--double">Courses</a>
+                <a class="menu__link menu__link--active menu__link--add">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.947 9.946"><path d="M9.325 4.352h-3.73V.622a.62.62 0 1 0-1.243 0v3.73H.622a.62.62 0 1 0 0 1.243h3.73v3.73a.622.622 0 0 0 1.244 0v-3.73h3.73a.622.622 0 1 0 0-1.243z" fill="#90a4ae"/></svg>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link menu__link--double">Staff</a>
+                <a class="menu__link menu__link--add">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.947 9.946"><path d="M9.325 4.352h-3.73V.622a.62.62 0 1 0-1.243 0v3.73H.622a.62.62 0 1 0 0 1.243h3.73v3.73a.622.622 0 0 0 1.244 0v-3.73h3.73a.622.622 0 1 0 0-1.243z" fill="#90a4ae"/></svg>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="profile.html" class="menu__link">Profile</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Sign out</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <button type="button" class="header__toggle"><span>Menu toggle</span></button>
+    </div>
+  </header>
+
+  <div class="page-header page-header--none">
+    <div class="container container--small">
+      <div class="user-courses">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="user-courses__title h1">Courses <a href="#" class="btn btn--submit btn--add">Add course</a></div>
+            <p class="user-courses__status">You see ATC courses only</p>
+            <ul class="user-courses__stat">
+              <li class="user-courses__stat-group">
+                <div class="user-courses__stat-item"><span class="user-courses__stat-count">48</span> courses</div>
+                <div class="user-courses__stat-item"><span class="user-courses__stat-count">244</span> sections</div>
+              </li>
+              <li class="user-courses__stat-group">
+                <div class="user-courses__stat-item"><span class="user-courses__stat-count">88h</span> video</div>
+                <div class="user-courses__stat-item"><span class="user-courses__stat-count">785h</span> watched</div>
+              </li>
+              <li class="user-courses__stat-group">
+                <div class="user-courses__stat-item"><span class="user-courses__stat-count">180</span> tests</div>
+                <div class="user-courses__stat-item"><span class="user-courses__stat-count">82%</span> correct</div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="user-courses__announce">
+              <a href="#" class="link-with-number">Announcements <span class="link-with-number__value">2</span></a>
+              <a href="#" class="btn btn--show-all user-courses__link">Show all announcements</a>
+              <div class="notice-text notice-text--success mobile-hide">22 Section added to course <a href="#">3998 Weather forecasts</a></div>
+              <div class="notice-text notice-text--danger mobile-hide">You have 2 overdue courses. Please, complete it asap.</div>
+            </div>
+          </div>
+        </div>
+        <ul class="user-courses__nav">
+          <li class="user-courses__nav-item user-courses__nav-item--active">
+            <a href="#" class="link-with-number js-tab-control" data-target="all-courses">All <span class="link-with-number__value">45</span></a>
+          </li>
+          <li class="user-courses__nav-item">
+            <a href="#" class="link-with-number js-tab-control" data-target="my-courses">My <span class="link-with-number__value">5</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container container--small">
+    <div class="courses js-tab-container">
+      <section class="courses-list js-tab js-tab--active all-courses">
+        <header class="courses-list__header">
+          <div class="courses-list__col courses-list__col--6">
+            <h3 class="courses-list__title">Courses</h3>
+          </div>
+          <div class="courses-list__col courses-list__col--3 tablet-hide">
+            <div class="courses-list__sub-title">instructor(s)</div>
+          </div>
+          <div class="courses-list__col courses-list__col--7 tablet-hide">
+            <div class="courses-list__sub-title text-right">progress</div>
+          </div>
+        </header>
+        <!-- course -->
+        <div class="course-preview">
+          <div class="course-preview__col course-preview__col--1">
+            <a href="#" class="course-preview__image">
+              <img src="img/course-bg-1.jpg" alt="">
+            </a>
+          </div>
+          <div class="course-preview__col course-preview__col--4">
+            <div class="course-preview__col course-preview__col--4-1">
+              <a href="#" class="course-preview__title">3496 Aviation Weather Forecasts course</a>
+              <span class="course-preview__time">9h 20m</span>, 
+              <p class="course-preview__about course-preview__about--inline">Elective, every year <span class="text-success">repeat until 26.03.2017</span></p>
+              <a href="#" class="btn btn--gray-edit tablet-hide">Edit</a>
+            </div>
+            <div class="course-preview__col course-preview__col--4-2 mobile-hide">
+              <a href="#" class="course-preview__instr">Adam Mccarthy</a>,
+              <a href="#" class="course-preview__instr">Joan Simpson</a>
+            </div>
+          </div>
+          <div class="course-preview__col course-preview__col--5">
+            <div class="progress-line">
+              <div class="progress-line__legend">
+                <span class="progress-line__done">2 </span><a href="#" class="progress-line__link">done</a>,
+                <span class="progress-line__progress">7 </span><a href="#" class="progress-line__link">in progress</a>,
+                <span class="progress-line__not">9 </span><a href="#" class="progress-line__link">not started</a>,
+                <span class="progress-line__overdue">3 </span><a href="#" class="progress-line__link">overdue</a>
+              </div>
+              <ul class="progress-line__bar">
+                <li class="progress-line__bar-line progress-line__bar-line--done" style="width:40%;"></li>
+                <li class="progress-line__bar-line progress-line__bar-line--progress" style="width:10%;"></li>
+                <li class="progress-line__bar-line progress-line__bar-line--not" style="width:20%;"></li>
+                <li class="progress-line__bar-line progress-line__bar-line--overdue" style="width:30%;"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- course -->
+        <div class="course-preview">
+          <div class="course-preview__col course-preview__col--1">
+            <a href="#" class="course-preview__image">
+              <img src="img/course-bg-2.jpg" alt="">
+            </a>
+          </div>
+          <div class="course-preview__col course-preview__col--4">
+            <div class="course-preview__col course-preview__col--4-1">
+              <a href="#" class="course-preview__title">3006 Abbreviations and Symbols course</a>
+              <span class="course-preview__time">5h 30 m</span>,
+              <p class="course-preview__about course-preview__about--inline">Obligatory, every year</p>
+              <a href="#" class="btn btn--gray-edit tablet-hide">Edit</a>
+            </div>
+            <div class="course-preview__col course-preview__col--4-2 mobile-hide">
+              <a href="#" class="course-preview__instr">Joan Simpson</a>
+            </div>
+          </div>
+          <div class="course-preview__col course-preview__col--5">
+            <div class="progress-line">
+              <div class="progress-line__legend">
+                <span class="progress-line__done">12 </span><a href="#" class="progress-line__link">done</a>,
+                <span class="progress-line__overdue">3 </span><a href="#" class="progress-line__link">overdue</a>
+              </div>
+              <ul class="progress-line__bar">
+                <li class="progress-line__bar-line progress-line__bar-line--done" style="width:70%;"></li>
+                <li class="progress-line__bar-line progress-line__bar-line--overdue" style="width:30%;"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="courses-list js-tab my-courses">
+        <header class="courses-list__header">
+          <div class="courses-list__col courses-list__col--6">
+            <h3 class="courses-list__title">Courses</h3>
+          </div>
+          <div class="courses-list__col courses-list__col--3 tablet-hide">
+            <div class="courses-list__sub-title">instructor(s)</div>
+          </div>
+          <div class="courses-list__col courses-list__col--7 tablet-hide">
+            <div class="courses-list__sub-title text-right">progress</div>
+          </div>
+        </header>
+        <!-- course -->
+        <div class="course-preview">
+          <div class="course-preview__col course-preview__col--1">
+            <a href="#" class="course-preview__image">
+              <img src="img/course-bg-2.jpg" alt="">
+            </a>
+          </div>
+          <div class="course-preview__col course-preview__col--4">
+            <div class="course-preview__col course-preview__col--4-1">
+              <a href="#" class="course-preview__title">3006 Abbreviations and Symbols course</a>
+              <span class="course-preview__time">5h 30 m</span>,
+              <p class="course-preview__about course-preview__about--inline">Obligatory, every year</p>
+              <a href="#" class="btn btn--gray-edit tablet-hide">Edit</a>
+            </div>
+            <div class="course-preview__col course-preview__col--4-2 mobile-hide">
+              <a href="#" class="course-preview__instr">Joan Simpson</a>
+            </div>
+          </div>
+          <div class="course-preview__col course-preview__col--5">
+            <div class="progress-line">
+              <div class="progress-line__legend">
+                <span class="progress-line__done">12 </span><a href="#" class="progress-line__link">done</a>,
+                <span class="progress-line__overdue">3 </span><a href="#" class="progress-line__link">overdue</a>
+              </div>
+              <ul class="progress-line__bar">
+                <li class="progress-line__bar-line progress-line__bar-line--done" style="width:70%;"></li>
+                <li class="progress-line__bar-line progress-line__bar-line--overdue" style="width:30%;"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container container--small">
+      <nav class="menu-footer">
+        <ul class="menu-footer__list">
+          <li class="menu-footer__item"><a href="index.html" class="menu-footer__link menu-footer__link--name">Sky Agency</a></li>
+          <li class="menu-footer__item"><a href="#" class="menu-footer__link">About</a></li>
+          <li class="menu-footer__item"><a href="#" class="menu-footer__link">Manual</a></li>
+          <li class="menu-footer__item"><a href="#" class="menu-footer__link">FAQ</a></li>
+          <li class="menu-footer__item"><a href="#" class="menu-footer__link">Help</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/script.min.js"></script>
+</body>
+</html>

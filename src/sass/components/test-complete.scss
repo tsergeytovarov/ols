@@ -7,7 +7,7 @@
   @include clearfix();
 
   @media (max-width: $tablet) {
-    padding: 15px 13px;
+    padding: 15px 0;
     border: none;
   }
 
@@ -79,7 +79,7 @@
     text-decoration: underline;
 
     &:hover {
-      color: darken($black, 15%);
+      text-decoration: none;
     }
   }
 }

@@ -1,16 +1,46 @@
 .page-header {
-  padding: 50px 0 50px;
-  border-bottom: 1px solid #cfd8dc;
+  padding: 50px 0;
   background-color: $gray;
   background-image: url("../img/bg-pattern.png");
+
+  @media (max-width: $tablet) {
+    padding: 35px 0;
+  }
 
   @media (max-width: $desktop) {
     background-color: $sand;
   }
 
-  &--with-tab {
-    padding-bottom: 0;
-    border-bottom: 0;
+  &--with-line {
+    border-bottom: 1px solid #cfd8dc;
+  }
+
+  &--admin{
+    padding: 0 0 50px;
+
+    @media (max-width: $tablet) {
+      padding: 0 0 35px;
+    }
+  }
+
+  &--none{
+    padding: 0;
+  }
+
+  &--courses {
+    padding: 50px 0 0;
+  }
+
+  &--course {
+    padding: 30px 0 0;
+
+    @media (max-width: $tablet) {
+      padding-bottom: 0;
+    }
+  }
+
+  &--message-form {
+    padding: 20px 0;
   }
 
   &__title {
@@ -20,9 +50,5 @@
 
   &__description {
     margin: 0;
-  }
-
-  &--message-form {
-    padding: 20px 0;
   }
 }

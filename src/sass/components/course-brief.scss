@@ -1,4 +1,5 @@
 .course-brief {
+  float: right;
   width: 280px;
   border-radius: 5px 5px 0 0;
   background: #ffffff;
@@ -93,6 +94,10 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  &__item-right {
+    padding-left: 10px;
   }
 
   &__status {

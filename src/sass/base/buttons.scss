@@ -8,19 +8,18 @@
   font-family: $open-sans;
   font-size: 15px;
   font-weight: 400;
-  transition: all 0.3s ease;
+  transition: all $time ease;
 
   @media (max-width: $tablet) {
     font-size: 14px;
   }
 
-  &--bordered {
+  &--edit {
     padding: 3px 10px;
-    border: 1px solid #b0bbbf;
+    border: 1px solid $gray-dark;
     border-radius: 5px;
-    background: none;
-    color: #546e7a;
-    text-transform: uppercase;
+    background-color: $gray-dark;
+    color: #F9FAFB;
     text-transform: uppercase;
     font-size: 15px;
     line-height: 16px;
@@ -29,17 +28,37 @@
       font-size: 14px;
     }
 
-    @media (max-width: $desktop) {
-      border: 1px solid $gray-dark;
-      background-color: $gray-dark;
-      color: #ffffff;
+    &:hover,
+    &--hover {
+      background-color: darken($gray-dark, 20%);
+      border-color: darken($gray-dark, 20%);
+    }
+
+    &:active,
+    &--active {
+      opacity: 0.8;
+    }
+  }
+
+  &--gray-edit {
+    background: #ECEFF1;
+    padding: 3px 10px;
+    border: 1px solid #ECEFF1;
+    border-radius: 5px;
+    color: #90A4AE;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 1;
+
+    @media (max-width: $tablet) {
+      font-size: 14px;
     }
 
     &:hover,
     &--hover {
-      border: 1px solid $gray-dark;
-      background-color: $gray-dark;
-      color: #ffffff;
+      color: #fff;
+      background-color: darken($gray-dark, 20%);
+      border-color: darken($gray-dark, 20%);
     }
 
     &:active,
@@ -109,7 +128,7 @@
   }
 
   &--reply {
-    padding: 3px 10px;
+    padding: 4px 10px;
     background: $gray-darker;
     color: #ffffff;
     text-transform: lowercase;
@@ -156,6 +175,22 @@
     }
   }
 
+  &--save {
+    padding: 7px 20px;
+  }
+
+  &--add{
+    margin-top: 3px;
+    margin-left: 15px;
+    text-transform: none;
+    padding: 7px 20px;
+
+    @media (max-width: $tablet) {
+      margin-left: 5px;
+      padding: 7px 10px;
+    }
+  }
+
   &--icon {
     padding: 4px 8px;
     border-radius: 3px;
@@ -188,10 +223,7 @@
 
     svg {
       transform: rotate(90deg);
-    }
-
-    .btn-text {
-      padding-left: 5px;
+      margin-right: 5px;
     }
 
     &:hover {
@@ -210,6 +242,7 @@
 
     svg {
       transform: rotate(180deg);
+      margin-left: 5px;
     }
 
     .btn-text {
@@ -369,5 +402,42 @@
     &--active {
       opacity: 0.8;
     }
+  }
+
+  &--restart {
+    padding: 4px 10px 4px 6px;
+    border-radius: 3px;
+    background: $orange;
+    color: #F9FAFB;
+    text-transform: uppercase;
+
+    svg {
+      width: 12px;
+      height: 12px;
+      margin-right: 5px;
+    }
+
+    path {
+      fill: #F9FAFB;
+    }
+
+    &:hover {
+      background-color: darken($orange, 5%);
+    }
+
+    &:active {
+      background-color: darken($orange, 2.5%);
+    }
+  }
+
+  &--close {
+    position: absolute;
+    right: -7px;
+    top: -7px;
+    width: 15px;
+    height: 15px;
+    border: none;
+    background: url('../img/svg/close-icon.svg') 50% 50% no-repeat;
+    background-size: 15px;
   }
 }

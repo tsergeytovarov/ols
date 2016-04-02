@@ -11,12 +11,6 @@
     display: none;
   }
 
-  @media (max-width: $desktop) {
-    &__menu {
-      margin-top: 30px;
-    }
-  }
-
   @media (max-width: $tablet) {
     position: relative;
 
@@ -26,7 +20,7 @@
 
     &__toggle {
       position: absolute;
-      top: 40px;
+      top: 30px;
       right: 30px;
       display: block;
       width: 30px;
@@ -74,6 +68,16 @@
           }
         }
       }
+    }
+
+    &--transparent &__toggle{
+      top: 45px;
+    }
+  }
+
+  @media (max-width: $desktop) {
+    &__menu {
+      margin-top: 30px;
     }
   }
 }

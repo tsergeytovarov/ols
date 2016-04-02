@@ -1,0 +1,27 @@
+.alert-staff {
+  padding: 15px 20px;
+  border: 1px solid #B0BEC5;
+
+  &__sum {
+    color: #455A64;
+    font-family: $open-sans-semi-bold;
+  }
+
+  span {
+    padding-right: 25px;
+
+    &.pull-right {
+      padding-right: 0;
+    }
+  }
+
+  &--gray{
+    background: #ECEFF1;
+    border: 1px solid #ECEFF1;
+
+    .pull-right {
+      color: #7C8E96;
+    }
+  }
+  
+}
