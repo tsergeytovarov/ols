@@ -59,6 +59,17 @@
 				display: none;
 			}
 		}
+
+		@media (max-width: $tablet) {
+			line-height: 22px;
+			padding: 15px 9px 20px 0px;
+			border-top: none;
+			border-bottom: 1px solid #C0C7CC;
+
+			&:last-of-type {
+				border-bottom: none;
+			}
+		}
 	}
 
 	&__photo {
@@ -69,17 +80,33 @@
 			width: 100%;
 			max-width: 32px;
 		}
+
+		@media (max-width: $tablet) {
+			width: 17%;
+
+			img {
+				max-width: 85%;
+			}
+		}
 	}
 
 	&__info {
 		width: 92%;
 		color: #97A4AB;
+
+		@media (max-width: $tablet) {
+			width: 83%;
+		}
 	}
 
 	&__name {
 		width: 22%;
 		text-align: left;
 		color: #37474F;
+
+		@media (max-width: $tablet) {
+			width: 50%;
+		}
 	}
 
 	&__deadline {
@@ -97,11 +124,21 @@
 
 	&__correct {
 		width: 13%;
+
+		@media (max-width: $tablet) {
+			width: 50%;
+			text-align: right;
+		}
 	}
 
 	&__passed {
 		width: 24%;
 		padding: 3px 0 0;
+
+		@media (max-width: $tablet) {
+			width: 100%;
+			margin-top: 5px;
+		}
 	}
 
 	&__restart {

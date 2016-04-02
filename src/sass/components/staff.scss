@@ -18,6 +18,12 @@
 
 	.pagination {
 		float: right;
+
+		@media (max-width: $tablet) {
+			float: left;
+			clear: both;
+			margin-top: 20px;
+		}
 	}
 
 }
