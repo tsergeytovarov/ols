@@ -94,20 +94,78 @@
       </div>
       <ul class="user-courses__nav user-courses__nav--course-admin">
         <li class="user-courses__nav-item user-courses__nav-item--active">
-          <a href="#" class="link-with-number js-tab-control" data-target="all-courses">Staff <span class="link-with-number__value">22</span></a>
+          <a href="#" class="link-with-number js-tab-control" data-target="staff">Staff <span class="link-with-number__value">22</span></a>
         </li>
         <li class="user-courses__nav-item">
-          <a href="#" class="link-with-number js-tab-control" data-target="my-courses">Sections</a>
+          <a href="#" class="link-with-number js-tab-control" data-target="sections">Sections</a>
         </li>
         <li class="user-courses__nav-item">
-          <a href="#" class="link-with-number js-tab-control" data-target="my-courses">Forum <span class="link-with-number__value">12</span></a>
+          <a href="#" class="link-with-number js-tab-control" data-target="forum">Forum <span class="link-with-number__value">12</span></a>
         </li>
       </ul>
     </div>
   </div>
 
   <div class="container container--small">
-
+    <div class="course-info js-tab-container">
+      <div class="staff">
+        <div class="row">
+          <aside class="col-md-3 col-sm-12 col-xs-12 pull-right">
+            <section class="filter">
+              <button type="button" class="filter__collapse js-filter-collapse">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.044 8.905"><path fill="none" stroke="#455a64" stroke-width="2" stroke-miterlimit="10" d="M11.248 8.274L6.192 1.618.776 8.274"/></svg>
+              </button>
+              <h2 class="filter__title">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.96 16.555"><path d="M17.909.312A.546.546 0 0 0 17.416 0H.544a.546.546 0 0 0-.42.89L6.61 8.757v7.254a.546.546 0 0 0 .786.488l3.644-1.806a.546.546 0 0 0 .303-.487l.007-5.448L17.836.891a.547.547 0 0 0 .073-.579zm-7.523 7.903a.543.543 0 0 0-.124.346l-.007 5.306-2.556 1.267V8.562a.545.545 0 0 0-.124-.346L1.699 1.089h14.563l-5.876 7.126z"/></svg>
+                Filter
+              </h2>
+              <form action="/echo" method="GET" class="filter__form">
+                <fieldset class="filter__group">
+                  <legend class="filter__group-title">By status</legend>
+                  <div class="checkbox checkbox--white-bg">
+                    <input type="checkbox" id="ch1">
+                    <label for="ch1" class="checkbox__label">New</label>
+                  </div>
+                  <div class="checkbox checkbox--white-bg">
+                    <input type="checkbox" id="ch2">
+                    <label for="ch2" class="checkbox__label">Read</label>
+                  </div>
+                  <div class="checkbox checkbox--white-bg">
+                    <input type="checkbox" id="ch3">
+                    <label for="ch3" class="checkbox__label">Answered</label>
+                  </div>
+                </fieldset>
+                <fieldset class="filter__group">
+                  <legend class="filter__group-title">By type</legend>
+                  <div class="checkbox checkbox--white-bg">
+                    <input type="checkbox" id="ch4">
+                    <label for="ch4" class="checkbox__label">Bug reports</label>
+                  </div>
+                  <div class="checkbox checkbox--white-bg">
+                    <input type="checkbox" id="ch5">
+                    <label for="ch5" class="checkbox__label">Questions</label>
+                  </div>
+                  <div class="checkbox checkbox--white-bg">
+                    <input type="checkbox" id="ch6">
+                    <label for="ch6" class="checkbox__label">Information</label>
+                  </div>
+                </fieldset>
+                <button type="submit" class="btn btn--submit">Show result</button>
+              </form>
+            </section>
+          </aside>
+          <div class="col-md-9 col-sm-12 col-xs-12">
+            <div class="employees">
+              <div class="alert-staff">
+                <span class="text-success">8 completed all courses</span>
+                <span class="text-danger">2 overdue</span>
+                <span class="pull-right">click calendar icon to set deadline</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <footer class="footer">
