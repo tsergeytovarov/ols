@@ -1,30 +1,30 @@
 .pagination {
-	display: inline-block;
-	border: 1px solid #DDDDDD;
-	border-radius: 3px;
-	font-size: 0;
+  display: inline-block;
+  border: 1px solid #DDDDDD;
+  border-radius: 3px;
+  font-size: 0;
 
-	&__link {
-		display: inline-block;
-		color: #78909C;
-		font-size: 14px;
-		text-decoration: none;
-		padding: 7px 12px;
-		border-right: 1px solid #DDDDDD;
+  &__link {
+    display: inline-block;
+    color: #78909C;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 7px 12px;
+    border-right: 1px solid #DDDDDD;
 
-		&:last-of-type {
-			border-right: none;
-		}
+    &:last-of-type {
+      border-right: none;
+    }
 
-		&--current,
-		&:hover {
-			background: #CFD8DC;
-			color: #37474F;
-		}
+    &--current,
+    &:hover {
+      background: #CFD8DC;
+      color: #37474F;
+    }
 
-		&:active {
-			color: #37474F;
-			background: #DDDDDD;
-		}
-	}
+    &:active {
+      color: #37474F;
+      background: #DDDDDD;
+    }
+  }
 }

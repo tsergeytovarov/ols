@@ -1,180 +1,180 @@
 .employees {
 
-	&__header {
-		text-align: center;
-		font-size: 13px;
-		padding: 15px 9px;
-		color: #546E7A;
+  &__header {
+    text-align: center;
+    font-size: 13px;
+    padding: 15px 9px;
+    color: #546E7A;
 
-		@include clearfix();
-	}
+    @include clearfix();
+  }
 
-	&__col {
-		float: left;
+  &__col {
+    float: left;
 
 
-		&--1 {
-			width: 29%;
-			text-align: left;
-		}
+    &--1 {
+      width: 29%;
+      text-align: left;
+    }
 
-		&--2 {
-			width: 16%;
-		}
+    &--2 {
+      width: 16%;
+    }
 
-		&--3 {
-			width: 13%;
-		}
+    &--3 {
+      width: 13%;
+    }
 
-		&--4 {
-			width: 12%;
-		}
+    &--4 {
+      width: 12%;
+    }
 
-		&--5 {
-			width: 22%;
-		}
+    &--5 {
+      width: 22%;
+    }
 
-		&--6 {
-			width: 8%;
-		}
+    &--6 {
+      width: 8%;
+    }
 
-		&--7 {		//col 5 + 6
-			width: 30%;
-			text-align: right;
-		}
-	}
+    &--7 {    //col 5 + 6
+      width: 30%;
+      text-align: right;
+    }
+  }
 
-	&__row {
-		padding: 7px 9px;
-		border-top: 1px solid #C0C7CC;
-		text-align: center;
-		line-height: 32px;
+  &__row {
+    padding: 7px 9px;
+    border-top: 1px solid #C0C7CC;
+    text-align: center;
+    line-height: 32px;
 
-		@include clearfix();
+    @include clearfix();
 
-		&--danger {
-			background: #FFF3E0;
+    &--danger {
+      background: #FFF3E0;
 
-			.employees__name,
-			.employees__deadline {
-				color: $red;
-			}
+      .employees__name,
+      .employees__deadline {
+        color: $red;
+      }
 
-			.employees__btn-restart {
-				display: none;
-			}
-		}
+      .employees__btn-restart {
+        display: none;
+      }
+    }
 
-		@media (max-width: $tablet) {
-			line-height: 22px;
-			padding: 15px 9px 20px 0px;
-			border-top: none;
-			border-bottom: 1px solid #C0C7CC;
+    @media (max-width: $tablet) {
+      line-height: 22px;
+      padding: 15px 9px 20px 0px;
+      border-top: none;
+      border-bottom: 1px solid #C0C7CC;
 
-			&:last-of-type {
-				border-bottom: none;
-			}
-		}
-	}
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+  }
 
-	&__photo {
-		width: 8%;
+  &__photo {
+    width: 8%;
 
-		img{
-			display: block;
-			width: 100%;
-			max-width: 32px;
-		}
+    img{
+      display: block;
+      width: 100%;
+      max-width: 32px;
+    }
 
-		@media (max-width: $tablet) {
-			width: 17%;
+    @media (max-width: $tablet) {
+      width: 17%;
 
-			img {
-				max-width: 85%;
-			}
-		}
-	}
+      img {
+        max-width: 85%;
+      }
+    }
+  }
 
-	&__info {
-		width: 92%;
-		color: #97A4AB;
+  &__info {
+    width: 92%;
+    color: #97A4AB;
 
-		@media (max-width: $tablet) {
-			width: 83%;
-		}
-	}
+    @media (max-width: $tablet) {
+      width: 83%;
+    }
+  }
 
-	&__name {
-		width: 22%;
-		text-align: left;
-		color: #37474F;
+  &__name {
+    width: 22%;
+    text-align: left;
+    color: #37474F;
 
-		@media (max-width: $tablet) {
-			width: 50%;
-		}
-	}
+    @media (max-width: $tablet) {
+      width: 50%;
+    }
+  }
 
-	&__deadline {
-		width: 18%;
+  &__deadline {
+    width: 18%;
 
-		input {
-			width: 90%;
-			border: none;
-		}
-	}
+    input {
+      width: 90%;
+      border: none;
+    }
+  }
 
-	&__wathched {
-		width: 14%;
-	}
+  &__wathched {
+    width: 14%;
+  }
 
-	&__correct {
-		width: 13%;
+  &__correct {
+    width: 13%;
 
-		@media (max-width: $tablet) {
-			width: 50%;
-			text-align: right;
-		}
-	}
+    @media (max-width: $tablet) {
+      width: 50%;
+      text-align: right;
+    }
+  }
 
-	&__passed {
-		width: 24%;
-		padding: 3px 0 0;
+  &__passed {
+    width: 24%;
+    padding: 3px 0 0;
 
-		@media (max-width: $tablet) {
-			width: 100%;
-			margin-top: 5px;
-		}
+    @media (max-width: $tablet) {
+      width: 100%;
+      margin-top: 5px;
+    }
 
-		&--right {
-			float: right;
-		}
-	}
+    &--right {
+      float: right;
+    }
+  }
 
-	&__restart {
-		width: 9%;
-		padding: 3px 0 0;
-	}
+  &__restart {
+    width: 9%;
+    padding: 3px 0 0;
+  }
 
-	&__btn-restart {
-		text-align: center;
-		padding: 0;
-		border: none;
-		background: transparent;
-		cursor: pointer;
-		padding-left: 5px;
-		
-		svg {
-			width: 18px;
-			height: 18px;
-		}
+  &__btn-restart {
+    text-align: center;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding-left: 5px;
+    
+    svg {
+      width: 18px;
+      height: 18px;
+    }
 
-		path {
-			fill: #97A4AB;
-		}
+    path {
+      fill: #97A4AB;
+    }
 
-		&:hover path {
-			fill: #455A64;
-		}
-	}
+    &:hover path {
+      fill: #455A64;
+    }
+  }
 
 }
