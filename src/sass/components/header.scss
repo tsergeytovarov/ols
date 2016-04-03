@@ -81,3 +81,25 @@
     }
   }
 }
+
+.fixed {
+  .header {
+    &__toggle {
+      display: none!important;
+    }
+
+    @media (max-width: $tablet) {
+      &__menu {
+        display: block;
+      }
+    }
+
+    @media (max-width: $desktop) {
+      &__menu {
+        display: block;
+        margin-top: 0;
+      }
+    }
+
+  }
+}

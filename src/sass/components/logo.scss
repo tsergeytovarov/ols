@@ -20,3 +20,13 @@
     }
   }
 }
+
+.fixed {
+  .logo {
+    @media (max-width: $tablet) {
+      &__second {
+        display: inline;
+      }
+    }
+  }
+}
