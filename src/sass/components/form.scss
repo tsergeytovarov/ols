@@ -38,7 +38,6 @@
     color: $black;
     font-family: $montserrat;
     font-size: 15px;
-    font-weight: 400;
   }
 
   &__label {
@@ -59,45 +58,6 @@
 
     &:hover {
       text-decoration: none;
-    }
-  }
-}
-
-.checkbox {
-  input[type="checkbox"] {
-    display: none;
-  }
-
-  input[type="checkbox"] + &__label {
-    position: relative;
-    padding-left: 25px;
-  }
-
-  input[type="checkbox"] + &__label::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 16px;
-    height: 16px;
-    border: 1px solid $gray-dark;
-    border-radius: 5px;
-    content: "";
-  }
-
-  input[type="checkbox"]:checked + &__label::after {
-    position: absolute;
-    top: 4px;
-    left: 3px;
-    width: 12px;
-    height: 12px;
-    background-image: url("../img/svg/checked-icon.svg");
-    background-repeat: no-repeat;
-    content: "";
-  }
-
-  &--white-bg {
-    input[type="checkbox"] + .checkbox__label::before {
-      background-color: #ffffff;
     }
   }
 }
