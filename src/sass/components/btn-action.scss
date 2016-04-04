@@ -1,5 +1,4 @@
 .btn-action {
-	display: inline-block;
 	color: #79898E;
 	font-size: 13px;
 	line-height: 1.1;
@@ -16,11 +15,23 @@
 		fill: #546E7A;
 	}
 
+	&:hover {
+		color: #546E7A;
+	}
+
+	&:active {
+		opacity: .8;
+	}
+
 	&--delete {
 		color: $red;
 
 		path {
 			fill: $red;
+		}
+
+		&:hover {
+			color: darken($red, 10%);
 		}
 	}
 
