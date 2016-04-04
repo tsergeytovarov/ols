@@ -143,49 +143,6 @@
     }
   }
 
-  input[type=file] {
-    cursor: pointer;
-    opacity: 0;
-    margin: 0;
-    padding: 0;
-    width: 90px;
-    height: 30px;
-    position: absolute;
-    top: 48%;
-    left: 50%;
-    margin-left: -45px;
-    z-index: 10;
-
-    @media (max-width: $tablet) {
-      top: 0;
-      left: 205%;
-    }
-  }
-
-  &__upload-btn {
-    display: inline-block;
-    box-sizing: border-box;
-    width: 90px;
-    height: 30px;
-    padding: 0;
-    border: 1px solid #90A4AE;
-    border-radius: 3px;
-    background: rgba(255,255,255,0.55);
-    font-size: 15px;
-    line-height: 25px;
-    color: #455A64;
-    position: absolute;
-    top: 48%;
-    left: 50%;
-    margin-left: -45px;
-    z-index: 1;
-
-    @media (max-width: $tablet) {
-      top: 0;
-      left: 205%;
-    }
-  }
-
   &__show-more {
     display: none;
     color: $base-text-color;

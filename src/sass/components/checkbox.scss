@@ -11,6 +11,13 @@
       display: inline-block;
       min-height: 9px;
     }
+
+    &--dark {
+      font-family: $montserrat;
+      font-size: 14px;
+      color: #455A64;
+      padding-bottom: 15px;
+    }
   }
 
   input[type="checkbox"] + &__label::before {

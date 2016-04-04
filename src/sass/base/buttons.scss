@@ -440,4 +440,19 @@
     background: url('../img/svg/close-icon.svg') 50% 50% no-repeat;
     background-size: 15px;
   }
+
+  &--edit-add {
+    font-family: $montserrat;
+    font-size: 12px;
+    line-height: 1.1;
+    color: #90A4AE;
+    background: #CFD8DC;
+    padding: 4px 8px;
+    border-radius: 3px;
+
+    &:hover {
+      background: darken(#CFD8DC, 10%);
+      color: #fff;
+    }
+  }
 }
