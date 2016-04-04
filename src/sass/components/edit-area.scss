@@ -1,5 +1,6 @@
 .edit-area {
 
+
 	&__title {
 		margin: 0;
 		padding: 0 0 40px;
@@ -7,6 +8,31 @@
 	
 	&__editor {
 		float: right;
-		width: 86%;
+		width: 74%;
+		background: #ffffff;
+		box-sizing: border-box;
 	}
+
+	&__editor-head {
+		border-bottom: 1px solid #CFD8DC;
+		padding: 25px 25px 0;
+		margin: 0 0 20px;
+
+		@include clearfix();
+	}
+
+	&__editor-title {
+		margin: 0;
+		padding: 0 0 35px;
+	}
+
+	.nav-tabs {
+		margin-top: 5px;
+		float: left;
+	}
+
+	.edit-area-alert {
+		float: right;
+	}
+
 }
