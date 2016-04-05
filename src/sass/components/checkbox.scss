@@ -1,0 +1,114 @@
+.checkbox {
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"] + &__label {
+    position: relative;
+    padding-left: 25px;
+
+    &--single {
+      display: inline-block;
+      min-height: 9px;
+    }
+
+    &--dark {
+      font-family: $montserrat;
+      font-size: 14px;
+      color: #455A64;
+      padding-bottom: 15px;
+    }
+  }
+
+  input[type="checkbox"] + &__label::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $gray-dark;
+    border-radius: 5px;
+    content: "";
+  }
+
+  input[type="checkbox"]:checked + &__label::after {
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    background-image: url("../img/svg/checked-icon.svg");
+    background-repeat: no-repeat;
+    content: "";
+  }
+
+  &--white-bg {
+    input[type="checkbox"] + .checkbox__label::before {
+      background-color: #ffffff;
+    }
+  }
+}
+
+.checkbox-able {
+  display: inline-block;
+  vertical-align: top;
+  
+  input[type="checkbox"] {
+    display: none;
+    position: relative;
+  }
+
+  label {
+    font-size: 0;
+  }
+
+  input[type="checkbox"] + label {
+    position: relative;
+    box-sizing: border-box;
+    width: 55px;
+    height: 32px;
+    border: 2px solid #D8E3EE;
+    border-radius: 20px;
+    line-height: 0;
+    margin-left: 20px;
+    color: #455A64;
+  }
+
+  input[type="checkbox"] + label::before {
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 22px;
+    top: 3px;
+    left: 3px;
+    border-radius: 50%;
+    background: url('../img/svg/x-icon.svg')  50% 50% no-repeat #455A64;
+    background-size: 10px;
+  }
+
+  input[type="checkbox"]:checked + label::before {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked + label::after {
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 22px;
+    top: 3px;
+    right: 3px;
+    border-radius: 50%;
+    background: url('../img/svg/checked-white-icon.svg')  50% 50% no-repeat $green;
+    background-size: 10px;
+  }
+
+  input[type="checkbox"]:checked + label span::after {
+    position: absolute;
+    content: 'Downoadable';
+    font-family: $montserrat;
+    font-size: 13px;
+    top: -20px;
+    left: -40px;
+  }
+
+}

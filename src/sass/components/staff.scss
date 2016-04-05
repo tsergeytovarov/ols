@@ -1,29 +1,28 @@
 .staff {
 
-	&__head {
-		padding-bottom: 30px;
-		@include clearfix();
-	}
+  &__head {
+    padding-bottom: 30px;
+    @include clearfix();
+  }
 
-	&__title {
-		margin: 0;
-		padding: 0;
-		float: left;
-	}
+  &__title {
+    margin: 0;
+    padding: 0;
+    float: left;
+  }
 
-	&__sum {
-		float: left;
-		padding: 9px 15px 0;
-	}
+  &__sum {
+    float: left;
+    padding: 9px 15px 0;
+  }
 
-	.pagination {
-		float: right;
+  .pagination {
+    float: right;
 
-		@media (max-width: $tablet) {
-			float: left;
-			clear: both;
-			margin-top: 20px;
-		}
-	}
-
+    @media (max-width: $tablet) {
+      float: left;
+      clear: both;
+      margin-top: 20px;
+    }
+  }
 }

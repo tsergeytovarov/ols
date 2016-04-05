@@ -64,6 +64,27 @@
         font-family: $open-sans-bold;
       }
     }
+
+    &--edit-draft {
+      color: #9E9E9E;
+
+      .forum__avatar-wrap {
+        position: relative;
+
+        &::after {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: url(../img/svg/eye-draft-icon.svg) 50% 50% no-repeat rgba(84, 110, 122, 0.6);
+          background-size: 26px 18px;
+          content: "";
+        }
+      }
+    }
   }
 
 

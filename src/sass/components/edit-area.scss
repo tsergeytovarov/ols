@@ -1,0 +1,104 @@
+.edit-area {
+
+  &__title {
+    margin: 0;
+    padding: 0 0 40px;
+  }
+
+  &__label-type {
+    display: inline-block;
+    background: #37474F;
+    font-family: $montserrat;
+    font-size: 12px;
+    color: #ffffff;
+    margin-left: 15px;
+    padding: 3px 10px;
+    border-radius: 3px;
+  }
+  
+  &__editor {
+    float: right;
+    width: 74%;
+    background: #ffffff;
+    box-sizing: border-box;
+    border-radius: 6px;
+  }
+
+  &__editor-header {
+    border-bottom: 1px solid #CFD8DC;
+    padding: 25px 25px 0;
+    margin: 0 0 20px;
+
+    @include clearfix();
+  }
+
+  &__editor-head {
+    @include clearfix();
+
+    .btn-action {
+      float: right;
+      padding: 5px 0;
+    }
+  }
+
+  &__editor-head &__editor-title {
+    float: left;
+  }
+
+  &__editor-title {
+    margin: 0;
+    padding: 0 0 35px;
+  }
+
+  &__btn-head {
+    margin: 0;
+    float: right;
+  }
+
+  .nav-tabs {
+    margin-top: 5px;
+    float: left;
+  }
+
+  .edit-area-alert {
+    float: right;
+  }
+
+  label {
+    display: block;
+    color: #97A4AB;
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    border: 1px solid #B0BEC5;
+    border-radius: 3px;
+    font-family: $montserrat;
+    font-size: 14px;
+    line-height: 1.1;
+    padding: 8px;
+
+    &:focus {
+      border: 1px solid #455A64;
+    }
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  select {
+    margin-bottom: 10px;
+  }
+
+  input[type="checkbox"] + &__label {
+    font-family: $montserrat;
+    font-size: 14px;
+    color: #455A64;
+    padding-bottom: 15px;
+  }
+
+}
