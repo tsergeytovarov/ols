@@ -51,8 +51,10 @@
 	}
 
 
-	&__item-close {
+	&__item-delete {
 		display: inline-block;
+		cursor: pointer;
+		text-decoration: none;
 		width: 8%;
 		text-align: right;
 		vertical-align: top;
@@ -64,6 +66,12 @@
 
 		path {
 			fill: #97A4AB;
+		}
+
+		&:hover {
+			path {
+				fill: $red;
+			}
 		}
 	}
 

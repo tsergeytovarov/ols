@@ -1,0 +1,30 @@
+.add-file {
+	position: relative;
+	height: 20px;
+	margin-bottom: 15px;
+	
+
+	input[type=file] {
+		border: none;
+		display: inline-block;
+		width: 85px;
+		height: 20px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 25;
+		padding: 0;
+		opacity: 0;
+	}
+
+	.btn-action {
+		position: absolute;
+		height: 20px;
+		cursor: pointer;
+		top: 0;
+		left: 0;
+		z-index: 10;
+		padding: 0;
+	}
+	
+}

@@ -1,0 +1,18 @@
+.edit-files {
+	padding: 0px 25px 25px;
+
+	&__head {
+		font-family: $montserrat-bold;
+		font-size: 18px;
+		line-height: 1.2;
+		color: #343D44;
+		margin-bottom: 20px;
+	}
+
+	&__descr {
+		font-family: $montserrat;
+		font-size: 12px;
+		color: #90A4AE;
+		padding-left: 25px;
+	}
+}
