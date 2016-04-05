@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>OLS - Edit сourse</title>
+  <title>OLS - Edit forum</title>
   <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
@@ -51,7 +51,7 @@
       <aside class="edit-nav">
         <ul class="edit-nav__list">
           <li class="edit-nav__list-item">
-            <a href="" class="edit-nav__link edit-nav__link--active">
+            <a href="" class="edit-nav__link">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.76 14.451"><path d="M12.732 5.57l-.373-.886s.866-1.956.79-2.03L12 1.53c-.078-.077-2.035.816-2.035.816l-.902-.365S8.266 0 8.156 0h-1.62c-.112 0-.85 1.987-.85 1.987l-.9.366s-2-.85-2.075-.773L1.566 2.7c-.08.078.833 1.995.833 1.995l-.373.884S0 6.36 0 6.463v1.588c0 .11 2.03.833 2.03.833l.373.883s-.867 1.955-.79 2.03l1.146 1.123c.077.077 2.034-.816 2.034-.816l.903.366s.797 1.98.907 1.98h1.62c.112 0 .85-1.986.85-1.986l.905-.366s1.993.85 2.07.775l1.147-1.122c.08-.078-.834-1.993-.834-1.993l.372-.884s2.026-.78 2.026-.888V6.4c0-.11-2.028-.83-2.028-.83zM9.747 7.224C9.747 8.5 8.685 9.54 7.38 9.54c-1.302 0-2.365-1.038-2.365-2.315S6.077 4.91 7.38 4.91c1.305.002 2.367 1.04 2.367 2.315z" fill="#546e7a"/></svg>
               Course basic info
             </a>
@@ -63,7 +63,7 @@
             </a>
           </li>
           <li class="edit-nav__list-item">
-            <a href="" class="edit-nav__link">
+            <a href="" class="edit-nav__link edit-nav__link--active">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.582 11.582"><g fill="#546e7a"><path d="M2.482 7.446V3.31s.002-.186.1-.414H.827S0 2.896 0 3.723v2.895c0 .827.827.827.827.827v4.136H3.31V8.274s-.828 0-.828-.827zm0-4.964c.215 0 .414-.06.59-.156.025-.015.052-.028.078-.042.344-.22.573-.604.573-1.043a1.24 1.24 0 1 0-1.24 1.242zm8.273.413H9.002c.096.228.098.414.098.414v4.135c0 .827-.827.828-.827.828v3.31h2.482V7.445s.827 0 .827-.827V3.723s0-.83-.827-.83zM8.43 2.283c.027.014.055.028.08.043.176.096.375.156.59.156a1.24 1.24 0 1 0-1.24-1.24c0 .437.228.82.57 1.04z"/><circle cx="5.791" cy="1.241" r="1.241"/><path d="M8.273 3.723s0-.827-.827-.827h-3.31s-.826 0-.826.827v2.895c0 .827.827.827.827.827v4.136h3.31V7.447s.826 0 .826-.827V3.722z"/></g></svg>
               Forum <span class="edit-nav__link-count">2</span>
             </a>
@@ -102,164 +102,52 @@
 
       <div class="edit-area__editor">
         <div class="edit-area__editor-head">
-          <h2 class="edit-area__editor-title h3">Course info</h2>
-          <ul class="nav-tabs">
-            <li class="nav-tabs__item nav-tabs__item--active">
-              <a href="#" class="link-with-number js-tab-control" data-target="edit-course">General</a>
-            </li>
-            <li class="nav-tabs__item">
-              <a href="#" class="link-with-number js-tab-control" data-target="edit-announce">Announcements <span class="link-with-number__value">2</span></a>
-            </li>
-          </ul>
-          <div class="edit-area-alert">Changes saved</div>
+          <h2 class="edit-area__editor-title h3">Forum</h2>
         </div>
 
-        <div class="edit-area__tabs-container js-tab-container">
-          <div class="edit-course js-tab js-tab--active">
-            <form action="/echo" method="POST">
-              <div class="edit-course__col edit-course__col--1">
-                <div class="edit-course__row">
-                  <label for="">Title</label>
-                  <input type="text">
+        <div class="edit-forum">
+          <div class="edit-forum__item">
+            <h2 class="edit-forum__item-title">3496 Aviation Weather Forecasts course (5/11 completed)</h2>
+            <p class="edit-forum__item-title">Section 4 - Experimental Grapical Forecasts</p>
+            <div class="forum__comment-wrap forum__comment-wrap--edit-draft">
+              <div class="forum__avatar-wrap">
+                <img src="img/person-thumb-1.png" alt="" class="forum__avatar">
+              </div>
+              <div class="forum__comment">
+                <div class="forum__comment-head">
+                  <span class="forum__comment-author">Adam Mccarthy</span>
+                  <span class="forum__comment-date">February 23, 2016</span>
+                  <a href="#" class="btn btn--forum btn--publish">Publish</a>
                 </div>
-                <div class="edit-course__row">
-                  <label for="">Description</label>
-                  <textarea name="" id="" rows="5"></textarea>
-                </div>
-                <div class="edit-course__row">
-                  <div class="edit-course__group edit-course__group--1">
-                    <div class="edit-course__label">Course for</div>
-                    <div class="checkbox checkbox--white-bg">
-                      <input type="checkbox" id="ch1" checked="">
-                      <label for="ch1" class="checkbox__label checkbox__label--dark">ATC</label>
-                    </div>
-                    <div class="checkbox checkbox--white-bg">
-                      <input type="checkbox" id="ch2" checked="">
-                      <label for="ch2" class="checkbox__label checkbox__label--dark">AIM</label>
-                    </div>
-                    <div class="checkbox checkbox--white-bg">
-                      <input type="checkbox" id="ch3">
-                      <label for="ch3" class="checkbox__label checkbox__label--dark">ATSEP</label>
-                    </div>
-                  </div>
-                  <div class="edit-course__group edit-course__group--1 center-text">
-                    <div class="edit-course__label">obligatory</div>
-                    <div class="checkbox checkbox--white-bg">
-                      <input type="checkbox" id="ch4">
-                      <label for="ch4" class="checkbox__label checkbox__label--single"></label>
-                    </div>
-                    <div class="checkbox checkbox--white-bg">
-                      <input type="checkbox" id="ch5">
-                      <label for="ch5" class="checkbox__label checkbox__label--single"></label>
-                    </div>
-                    <div class="checkbox checkbox--white-bg">
-                      <input type="checkbox" id="ch6">
-                      <label for="ch5" class="checkbox__label checkbox__label--single"></label>
-                    </div>
-                  </div>
-                  <div class="edit-course__group edit-course__group--2">
-                    <div class="edit-course__label">repeat every</div>
-                    <select name="" id="">
-                      <option value="">earl</option>
-                      <option value="">month</option>
-                      <option value="">2 years</option>
-                    </select>
-                    <select name="" id="">
-                      <option value="">earl</option>
-                      <option value="">month</option>
-                      <option value="">2 years</option>
-                    </select>
-                    <select name="" id="">
-                      <option value="">earl</option>
-                      <option value="">month</option>
-                      <option value="">2 years</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="edit-course__row">
-                  <label for="">Setting 1</label>
-                  <input type="text">
-                </div>
-                <div class="edit-course__row">
-                  <div class="edit-course__group edit-course__group--half">
-                    <label for="">Setting 2</label>
-                    <input type="text">
-                  </div>
-                  <div class="edit-course__group edit-course__group--half">
-                    <label for="">Setting 3</label>
-                    <input type="text">
-                  </div>
+                <div class="forum__comment-text">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                  <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type </p>
                 </div>
               </div>
-              <div class="edit-course__col edit-course__col--2">
-                <div class="edit-course__row">
-                  <label for="">Picture</label>
-                  <div class="upload-file upload-file--edit" style="background-image: url('img/course-bg-big-2.png');">
-                    <input type="file">
-                    <span class="upload-file__btn">Replace</span>
-                    <button class="btn btn--close"></button>
-                  </div>
-                </div>
-                <div class="edit-course__row">
-                  <div class="checkbox checkbox--white-bg">
-                    <input type="checkbox" id="ch7">
-                    <label for="ch7" class="checkbox__label checkbox__label--dark">Forum is enabled in course</label>
-                  </div>
-                  <div class="checkbox checkbox--white-bg">
-                    <input type="checkbox" id="ch7">
-                    <label for="ch7" class="checkbox__label checkbox__label--dark">Forum is enabled in sections</label>
-                  </div>
-                </div>
-                <div class="edit-course__row">
-                  <p class="edit-course__add">Course instructor(s) <a href="" class="btn btn--edit-add">add</a></p>
-                </div>
-                <div class="edit-course__row">
-                  <div class="edit-course__select-group">
-                    <select name="" id="" class="select select--long">
-                      <option value="">earl</option>
-                      <option value="">month</option>
-                      <option value="">2 years</option>
-                    </select>
-                    <select name="" id="" class="select select--long">
-                      <option value="">earl</option>
-                      <option value="">month</option>
-                      <option value="">2 years</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-            </form>
+            </div>
           </div>
-          <div class="edit-announce js-tab">
-            <div class="edit-announce__item edit-announce__item--info">
-              <div class="edit-announce__info-left">
-                <p class="edit-announce__info-message">2 Section added and 2 tests. Please, complete sections and tests</p>
-                <span class="edit-announce__info-date">24.02 2016</span>
-                <span class="edit-announce__info-author">Gladys Cross</span>
+          <div class="edit-forum__item">
+            <h2 class="edit-forum__item-title">3496 Aviation Weather Forecasts course (5/11 completed)</h2>
+            <p class="edit-forum__item-title">Section 4 - Experimental Grapical Forecasts</p>
+            <div class="forum__comment-wrap forum__comment-wrap--edit-draft">
+              <div class="forum__avatar-wrap">
+                <img src="img/person-thumb-2.png" alt="" class="forum__avatar">
               </div>
-              <div class="edit-announce__info-right">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.581 10.582"><path d="M0 8.31l3.02-3.02L0 2.27 2.27 0l3.02 3.02L8.31 0l2.27 2.27-3.02 3.02 3.02 3.02-2.27 2.272-3.02-3.02-3.02 3.02L0 8.312z"/></svg>
-                <div class="edit-announce__thumb edit-announce__thumb--info"><img src="img/person-thumb-1.png" alt=""></div>
+              <div class="forum__comment">
+                <div class="forum__comment-head">
+                  <span class="forum__comment-author">Adam Mccarthy</span>
+                  <span class="forum__comment-date">March 23, 2016</span>
+                  <a href="#" class="btn btn--forum btn--publish">Publish</a>
+                </div>
+                <div class="forum__comment-text">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                  <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type </p>
+                </div>
               </div>
-            </div>
-            <div class="edit-announce__item edit-announce__item--info">
-              <div class="edit-announce__info-left">
-                <p class="edit-announce__info-message">Deadline for course changed. Please, complete immediately</p>
-                <span class="edit-announce__info-date">20.02 2016</span>
-                <span class="edit-announce__info-author">Joy Haynero</span>
-              </div>
-              <div class="edit-announce__info-right">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.581 10.582"><path d="M0 8.31l3.02-3.02L0 2.27 2.27 0l3.02 3.02L8.31 0l2.27 2.27-3.02 3.02 3.02 3.02-2.27 2.272-3.02-3.02-3.02 3.02L0 8.312z"/></svg>
-                <div class="edit-announce__thumb edit-announce__thumb--info"><img src="img/student-photo-thumb.jpg" alt=""></div>
-              </div>
-            </div>
-            <div class="edit-announce__item edit-announce__item--action">
-              <div class="edit-announce__thumb edit-announce__thumb--action"><img src="img/person-thumb-2.png" alt=""></div>
-              <p class="edit-announce__action-message">Deadline for course changed. Please, complete immediately</p>
-              <a href="" class="edit-announce__action-btn btn btn--submit">Add</a>
             </div>
           </div>
         </div>
+
       </div>
       
 

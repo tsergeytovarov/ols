@@ -1,0 +1,25 @@
+.edit-forum {
+	padding: 0 25px 25px;
+	width: 75%;
+	
+	&__item {
+		margin-top: 15px;
+		border-bottom: 1px solid #D4D4D4;
+		
+		&:last-of-type {
+			border-bottom: none;
+		}
+	}
+
+	&__item-title {
+		padding: 0 0 8px;
+		margin: 0;
+		font-family: $montserrat;
+		font-size: 14px;
+		line-height: 1.2;
+	}
+
+	.forum__comment-wrap {
+		margin-top: 12px;
+	}
+}
