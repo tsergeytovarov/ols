@@ -44,12 +44,15 @@
 		&--section {
 			display: block;
 			padding: 5px 8px;
+			margin-bottom: 5px;
 
 			@include clearfix();
 
 			svg {
 				width: 12px;
 				height: 12px;
+				margin-top: 4px;
+				vertical-align: top;
 			}
 		}
 	}
@@ -89,6 +92,7 @@
 
 	&__link-text {
 		float: left;
+		display: inline-block;
 	}
 
 	&__link-sum {

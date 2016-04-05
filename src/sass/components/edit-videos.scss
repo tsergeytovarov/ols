@@ -1,0 +1,85 @@
+.edit-videos {
+	padding: 0px 25px 25px;
+
+	&__head {
+		font-family: $montserrat-bold;
+		font-size: 18px;
+		line-height: 1.2;
+		color: #343D44;
+		margin-bottom: 20px;
+	}
+
+	&__descr {
+		font-family: $montserrat;
+		font-size: 12px;
+		color: #90A4AE;
+		padding-left: 25px;
+	}
+	
+	&__item {
+		padding: 15px;
+		background: #ECEFF1;
+		margin-bottom: 30px;
+		font-size: 0;
+	}
+
+	&__item-icon {
+		display: inline-block;
+		width: 15%;
+		text-align: center;
+		background: #37474F;
+		border-radius: 5px;
+		vertical-align: top;
+		line-height: 0;
+		padding: 17px 0;
+
+		svg {
+			width: 20px;
+			height: 25px;
+		}
+
+		path {
+			fill: #ECEFF1;
+		}
+	}
+
+	&__item-about {
+		box-sizing: border-box;
+		display: inline-block;
+		width: 77%;
+		padding-left: 16px;
+	}
+
+
+	&__item-close {
+		display: inline-block;
+		width: 8%;
+		text-align: right;
+		vertical-align: top;
+
+		svg {
+			width: 12px;
+			height: 12px;
+		}
+
+		path {
+			fill: #97A4AB;
+		}
+	}
+
+	label {
+		font-family: $montserrat;
+		color: #455A64;
+	}
+
+	input[type=text] {
+		max-width: 390px;
+		border-radius: 0;
+		font-family: $montserrat;
+		font-size: 13px;
+	}
+	
+	&__btn-save {
+		margin: 0;
+	}
+}

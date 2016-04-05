@@ -107,10 +107,10 @@
             <a href="#" class="btn btn-action btn-action--delete">Delete course</a>
           </div>
           <ul class="nav-tabs">
-            <li class="nav-tabs__item nav-tabs__item--active">
+            <li class="nav-tabs__item">
               <a href="#" class="link-with-number js-tab-control" data-target="edit-section-info">Section info</a>
             </li>
-            <li class="nav-tabs__item">
+            <li class="nav-tabs__item nav-tabs__item--active">
               <a href="#" class="link-with-number js-tab-control" data-target="edit-videos">Videos <span class="link-with-number__value">2</span></a>
             </li>
             <li class="nav-tabs__item">
@@ -121,7 +121,7 @@
         </div>
 
         <div class="edit-area__tabs-container js-tab-container">
-          <div class="edit-course js-tab js-tab--active">
+          <div class="edit-course js-tab">
             <form action="/echo" method="POST">
               <div class="edit-course__col edit-course__col--1">
                 <div class="edit-course__row">
@@ -144,34 +144,54 @@
               </div>
             </form>
           </div>
-          <div class="edit-announce js-tab">
-            <div class="edit-announce__item edit-announce__item--info">
-              <div class="edit-announce__info-left">
-                <p class="edit-announce__info-message">2 Section added and 2 tests. Please, complete sections and tests</p>
-                <span class="edit-announce__info-date">24.02 2016</span>
-                <span class="edit-announce__info-author">Gladys Cross</span>
+          <div class="edit-videos js-tab js-tab--active">
+            <div class="edit-videos__head">2 videos <span class="edit-videos__descr">Drag and drop to reorder</span></div>
+            <form action="/echo" method="POST">
+              <div class="edit-videos__item">
+                <div class="edit-videos__item-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.101 9.901"><path d="M0 9.9V0l8.1 4.95L0 9.9z" /></svg>
+                </div>
+                <div class="edit-videos__item-about">
+                  <div class="edit-videos__item-row">
+                    <label for="">Title</label>
+                  </div>
+                  <div class="edit-videos__item-row">
+                    <input type="text" class="edit-videos__item-input">
+                    <div class="checkbox-able">
+                      <input type="checkbox" id="ch10" checked>
+                      <label for="ch10" class="checkbox-able__label"><span class="checkbox-able__label-text">Downoadable</span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="edit-videos__item-close">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.581 10.582"><path d="M0 8.31l3.02-3.02L0 2.27 2.27 0l3.02 3.02L8.31 0l2.27 2.27-3.02 3.02 3.02 3.02-2.27 2.272-3.02-3.02-3.02 3.02L0 8.312z" fill="#FF5722"/></svg>
+                </div>
               </div>
-              <div class="edit-announce__info-right">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.581 10.582"><path d="M0 8.31l3.02-3.02L0 2.27 2.27 0l3.02 3.02L8.31 0l2.27 2.27-3.02 3.02 3.02 3.02-2.27 2.272-3.02-3.02-3.02 3.02L0 8.312z"/></svg>
-                <div class="edit-announce__thumb edit-announce__thumb--info"><img src="img/person-thumb-1.png" alt=""></div>
+              <div class="edit-videos__item">
+                <div class="edit-videos__item-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.101 9.901"><path d="M0 9.9V0l8.1 4.95L0 9.9z" /></svg>
+                </div>
+                <div class="edit-videos__item-about">
+                  <div class="edit-videos__item-row">
+                    <label for="">Title</label>
+                  </div>
+                  <div class="edit-videos__item-row">
+                    <input type="text" class="edit-videos__item-input">
+                    <div class="checkbox-able">
+                      <input type="checkbox" id="ch10">
+                      <label for="ch10" class="checkbox-able__label"><span class="checkbox-able__label-text">Downoadable</span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="edit-videos__item-close">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.581 10.582"><path d="M0 8.31l3.02-3.02L0 2.27 2.27 0l3.02 3.02L8.31 0l2.27 2.27-3.02 3.02 3.02 3.02-2.27 2.272-3.02-3.02-3.02 3.02L0 8.312z" fill="#FF5722"/></svg>
+                </div>
               </div>
-            </div>
-            <div class="edit-announce__item edit-announce__item--info">
-              <div class="edit-announce__info-left">
-                <p class="edit-announce__info-message">Deadline for course changed. Please, complete immediately</p>
-                <span class="edit-announce__info-date">20.02 2016</span>
-                <span class="edit-announce__info-author">Joy Haynero</span>
+              <div class="edit-videos__add">
+                <a href="#" class="btn btn-action"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.128 9.128"><path d="M0 3.317h3.317V0H5.81v3.317h3.32V5.81H5.81v3.32H3.318V5.81H0V3.318z" /></svg> Add section</a>
               </div>
-              <div class="edit-announce__info-right">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.581 10.582"><path d="M0 8.31l3.02-3.02L0 2.27 2.27 0l3.02 3.02L8.31 0l2.27 2.27-3.02 3.02 3.02 3.02-2.27 2.272-3.02-3.02-3.02 3.02L0 8.312z"/></svg>
-                <div class="edit-announce__thumb edit-announce__thumb--info"><img src="img/student-photo-thumb.jpg" alt=""></div>
-              </div>
-            </div>
-            <div class="edit-announce__item edit-announce__item--action">
-              <div class="edit-announce__thumb edit-announce__thumb--action"><img src="img/person-thumb-2.png" alt=""></div>
-              <p class="edit-announce__action-message">Deadline for course changed. Please, complete immediately</p>
-              <a href="" class="edit-announce__action-btn btn btn--submit">Add</a>
-            </div>
+              <button class="edit-videos__btn-save btn btn--submit">Save</button>
+            </form>
           </div>
         </div>
       </div>
