@@ -1,100 +1,100 @@
 .edit-announce {
 
-	padding: 0 25px 25px;
+  padding: 0 25px 25px;
 
-	&__item {
-		box-sizing: border-box;
-		padding: 10px 15px;
-		font-family: $montserrat;
-		font-size: 13px;
-		color: #455A64;
-		margin-bottom: 15px;
+  &__item {
+    box-sizing: border-box;
+    padding: 10px 15px;
+    font-family: $montserrat;
+    font-size: 13px;
+    color: #455A64;
+    margin-bottom: 15px;
 
-		@include clearfix();
+    @include clearfix();
 
-		&--info {
-			border: 1px solid #EFEBE9;
-			background: #EFEBE9;
-		}
+    &--info {
+      border: 1px solid #EFEBE9;
+      background: #EFEBE9;
+    }
 
-		&--action {
-			border: 1px solid #D7CCC8;
-			background: #ffffff;
-		}
-	}
+    &--action {
+      border: 1px solid #D7CCC8;
+      background: #ffffff;
+    }
+  }
 
-	&__info-left {
-		float: left;
-	}
+  &__info-left {
+    float: left;
+  }
 
-	&__info-right {
-		float: right;
-		margin-top: 5px;
+  &__info-right {
+    float: right;
+    margin-top: 5px;
 
-		@include clearfix();
+    @include clearfix();
 
-		svg {
-			float: right;
-			width: 12px;
-			height: 12px;
-			margin-top: 9px;
-			cursor: pointer;
-		}
+    svg {
+      float: right;
+      width: 12px;
+      height: 12px;
+      margin-top: 9px;
+      cursor: pointer;
+    }
 
-		path {
-			fill: #78909C;
-		}
-	}
+    path {
+      fill: #78909C;
+    }
+  }
 
-	&__info-message {
-		padding: 0;
-		margin: 0;
-	}
+  &__info-message {
+    padding: 0;
+    margin: 0;
+  }
 
-	&__info-date,
-	&__info-author {
-		font-family: $montserrat;
-		color: #78909C;
-		font-size: 12px;
-		line-height: 1.1;
-	}
+  &__info-date,
+  &__info-author {
+    font-family: $montserrat;
+    color: #78909C;
+    font-size: 12px;
+    line-height: 1.1;
+  }
 
-	&__info-date {
-		padding-right: 15px;
-	}
+  &__info-date {
+    padding-right: 15px;
+  }
 
-	&__thumb {
+  &__thumb {
 
-		img {
-			display: block;
-			width: 30px;
-			height: auto;
-			border-radius: 50%;
-		}
+    img {
+      display: block;
+      width: 30px;
+      height: auto;
+      border-radius: 50%;
+    }
 
-		&--info {
-			float: right;
-			padding-right: 10px;
-		}
+    &--info {
+      float: right;
+      padding-right: 10px;
+    }
 
-		&--action {
-			float: left;
-			padding-right: 10px;
-		}
-	}
+    &--action {
+      float: left;
+      padding-right: 10px;
+    }
+  }
 
-	&__action-message {
-		float: left;
-		width: 80%;
-		margin: 0;
-		line-height: 30px;
-		border-left: 1px solid #D7CCC8;
-		padding-left: 10px;
-	}
+  &__action-message {
+    float: left;
+    width: 80%;
+    margin: 0;
+    line-height: 30px;
+    border-left: 1px solid #D7CCC8;
+    padding-left: 10px;
+  }
 
-	&__action-btn {
-		margin: 0;
-		float: right;
-	}
+  &__action-btn {
+    margin: 0;
+    float: right;
+  }
 
 }

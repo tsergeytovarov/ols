@@ -1,38 +1,38 @@
 .btn-action {
-	color: #79898E;
-	font-size: 13px;
-	line-height: 1.1;
-	text-decoration: none;
-	padding: 0px 25px 15px 0;
+  color: #79898E;
+  font-size: 13px;
+  line-height: 1.1;
+  text-decoration: none;
+  padding: 0px 25px 15px 0;
 
-	svg {
-		width: 10px;
-		height: 10px;
-		margin-right: 5px;
-	}
+  svg {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+  }
 
-	path {
-		fill: #546E7A;
-	}
+  path {
+    fill: #546E7A;
+  }
 
-	&:hover {
-		color: #546E7A;
-	}
+  &:hover {
+    color: #546E7A;
+  }
 
-	&:active {
-		opacity: .8;
-	}
+  &:active {
+    opacity: .8;
+  }
 
-	&--delete {
-		color: $red;
+  &--delete {
+    color: $red;
 
-		path {
-			fill: $red;
-		}
+    path {
+      fill: $red;
+    }
 
-		&:hover {
-			color: darken($red, 10%);
-		}
-	}
+    &:hover {
+      color: darken($red, 10%);
+    }
+  }
 
 }

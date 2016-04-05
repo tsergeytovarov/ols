@@ -1,32 +1,32 @@
 .edit-files {
-	padding: 0px 25px 25px;
+  padding: 0px 25px 25px;
 
-	&__head {
-		font-family: $montserrat-bold;
-		font-size: 18px;
-		line-height: 1.2;
-		color: #343D44;
-		margin-bottom: 20px;
-	}
+  &__head {
+    font-family: $montserrat-bold;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #343D44;
+    margin-bottom: 20px;
+  }
 
-	&__descr {
-		font-family: $montserrat;
-		font-size: 12px;
-		color: #90A4AE;
-		padding-left: 25px;
-	}
+  &__descr {
+    font-family: $montserrat;
+    font-size: 12px;
+    color: #90A4AE;
+    padding-left: 25px;
+  }
 
-	&__item-wrap {
-		font-size: 0;
-		margin-bottom: 15px;
+  &__item-wrap {
+    font-size: 0;
+    margin-bottom: 15px;
 
-		@include clearfix();
-	}
+    @include clearfix();
+  }
 
-	&__item {
-		float: left;
-		width: 95%;
-		border: 2px solid #D8E3EE;
+  &__item {
+    float: left;
+    width: 95%;
+    border: 2px solid #D8E3EE;
     border-radius: 20px;
     padding: 6px 12px;
     box-sizing: border-box;
@@ -35,38 +35,38 @@
     color: #818181;
 
     svg {
-    	width: 14px;
-    	height: 14px;
-    	margin-right: 5px;
+      width: 14px;
+      height: 14px;
+      margin-right: 5px;
     }
-	}
+  }
 
-	&__item-text {
-		display: inline-block;
-		vertical-align: top;
-		line-height: 15px;
-	}
+  &__item-text {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 15px;
+  }
 
-	&__item-delete {
-		float: right;
-		width: 5%;
-		cursor: pointer;
-		text-align: right;
-		padding-top: 9px;
+  &__item-delete {
+    float: right;
+    width: 5%;
+    cursor: pointer;
+    text-align: right;
+    padding-top: 9px;
 
-		svg {
-			width: 12px;
-			height: 12px;
-		}
+    svg {
+      width: 12px;
+      height: 12px;
+    }
 
-		path {
-			fill: #97A4AB;
-		}
+    path {
+      fill: #97A4AB;
+    }
 
-		&:hover {
-			path {
-				fill: $red;
-			}
-		}
-	}
+    &:hover {
+      path {
+        fill: $red;
+      }
+    }
+  }
 }

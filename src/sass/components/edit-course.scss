@@ -1,84 +1,84 @@
 .edit-course {
-	padding: 0 25px 25px;
+  padding: 0 25px 25px;
 
-	@include clearfix();
+  @include clearfix();
 
-	&__col {
-		float: left;
-		box-sizing: border-box;
-
-
-		&--1{
-			width: 56%;
-			padding-right: 20px;
-		}
-
-		&--2{
-			width: 44%;
-		}
-	}
+  &__col {
+    float: left;
+    box-sizing: border-box;
 
 
-	&__row{
-		font-size: 0;
-		margin-bottom: 15px;
-	}
+    &--1{
+      width: 56%;
+      padding-right: 20px;
+    }
 
-	&__group {
-		box-sizing: border-box;
-		display: inline-block;
-		vertical-align: top;
+    &--2{
+      width: 44%;
+    }
+  }
 
 
-		&--half {
-			width: 50%;
+  &__row{
+    font-size: 0;
+    margin-bottom: 15px;
+  }
 
-			&:first-child {
-				padding-right: 25px;
-			}
-		}
+  &__group {
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
 
-		&--1 {
-			width: 30%;
 
-			.edit-course__label {
-				padding-bottom: 20px;
-			}
+    &--half {
+      width: 50%;
 
-		}
+      &:first-child {
+        padding-right: 25px;
+      }
+    }
 
-		&--2 {
-			width: 40%;
-			padding-left: 25px;
+    &--1 {
+      width: 30%;
 
-			.edit-course__label {
-				padding-bottom: 20px;
-			}
-		}
-	}
-	
-	&__label {
-		display: block;
-		color: #97A4AB;
-		font-size: 14px;
-		padding-bottom: 10px;
-	}
+      .edit-course__label {
+        padding-bottom: 20px;
+      }
 
-	&__add {
-		font-family: $montserrat;
-		font-size: 14px;
-		color: #97A4AB;
+    }
 
-		.btn--edit-add {
-			margin-left: 5px;
-		}
-	}
+    &--2 {
+      width: 40%;
+      padding-left: 25px;
 
-	&__select-group {
-		margin-top: 40px;
-	}
-	
-	&__btn-save {
-		margin: 0;
-	}
+      .edit-course__label {
+        padding-bottom: 20px;
+      }
+    }
+  }
+  
+  &__label {
+    display: block;
+    color: #97A4AB;
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+
+  &__add {
+    font-family: $montserrat;
+    font-size: 14px;
+    color: #97A4AB;
+
+    .btn--edit-add {
+      margin-left: 5px;
+    }
+  }
+
+  &__select-group {
+    margin-top: 40px;
+  }
+  
+  &__btn-save {
+    margin: 0;
+  }
 }

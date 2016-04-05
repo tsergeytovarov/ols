@@ -1,105 +1,105 @@
 .edit-nav {
-	float: left;
-	width: 26%;
-	padding-right: 20px;
-	box-sizing: border-box;
+  float: left;
+  width: 26%;
+  padding-right: 20px;
+  box-sizing: border-box;
 
-	&__list {
-		padding: 0;
-		margin: 0;
-		list-style: none;
-	}
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
 
-	&__list-item {
-		margin-bottom: 5px;
-	}
-	
-	&__link {
-		display: inline-block;
-		vertical-align: top;
-		text-decoration: none;
-		color: #546E7A;
-		padding: 5px 25px 5px 8px;
-		line-height: 20px;
+  &__list-item {
+    margin-bottom: 5px;
+  }
+  
+  &__link {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    color: #546E7A;
+    padding: 5px 25px 5px 8px;
+    line-height: 20px;
 
-		&:hover,
-		&--active {
-			border-radius: 6px;
-			background: #ffffff;
-		}
+    &:hover,
+    &--active {
+      border-radius: 6px;
+      background: #ffffff;
+    }
 
-		svg {
-			display: inline-block;
-			vertical-align: sub;
-			width: 15px;
-			height: 15px;
-			margin-right: 8px;
-		}
+    svg {
+      display: inline-block;
+      vertical-align: sub;
+      width: 15px;
+      height: 15px;
+      margin-right: 8px;
+    }
 
-		path,
-		circle {
-			fill: #546E7A;
-		}
+    path,
+    circle {
+      fill: #546E7A;
+    }
 
-		&--section {
-			display: block;
-			padding: 5px 8px;
-			margin-bottom: 5px;
+    &--section {
+      display: block;
+      padding: 5px 8px;
+      margin-bottom: 5px;
 
-			@include clearfix();
+      @include clearfix();
 
-			svg {
-				width: 12px;
-				height: 12px;
-				margin-top: 4px;
-				vertical-align: top;
-			}
-		}
-	}
+      svg {
+        width: 12px;
+        height: 12px;
+        margin-top: 4px;
+        vertical-align: top;
+      }
+    }
+  }
 
-	&__link-count {
-		display: inline-block;
-		margin-left: 5px;
-		padding: 3px 8px;
-		background: #546E7A;
-		border-radius: 45%;
-		font-size: 12px;
-		line-height: 1.1;
-		color: #D8E3EE;
-	}
+  &__link-count {
+    display: inline-block;
+    margin-left: 5px;
+    padding: 3px 8px;
+    background: #546E7A;
+    border-radius: 45%;
+    font-size: 12px;
+    line-height: 1.1;
+    color: #D8E3EE;
+  }
 
-	&__title {
-		padding: 30px 8px 5px;
-		margin: 0;
-		font-family: $montserrat-bold;
-		font-size: 16px;
-		line-height: 1.2;
-		color: #37474F;
-	}
+  &__title {
+    padding: 30px 8px 5px;
+    margin: 0;
+    font-family: $montserrat-bold;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #37474F;
+  }
 
-	&__descr {
-		padding: 0px 8px 0;
-		font-size: 13px;
-		color: #90A4AE;
-	}
+  &__descr {
+    padding: 0px 8px 0;
+    font-size: 13px;
+    color: #90A4AE;
+  }
 
-	&__group {
-		border-top: 1px solid #B0BEC5;
-		border-bottom: 1px solid #B0BEC5;
-		margin: 25px 0 10px;
-		padding: 10px 0;
-	}
+  &__group {
+    border-top: 1px solid #B0BEC5;
+    border-bottom: 1px solid #B0BEC5;
+    margin: 25px 0 10px;
+    padding: 10px 0;
+  }
 
-	&__link-text {
-		float: left;
-	}
+  &__link-text {
+    float: left;
+  }
 
-	&__link-sum {
-		float: right;
-	}
+  &__link-sum {
+    float: right;
+  }
 
-	&__actions {
-		padding: 0 8px;
-	}
+  &__actions {
+    padding: 0 8px;
+  }
 
 }
