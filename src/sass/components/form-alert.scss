@@ -12,4 +12,20 @@
   &__btn {
     margin-left: 15px;
   }
+
+  &--edit-test {
+    padding: 10px 15px 10px 13px;
+
+    @include clearfix();
+  }
+  
+  &--edit-test &__text {
+    float: left;
+  }
+
+  &--edit-test &__link {
+    float: right;
+    color: #546E7A;
+  }
+
 }
