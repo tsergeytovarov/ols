@@ -15,6 +15,17 @@
     @media (max-width: $tablet) {
       max-width: 60px;
       min-height: 60px;
+      max-height: 60px;
+
+      input[type=file],
+      .upload-file__btn {
+        top: 0;
+        left: 215%;
+      }
+    }
+
+    @media (min-width: $desktop) {
+      min-height: 215px;
     }
   }
 
