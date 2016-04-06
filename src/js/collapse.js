@@ -11,10 +11,13 @@
         event.preventDefault();
 
         var btn = item.querySelector('.js-collapse-text');
-        var text = item.dataset.text;
+        var btnText = btn.innerHTML;
+        var text = item.dataset.texte;
 
-        btn.dataset.text = btn.innerHTML;
+        console.log(btn.dataset.texte);
+
         btn.innerHTML = text;
+        item.dataset.texte = btnText;
 
         item.parentNode.parentNode.classList.toggle('collapse--open');
       });

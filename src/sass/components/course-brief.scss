@@ -5,7 +5,18 @@
   background: #ffffff;
 
   &__img {
-    width: 100%;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      height: 35px;
+      background: url("../img/svg/contour.svg") 0 0 no-repeat;
+      background-size: 100% 185px;
+      content: "";
+    }
 
     img {
       display: block;
@@ -19,17 +30,6 @@
     position: relative;
     padding: 10px 45px 45px;
     text-align: center;
-
-    &::before {
-      position: absolute;
-      top: -32px;
-      right: 0;
-      left: 0;
-      height: 35px;
-      background: url(../img/svg/contour.svg) 0 0 no-repeat;
-      background-size: 100% 185px;
-      content: "";
-    }
 
     // fixing svg bug
     &::after {

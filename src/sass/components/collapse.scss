@@ -17,6 +17,7 @@
 
   &__header {
     @include clearfix();
+    cursor: pointer;
   }
 
   &__title {
@@ -24,7 +25,7 @@
     font-family: $montserrat;
     font-size: 18px;
     font-weight: 400;
-    
+
     @media (max-width: $tablet) {
       font-size: 14px;
     }

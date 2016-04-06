@@ -70,8 +70,13 @@
     color: #37474F;
   }
 
+  .link-with-number {
+    vertical-align: middle;
+  }
+
   &__link {
-    margin-top: 10px;
+    display: inline-block;
+    vertical-align: middle;
 
     @media (min-width: $desktop) {
       margin-top: 0;
@@ -94,7 +99,7 @@
   }
 
   &__announce {
-    
+
     @media (max-width: $tablet) {
 
       .link-with-number {

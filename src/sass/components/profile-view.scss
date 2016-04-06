@@ -14,7 +14,7 @@
     @media (max-width: $desktop) {
       width: 160px;
     }
-    
+
     img {
       display: block;
       width: 100%;
@@ -104,9 +104,12 @@
   }
 
   &__table {
+    td {
+      padding-bottom: 10px;
+    }
+
     td:first-child {
       width: 150px;
-      padding-bottom: 10px;
     }
   }
 }
