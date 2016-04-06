@@ -57,14 +57,17 @@
     }
   }
 
-
-
   &__nav-list {
     margin: 0;
     padding: 0;
     list-style: none;
     text-align: center;
     font-size: 0;
+
+    @media (max-width: $desktop) {
+      margin-top: 20px;
+      text-align: left;
+    }
   }
 
   &__nav-item {
