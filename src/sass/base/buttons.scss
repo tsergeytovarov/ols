@@ -457,4 +457,19 @@
       color: #fff;
     }
   }
+
+  &--footer {
+    text-transform: uppercase;
+    color: #B0BEC5;
+    border: 1px solid #B0BEC5;
+    border-radius: 5px;
+    font-size: 13px;
+    line-height: 13px;
+    padding: 5px 10px;
+
+    &:hover {
+      background-color: #B0BEC5;
+      color: #fff;
+    }
+  }
 }
