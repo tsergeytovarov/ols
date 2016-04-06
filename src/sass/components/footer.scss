@@ -120,3 +120,33 @@
     }
   }
 }
+
+.edit {
+  .footer {
+    &__version .wrapper::after {
+      right: 78px;
+      left: auto;
+    }
+
+    &__open-version {
+      @media (max-width: $desktop) {
+        text-align: right;
+        margin-bottom: 0;
+      }
+    }
+
+    &__nav-list {
+      @media (max-width: $desktop) {
+        margin-top: 0;
+        text-align: center;
+      }
+    }
+
+    &__nav-item {
+      @media (max-width: $desktop) {
+        display: inline-block;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
