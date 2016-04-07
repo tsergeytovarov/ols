@@ -21,4 +21,17 @@
       });
     });
   }
+
+  var deleteImage = document.querySelectorAll('.edit-quest__item-img button');
+
+  if (deleteImage) {
+    deleteImage = Array.prototype.slice.call(deleteImage, 0);
+
+    deleteImage.forEach(function(image) {
+      image.addEventListener('click', function(event) {
+        event.preventDefault();
+        image.parentNode.remove();
+      });
+    });
+  }
 })();
