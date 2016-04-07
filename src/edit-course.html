@@ -253,9 +253,13 @@
               </div>
             </div>
             <div class="edit-announce__item edit-announce__item--action">
-              <div class="edit-announce__thumb edit-announce__thumb--action"><img src="img/person-thumb-2.png" alt=""></div>
-              <p class="edit-announce__action-message">Deadline for course changed. Please, complete immediately</p>
-              <a href="" class="edit-announce__action-btn btn btn--submit">Add</a>
+              <form action="/echo" method="POST">
+                <button type="submit" class="edit-announce__action-btn btn btn--submit">Add</button>
+                <div class="edit-announce__thumb edit-announce__thumb--action"><img src="img/person-thumb-2.png" alt=""></div>
+                <div class="edit-announce__field-wrap">
+                  <input type="text" placeholder="Text" class="edit-announce__field">
+                </div>
+              </form>
             </div>
           </div>
         </div>
