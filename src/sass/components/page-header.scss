@@ -43,6 +43,12 @@
     }
   }
 
+  &--course-section {
+    @media (max-width: $tablet) {
+      padding: 35px 0 0;
+    }
+  }
+
   &--message-form {
     padding: 20px 0;
   }
