@@ -34,4 +34,17 @@
       });
     });
   }
+
+  var deleteVideo = document.querySelectorAll('.edit-videos__item-delete');
+
+  if (deleteVideo) {
+    deleteVideo = Array.prototype.slice.call(deleteVideo, 0);
+
+    deleteVideo.forEach(function(image) {
+      image.addEventListener('click', function(event) {
+        event.preventDefault();
+        image.parentNode.remove();
+      });
+    });
+  }
 })();
