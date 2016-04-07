@@ -83,17 +83,21 @@
     }
   }
 
-  &__action-message {
-    float: left;
-    width: 80%;
-    margin: 0;
-    line-height: 30px;
-    border-left: 1px solid #D7CCC8;
-    padding-left: 10px;
+  &__field-wrap {
+    margin: 0 80px 0 50px;
+
+    input {
+      border: 0;
+
+      &:focus {
+        border: 0;
+      }
+    }
   }
 
   &__action-btn {
     margin: 0;
+    margin-left: 10px;
     float: right;
   }
 

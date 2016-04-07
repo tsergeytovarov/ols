@@ -12,6 +12,9 @@
 
         var footer = document.querySelector('.footer');
         footer.classList.toggle('footer--open');
+
+        window.scrollTo(0, document.body.scrollHeight);
+
       });
     });
   }

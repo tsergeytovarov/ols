@@ -71,23 +71,31 @@
         <p class="edit-nav__title">Sections & tests</p>
         <p class="edit-nav__descr">Drag and drop to reorder</p>
         <div class="edit-nav__group">
-          <a class="edit-nav__link edit-nav__link--section">
-            <span class="edit-nav__link-text">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.962 11.73"><path d="M0 11.73h8.962V9.775H0v1.955zm0-4.887h11.962V4.888H0v1.955zM0 0v1.955h11.962V0H0z"/></svg>
-            Commercial Airliners</span>
-            <span class="edit-nav__link-sum">2</span>
-          </a>
-          <a class="edit-nav__link edit-nav__link--section">
-            <span class="edit-nav__link-text">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.021 12.164"><path d="M3.846 0C5.95 0 8.02.97 8.02 3.287c0 2.137-2.448 2.96-2.974 3.732-.395.573-.263 1.38-1.348 1.38-.707 0-1.052-.575-1.052-1.1 0-1.958 2.876-2.4 2.876-4.013 0-.887-.59-1.413-1.577-1.413-2.104 0-1.282 2.17-2.876 2.17C.493 4.043 0 3.697 0 3.04 0 1.43 1.84 0 3.846 0zm-.082 9.467c.74 0 1.348.607 1.348 1.348s-.608 1.348-1.348 1.348-1.348-.607-1.348-1.348c0-.74.608-1.348 1.348-1.348z"/></svg>
-            Aircraft Terms</span>
-            <span class="edit-nav__link-sum">15</span>
-          </a>
-          <a class="edit-nav__link edit-nav__link--section">
-            <span class="edit-nav__link-text"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.962 11.73"><path d="M0 11.73h8.962V9.775H0v1.955zm0-4.887h11.962V4.888H0v1.955zM0 0v1.955h11.962V0H0z"/></svg>
-            U.S. Aircraft History</span>
-            <span class="edit-nav__link-sum">2</span>
-          </a>
+          <ul class="sortable">
+            <li>
+              <a class="edit-nav__link edit-nav__link--section">
+                <span class="edit-nav__link-text">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.962 11.73"><path d="M0 11.73h8.962V9.775H0v1.955zm0-4.887h11.962V4.888H0v1.955zM0 0v1.955h11.962V0H0z"/></svg>
+                Commercial Airliners</span>
+                <span class="edit-nav__link-sum">2</span>
+              </a>
+            </li>
+            <li>
+              <a class="edit-nav__link edit-nav__link--section">
+                <span class="edit-nav__link-text">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.021 12.164"><path d="M3.846 0C5.95 0 8.02.97 8.02 3.287c0 2.137-2.448 2.96-2.974 3.732-.395.573-.263 1.38-1.348 1.38-.707 0-1.052-.575-1.052-1.1 0-1.958 2.876-2.4 2.876-4.013 0-.887-.59-1.413-1.577-1.413-2.104 0-1.282 2.17-2.876 2.17C.493 4.043 0 3.697 0 3.04 0 1.43 1.84 0 3.846 0zm-.082 9.467c.74 0 1.348.607 1.348 1.348s-.608 1.348-1.348 1.348-1.348-.607-1.348-1.348c0-.74.608-1.348 1.348-1.348z"/></svg>
+                Aircraft Terms</span>
+                <span class="edit-nav__link-sum">15</span>
+              </a>
+            </li>
+            <li>
+              <a class="edit-nav__link edit-nav__link--section">
+                <span class="edit-nav__link-text"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.962 11.73"><path d="M0 11.73h8.962V9.775H0v1.955zm0-4.887h11.962V4.888H0v1.955zM0 0v1.955h11.962V0H0z"/></svg>
+                U.S. Aircraft History</span>
+                <span class="edit-nav__link-sum">2</span>
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="edit-nav__actions">
           <a href="#" class="btn btn-action"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.128 9.128"><path d="M0 3.317h3.317V0H5.81v3.317h3.32V5.81H5.81v3.32H3.318V5.81H0V3.318z" /></svg> Add section</a>
@@ -196,7 +204,7 @@
                   <div class="upload-file upload-file--edit" style="background-image: url('img/course-bg-big-2.png');">
                     <input type="file">
                     <span class="upload-file__btn">Replace</span>
-                    <button class="btn btn--close"></button>
+                    <button type="button" class="btn btn--close js-delete-image" data-target="upload-file"></button>
                   </div>
                 </div>
                 <div class="edit-course__row">
@@ -253,9 +261,13 @@
               </div>
             </div>
             <div class="edit-announce__item edit-announce__item--action">
-              <div class="edit-announce__thumb edit-announce__thumb--action"><img src="img/person-thumb-2.png" alt=""></div>
-              <p class="edit-announce__action-message">Deadline for course changed. Please, complete immediately</p>
-              <a href="" class="edit-announce__action-btn btn btn--submit">Add</a>
+              <form action="/echo" method="POST">
+                <button type="submit" class="edit-announce__action-btn btn btn--submit">Add</button>
+                <div class="edit-announce__thumb edit-announce__thumb--action"><img src="img/person-thumb-2.png" alt=""></div>
+                <div class="edit-announce__field-wrap">
+                  <input type="text" placeholder="Text" class="edit-announce__field">
+                </div>
+              </form>
             </div>
           </div>
         </div>

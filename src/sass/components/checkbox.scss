@@ -52,7 +52,7 @@
 .checkbox-able {
   display: inline-block;
   vertical-align: top;
-  
+
   input[type="checkbox"] {
     display: none;
     position: relative;
@@ -102,7 +102,7 @@
     background-size: 10px;
   }
 
-  input[type="checkbox"]:checked + label span::after {
+  input[type="checkbox"] + label span::after {
     position: absolute;
     content: 'Downoadable';
     font-family: $montserrat;

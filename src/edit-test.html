@@ -71,23 +71,31 @@
         <p class="edit-nav__title">Sections & tests</p>
         <p class="edit-nav__descr">Drag and drop to reorder</p>
         <div class="edit-nav__group">
-          <a class="edit-nav__link edit-nav__link--section">
-            <span class="edit-nav__link-text">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.962 11.73"><path d="M0 11.73h8.962V9.775H0v1.955zm0-4.887h11.962V4.888H0v1.955zM0 0v1.955h11.962V0H0z"/></svg>
-            Commercial Airliners</span>
-            <span class="edit-nav__link-sum">2</span>
-          </a>
-          <a class="edit-nav__link edit-nav__link--section edit-nav__link--active">
-            <span class="edit-nav__link-text">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.021 12.164"><path d="M3.846 0C5.95 0 8.02.97 8.02 3.287c0 2.137-2.448 2.96-2.974 3.732-.395.573-.263 1.38-1.348 1.38-.707 0-1.052-.575-1.052-1.1 0-1.958 2.876-2.4 2.876-4.013 0-.887-.59-1.413-1.577-1.413-2.104 0-1.282 2.17-2.876 2.17C.493 4.043 0 3.697 0 3.04 0 1.43 1.84 0 3.846 0zm-.082 9.467c.74 0 1.348.607 1.348 1.348s-.608 1.348-1.348 1.348-1.348-.607-1.348-1.348c0-.74.608-1.348 1.348-1.348z"/></svg>
-            Aircraft Terms</span>
-            <span class="edit-nav__link-sum">15</span>
-          </a>
-          <a class="edit-nav__link edit-nav__link--section">
-            <span class="edit-nav__link-text"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.962 11.73"><path d="M0 11.73h8.962V9.775H0v1.955zm0-4.887h11.962V4.888H0v1.955zM0 0v1.955h11.962V0H0z"/></svg>
-            U.S. Aircraft History</span>
-            <span class="edit-nav__link-sum">2</span>
-          </a>
+          <ul class="sortable">
+            <li>
+              <a class="edit-nav__link edit-nav__link--section">
+                <span class="edit-nav__link-text">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.962 11.73"><path d="M0 11.73h8.962V9.775H0v1.955zm0-4.887h11.962V4.888H0v1.955zM0 0v1.955h11.962V0H0z"/></svg>
+                Commercial Airliners</span>
+                <span class="edit-nav__link-sum">2</span>
+              </a>
+            </li>
+            <li>
+              <a class="edit-nav__link edit-nav__link--section">
+                <span class="edit-nav__link-text">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.021 12.164"><path d="M3.846 0C5.95 0 8.02.97 8.02 3.287c0 2.137-2.448 2.96-2.974 3.732-.395.573-.263 1.38-1.348 1.38-.707 0-1.052-.575-1.052-1.1 0-1.958 2.876-2.4 2.876-4.013 0-.887-.59-1.413-1.577-1.413-2.104 0-1.282 2.17-2.876 2.17C.493 4.043 0 3.697 0 3.04 0 1.43 1.84 0 3.846 0zm-.082 9.467c.74 0 1.348.607 1.348 1.348s-.608 1.348-1.348 1.348-1.348-.607-1.348-1.348c0-.74.608-1.348 1.348-1.348z"/></svg>
+                Aircraft Terms</span>
+                <span class="edit-nav__link-sum">15</span>
+              </a>
+            </li>
+            <li>
+              <a class="edit-nav__link edit-nav__link--section">
+                <span class="edit-nav__link-text"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.962 11.73"><path d="M0 11.73h8.962V9.775H0v1.955zm0-4.887h11.962V4.888H0v1.955zM0 0v1.955h11.962V0H0z"/></svg>
+                U.S. Aircraft History</span>
+                <span class="edit-nav__link-sum">2</span>
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="edit-nav__actions">
           <a href="#" class="btn btn-action"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.128 9.128"><path d="M0 3.317h3.317V0H5.81v3.317h3.32V5.81H5.81v3.32H3.318V5.81H0V3.318z" /></svg> Add section</a>
@@ -132,7 +140,7 @@
                   <a href="#" class="btn-test">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.666 13.665"><path d="M1.226 9.93l2.485 2.487L0 13.665 1.226 9.93zm1.003-.9l6.843-6.845L11.46 4.57l-6.845 6.844L2.23 9.03zm7.802-7.804L11.08.146c.11-.098.234-.146.368-.146s.256.048.368.145L13.52 1.85a.534.534 0 0 1 .146.374.492.492 0 0 1-.145.362l-1.103 1.026-2.385-2.386z"/></svg>
                   </a>
-                  <a href="#" class="btn-test">
+                  <a href="#" class="btn-test js-test-delete">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.581 10.582"><path d="M0 8.31l3.02-3.02L0 2.27 2.27 0l3.02 3.02L8.31 0l2.27 2.27-3.02 3.02 3.02 3.02-2.27 2.272-3.02-3.02-3.02 3.02L0 8.312z"/></svg>
                   </a>
                 </div>
@@ -145,7 +153,7 @@
                   <a href="#" class="btn-test">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.666 13.665"><path d="M1.226 9.93l2.485 2.487L0 13.665 1.226 9.93zm1.003-.9l6.843-6.845L11.46 4.57l-6.845 6.844L2.23 9.03zm7.802-7.804L11.08.146c.11-.098.234-.146.368-.146s.256.048.368.145L13.52 1.85a.534.534 0 0 1 .146.374.492.492 0 0 1-.145.362l-1.103 1.026-2.385-2.386z"/></svg>
                   </a>
-                  <a href="#" class="btn-test">
+                  <a href="#" class="btn-test js-test-delete">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.581 10.582"><path d="M0 8.31l3.02-3.02L0 2.27 2.27 0l3.02 3.02L8.31 0l2.27 2.27-3.02 3.02 3.02 3.02-2.27 2.272-3.02-3.02-3.02 3.02L0 8.312z"/></svg>
                   </a>
                 </div>
@@ -158,7 +166,7 @@
                   <a href="#" class="btn-test">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.666 13.665"><path d="M1.226 9.93l2.485 2.487L0 13.665 1.226 9.93zm1.003-.9l6.843-6.845L11.46 4.57l-6.845 6.844L2.23 9.03zm7.802-7.804L11.08.146c.11-.098.234-.146.368-.146s.256.048.368.145L13.52 1.85a.534.534 0 0 1 .146.374.492.492 0 0 1-.145.362l-1.103 1.026-2.385-2.386z"/></svg>
                   </a>
-                  <a href="#" class="btn-test">
+                  <a href="#" class="btn-test js-test-delete">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.581 10.582"><path d="M0 8.31l3.02-3.02L0 2.27 2.27 0l3.02 3.02L8.31 0l2.27 2.27-3.02 3.02 3.02 3.02-2.27 2.272-3.02-3.02-3.02 3.02L0 8.312z"/></svg>
                   </a>
                 </div>
@@ -179,7 +187,7 @@
                     <a href="#" class="btn-test">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.666 13.665"><path d="M1.226 9.93l2.485 2.487L0 13.665 1.226 9.93zm1.003-.9l6.843-6.845L11.46 4.57l-6.845 6.844L2.23 9.03zm7.802-7.804L11.08.146c.11-.098.234-.146.368-.146s.256.048.368.145L13.52 1.85a.534.534 0 0 1 .146.374.492.492 0 0 1-.145.362l-1.103 1.026-2.385-2.386z"/></svg>
                     </a>
-                    <a href="#" class="btn-test">
+                    <a href="#" class="btn-test js-test-delete">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.581 10.582"><path d="M0 8.31l3.02-3.02L0 2.27 2.27 0l3.02 3.02L8.31 0l2.27 2.27-3.02 3.02 3.02 3.02-2.27 2.272-3.02-3.02-3.02 3.02L0 8.312z"/></svg>
                     </a>
                   </div>
