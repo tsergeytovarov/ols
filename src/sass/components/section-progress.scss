@@ -9,13 +9,19 @@
     position: relative;
     display: inline-block;
     box-sizing: border-box;
-    padding: 8px 18px;
     background: #ffffff;
     text-align: center;
     text-decoration: none;
 
-    @media (max-width: $tablet) {
-      padding: 7px 10px;
+    @media (max-width: $desktop) { 
+
+      &:nth-of-type(n+6){
+        .tooltip {
+          &--top:hover::before {
+            left: -500%;
+          }
+        }
+      }
     }
 
     &::after {
@@ -124,5 +130,15 @@
         }
       }
     }
+  }
+
+  &__step-icon {
+    display: block;
+    padding: 8px 18px;
+
+    @media (max-width: $tablet) {
+      padding: 7px 10px;
+    }
+
   }
 }

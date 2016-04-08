@@ -1,10 +1,8 @@
-[data-tooltip] {
+.tooltip {
   position: relative;
 
   &::before {
     position: absolute;
-    right: -10px;
-    bottom: -40px;
     z-index: 999;
     display: none;
     padding: 6px 20px;
@@ -21,15 +19,45 @@
   &::after {
     position: absolute;
     right: 5px;
-    bottom: -15px;
     display: none;
     border: 8px solid transparent;
-    border-bottom: 12px solid #37474f;
     content: "";
   }
 
   &:hover::before,
   &:hover::after {
     display: block;
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &--top {
+
+    &::before {
+      top: -40px;
+      left: -5px;
+    }
+
+    &::after {
+      top: -11px;
+      border-top: 12px solid #37474f;
+
+    }
+  }
+
+  &--bottom {
+
+    &::before {
+      bottom: -40px;
+      right: -10px;
+    }
+
+    &::after {
+      bottom: -15px;
+      border-bottom: 12px solid #37474f;
+    }
+    
   }
 }
